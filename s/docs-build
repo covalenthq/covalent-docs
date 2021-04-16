@@ -10,3 +10,6 @@ cp gatsby-config.js .docs/
 cp gatsby-node.js .docs/
 # NODE_ENV=production 
 cd .docs && ./node_modules/.bin/gatsby clean && ./node_modules/.bin/gatsby build --prefix-paths && cp -R public/* ../public/docs/
+
+./node_modules/.bin/gatsby serve
+
