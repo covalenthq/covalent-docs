@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "gatsby": "^2.32.12",
+    "gatsby-plugin-google-gtag": "^2.8.0",
+    "gatsby-plugin-google-tagmanager": "^2.11.0",
+    "react-dropdown": "^1.9.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs-bootstrap": "node_modules/cloudflare-docs-engine/bin/commands.sh bootstrap"
@@ -20,6 +26,7 @@
   "devDependencies": {
     "cloudflare-docs-engine": "git+https://github.com/cloudflare/cloudflare-docs-engine.git",
     "gatsby-plugin-google-tagmanager": "^2.11.0",
-    "react-dropdown": "^1.9.2"
+    "react-dropdown": "^1.9.2",
+    "webpack-cli": "^4.6.0"
   }
 }
