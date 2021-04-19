@@ -1,6 +1,6 @@
 module.exports = {
     product: "Covalent docs",
-    pathPrefix: "/docs/",
+    pathPrefix: "/",
     productLogoPathD: "M8 8v32h32V26H22V8zm18-2h16v16H26z",
     contentRepo: "covalenthq/covalent-docs",
     contentRepoFolder: "docs/",
