@@ -144,7 +144,7 @@ module.exports = {
         background_color: "#25275b",
         theme_color: "#25275b",
         display: "minimal-ui",
-        icon: "../static/static/images/covalent-logomark-white.png"
+        icon: "../static/images/covalent-logomark-white.png"
       }
     },
     {
