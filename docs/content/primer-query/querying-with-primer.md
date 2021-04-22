@@ -1,6 +1,6 @@
 ---
 title: Querying with Primer (Beginner)
-order: 5
+order: 0
 ---
 
 import Prerequisites from "../../components/prerequisites.js";

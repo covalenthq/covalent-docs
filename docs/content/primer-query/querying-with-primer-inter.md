@@ -1,6 +1,6 @@
 ---
 title: Querying with Primer (Intermediate)
-order: 6
+order: 1
 ---
 
 # Querying with Primer (Intermediate)
