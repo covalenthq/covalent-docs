@@ -4,19 +4,13 @@ order: 5
 hidden: false
 ---
 
-# Alchemist Cookbook
+# Primer Knowledge Base
 
-We have branded our learning series as the *Alchemist Cookbook*! Here you will find content in the form of how-to guides and case studies to help you learn how to use the [Covalent API](https://www.covalenthq.com/docs/api/#overview) in more detail.
+Primer is a query language built to transform Covalent API responses at query time. Primer queries are listed in order of precedence. Eg: If `primer={ ... }` and `match={ ... }` are used, `primer` is executed first. All top-level queries including the _primer pipeline_ are executed on the set of records returned after _pagination_. In other words, if you want these queries to include _all_ records, you must set the ```page-number=0``` and the ```page-size=...``` to an amount that includes all records.
 
+The Article below serve as a knowledge resource to give you an indepth understanding of primer.
 ## How-to Guides
 
-* [Use Class A endpoints](/learn/class-a)
-* [Work with NFTs](/learn/tracking-nft-data)
+* [Querying with Primer: Beginner](/learn/querying-with-primer)
+* [Querying with Primer: Beginner](/learn/querying-with-primer-inter)
 <!-- * [Querying with Primer (Beginner)](/learn/querying-with-primer) -->
-
-
-## Case Studies
-The following are detailed case studies or guiding you through a descriptive and exploratory analysis of popular blockchain topics. 
-
-* [Tether analysis](/learn/tether-analysis)
-* [Uniswap as an Oracle Price Feed](/learn/uniswap-pancake-amm-oracle)
