@@ -5,7 +5,7 @@ order: 6
 
 # Querying with Primer (Intermediate)
 
-In the previous cookbook recipe, you were able to use Primer to query the blockchain for exact matches and the dot notation. In this guide, we  will use Primer's comparison operators and combine query criteria to make compound queries.
+In the previous cookbook recipe, you were able to use Primer to query the blockchain for exact matches and with the dot notation. In this guide, we  will use Primer's comparison operators and combine query criteria to make compound queries.
 
 
 ## Comparison operators
@@ -25,7 +25,7 @@ The operators include: >, <, >=, <=, ===, and !==
 
 </TableWrap>
 
-Let's use a real-world example from the transaction endpoint. We have set `no-logs` to `true` to emit logs for simplicity. 
+Let's use a real-world example from the transaction endpoint. We have set `no-logs` to `true` to omit logs for simplicity. 
 
 ```json
 // https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?no-logs=true&page-number=0&page-size=5&key=...
