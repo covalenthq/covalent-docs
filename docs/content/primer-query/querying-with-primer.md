@@ -13,6 +13,12 @@ import Prerequisites from "../../components/prerequisites.js";
 
 Covalent offers the query language **Primer** which makes it easy for users to further process and transform the records in the Covalent API responses for their custom use-cases. Although you can transform and process the records in Javascript or your spreadsheet of choice, learning to query using Primer will make your job much easier.
 
+Primer is currently available on these endpoints:
+
+1. [Get log events by contract address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
+2. [Get log events by topic hash(es)](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
+3. [Get transactions](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/transactions_v2/)
+
 
 ## Primer intro
 
@@ -44,6 +50,33 @@ The Primer syntax and functionality is closely modeled after MongoDB - one of th
 </TableWrap>
 
 The query itself is a well-formed JSON document, which we call a "query document". Besides the slight differences in how we name things, there are no differences in the behavior or functionality of the query system.
+
+## Primer URL Syntax
+
+We have the following top-level query parameters.
+
+|Name|Description|
+|---|---|
+|primer|Records enter a multi-stage pipeline that transforms the records into aggregated results. Supports `$group` and `Aggregation` operators.|
+|match|Filters the records to pass only the documents that match the specified condition(s).|
+|group|Groups input elements by the specified _id expression and for each distinct grouping, outputs an element. Grouping by _date_ operators is also possible.|
+|sort|Sorts all input records and returns them in ascending or descending sorted order.|
+|skip|Skips over the specified number of records|
+|limit|Limits the number of records.|
+
+The following are example URL query parameters.
+
+### Basic _Sort_
+
+sort=
+```json
+{
+    "block_signed_at": 1
+}
+```
+[https://api.covalenthq.com/v1/1/address/0xA361718326c15715591c299427c62086F69923D9/transactions_v2/?sort={"block_signed_at":1}](https://api.covalenthq.com/v1/1/address/0xA361718326c15715591c299427c62086F69923D9/transactions_v2/?sort={%22block_signed_at%22:%221%22})
+
+This will return the entire block height of the response. _sort_ will re-arrange the order of the response. In this case by the block_signed_at date.
 
 ## Primer syntax
 
@@ -105,8 +138,6 @@ Now we will put to use the Primer concepts we were introduced to in the previous
 
 The Compound Governance contract is at `0xc0da01a04c3f3e0be433606045bb7017a7323e38`.
 
-The governance contract emits events pertaining to a proposal's lifecycle and voting history of COMP token holders. Here are some of the events that are emitted through this contract:
-
 </Aside>
 
 ### Prerequisites
@@ -115,7 +146,7 @@ The governance contract emits events pertaining to a proposal's lifecycle and vo
 
 ### About the data
 
-The governance contract emits events pertaining to a proposal's lifecycle and voting history of COMP token holders. Here are some of the events that are emitted through this contract:
+The Compound governance contract emits events pertaining to a proposal's lifecycle and voting history of COMP token holders. Here are some of the events that are emitted through this contract:
 
 * `ProposalCreated` - emitted when a new proposal is created
 * `VoteCast` - emitted when a vote has been cast on a proposal
