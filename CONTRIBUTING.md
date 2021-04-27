@@ -23,7 +23,7 @@ Please refer to the project's style and contribution guidelines for submitting p
  2. **Clone** the project to your own machine
  3. **Commit** changes to your own branch
  4. **Push** your work back up to your fork
- 5. Submit a **Pull request** to `develop` branch so that we can review your changes
+ 5. Submit a **Pull request** to `development` branch so that we can review your changes
 
 NOTE: Be sure to merge the latest from "develop" before making a pull request!
 
