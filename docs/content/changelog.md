@@ -11,8 +11,51 @@ Every change to our API matters and reflects our belief in one of the following 
 - `<data-accessibility>` - access to any blockchain data at any time with greater detail.
 - `<no-code>` - support for non-devs
 
-## 2021-03-30
+&nbsp;
+## 2021-04-30
+### Added
 
+- Pricing Endpoint - Get historical prices by addresses v2 `<data-accessibility>`
+
+
+- Class B Endpoint - GET Pancakeswap V2 network assets -  Return a paginated list of Pancake V2 pools sorted by exchange volume. Only pools with swaps in the last 24 hours are included. `<data-accessibility>`
+- Class B Endpoint - GET Pancakeswap V2 address exchange balances - Gets Pancakeswap V2 address exchange balances. `<data-accessibility>`
+- Class B Endpoint - GET Pancakeswap V2 address exchange liquidity transactions - Gets Pancakeswap V2 address exchange liquidity transactions  `<data-accessibility>`
+
+
+- Class B Endpoint - GET Pancakeswap network assets -  Return a paginated list of Pancake pools sorted by exchange volume. Only pools with swaps in the last 24 hours are included. `<data-accessibility>`
+- Class B Endpoint - GET Pancakeswap address exchange balances - Gets Pancakeswap address exchange balances. `<data-accessibility>`
+- Class B Endpoint - GET Pancakeswap address exchange liquidity transactions - Gets Pancakeswap address exchange liquidity transactions. `<data-accessibility>` 
+
+- Class A Endpoint -  GET Block Height `block_v2` `<data-accessibility>`
+
+- Added Support for Zora NFTs `<data-accessibility>`
+
+### Fixed
+
+- Fix `TokenBalanceService` - Use PricingServiceV2 quote rates [Issue-594](https://github.com/covalenthq/scout/issues/594)
+
+- PricingService - Historical Prices - ensure that yesterday is populated when we transition into today using UTC [Issue-557](https://github.com/covalenthq/scout/issues/557)
+
+- Fix `TokenBalanceService` and `TokenTransferService` in Avalanche portfolio returns http 500 error message. [Issue-530](https://github.com/covalenthq/scout/issues/530)
+
+- Fix parameterize pancake swap by setting Switch chain_id for the router [Issue-527](https://github.com/covalenthq/scout/issues/527)
+
+- Fix Uniswap v2 streamify swaps returns http 500 error message. [Issue-524](https://github.com/covalenthq/scout/issues/524)
+
+- Pricing service fix to add price changes in WETH. [Issue-511](https://github.com/covalenthq/scout/issues/511)
+
+- Auto Calculate starting block fix: Allow the user to put in `latest` with no starting_block. So it is auto-calculated as `latest-1000000`. That way the user doesn't have to always look up the starting block. [Issue-431](https://github.com/covalenthq/scout/issues/431)
+
+- Pricing service refactoring - Code refactoring to move components into separate particular functions. "Getting historical prices by address" changed to a cleaner flow using switch statements. Can now be done in 2 blocks. [Issue-339](https://github.com/covalenthq/scout/issues/339)
+
+- Fix Primer Exceptions should be typed: Primer exceptions are now less generic. Most of them are JSONParseExceptions but we also created a few more specific ones for other cases. [Issue-332](https://github.com/covalenthq/scout/issues/332)
+
+
+- Primer enabled on all class A endpoints. Added two query parameters: `match` - to filter responses. `primer` - to filter, aggregate, sort, limit responses. [Issue-323](https://github.com/covalenthq/scout/issues/323)
+
+&nbsp;
+## 2021-03-30
 ### Added
 
 - Integrated [Fantom](https://fantom.foundation/) chain! Fantom is a high-performance, scalable, customizable, and secure smart-contract platform. Fantom is permissionless, decentralized, and open-source while achieving fast finality (1-2 second transaction confirmation) and low fees ($0.00001). Furthermore, Fantom is EVM-compatible. `ChainID: 250`. `<multichain>`
@@ -54,7 +97,6 @@ Every change to our API matters and reflects our belief in one of the following 
 &nbsp;
 
 ## 2021-02-28
-
 ### Added
 
 - Binance Smart Chain (BSC) has been indexed and is now ready for beta testing. BSC is one of the most promising up-and-coming blockchains and we are thrilled to be supporting it. `<multichain>`
@@ -80,7 +122,6 @@ Every change to our API matters and reflects our belief in one of the following 
 &nbsp;
 
 ## 2021-01-26
-
 ### Added
 
 - SushiSwap balances and log events are now available to serve up data for one of the largest DeFi exchanges.
