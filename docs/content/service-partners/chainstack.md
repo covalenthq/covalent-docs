@@ -2,7 +2,7 @@
 title: Chainstack
 order: 1
 hidden: false
-featuredImage: ../images/service-partners/chainstack-banner.png
+featuredImage: ./images/chainstack-banner.png
 description: Managed services for blockchain, making it simple to launch and scale decentralized networks and applications.
 ---
 

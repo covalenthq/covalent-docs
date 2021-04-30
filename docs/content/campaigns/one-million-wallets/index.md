@@ -5,7 +5,7 @@ order: 1
 # One Million Wallets
 
 
-![One Million Wallets Banner](../images/omw-banner.png)
+![One Million Wallets Banner](./images/omw-banner.png)
 
 
 The purpose of *One Million Wallets* is to celebrate the creativity and diversity of blockchain developer communities. This campaign focuses on building custom-themed 'wallets' for any application. Anyone can build a crypto wallet, which we consider to be a commodity. 

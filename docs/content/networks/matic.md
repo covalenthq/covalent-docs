@@ -2,11 +2,11 @@
 title: Polygon/Matic indexing & querying data API
 order: 2
 hidden: false
-featuredImage: ../images/networks/Matic.png
+featuredImage: ./images/Matic.png
 description: Working together to bring massive scale to Ethereum
 ---
 
-![Matic network banner](../images/networks/Matic.png)
+![Matic network banner](./images/Matic.png)
 
 # Polygon / Matic Network
 

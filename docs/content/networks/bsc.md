@@ -2,11 +2,11 @@
 title: Binance Smart Chain indexing & querying data API
 order: 4
 hidden: false
-featuredImage: ../images/networks/Binance.png
+featuredImage: ./images/Binance.png
 description: Supporting a faster, cheaper, EVM-compatible network
 ---
 
-![BSC network banner](../images/networks/Binance.png)
+![BSC network banner](./images/Binance.png)
 
 # Binance Smart Chain
 

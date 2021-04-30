@@ -44,7 +44,7 @@ const DocsTutorialsData = props => {
 
   const tutorials = query.allMdx.edges
     .map(({ node }) => node)
-    .filter(page => page.fields.slug.match(/^\/tutorials\/.+/))
+    .filter(page => page.fields.slug.match(/^\/learn\/tutorials\/.+/))
     .map(page => ({
       order: page.frontmatter.order,
       title: getPageTitle(page),
@@ -155,7 +155,9 @@ class DocsTutorialsOverview extends React.Component {
                                 </Link>
                             </div>
                             <div className="DocsTutorials--column" data-column="author">
-                                <p>{tutorial.author}</p>
+                                <Link className="Link" to={"https://github.com/" + (tutorial.author)}>
+                                    {tutorial.author}
+                                </Link>
                             </div>
                             <div className="DocsTutorials--column" data-column="updated">
                                 <TimeAgo date={tutorial.updated} formatter={(value, unit) => (

@@ -2,11 +2,11 @@
 title: NFTree
 order: 8
 hidden: false
-featuredImage: ../images/project-showcase/nftree.png
+featuredImage: ./images/nftree.png
 description: This project allows users to save and invest crypto in a fun new way and create NFT art at the same time.
 ---
 
-![NFTree Banner](../images/project-showcase/nftree.png)
+![NFTree Banner](./images/nftree.png)
 
 &nbsp;
 # Nifty NFTs

@@ -1,5 +1,4 @@
 .DocsTutorials--column {
   width: 100%;
   padding-left: calc(var(--gap) / 2);
-  padding-right: calc(var(--gap) / 2);
 }

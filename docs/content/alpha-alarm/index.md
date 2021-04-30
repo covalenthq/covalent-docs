@@ -4,7 +4,7 @@ order: 6
 hidden: false
 ---
 
-![Banner](..//images/Alpha_Alarm/Alpha_Banner.png)
+![Banner](./images/Alpha_Banner.png)
 
 ## Previous Visuals
 

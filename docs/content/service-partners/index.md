@@ -12,4 +12,4 @@ Covalent works closely with the technical and business teams of the partner node
 Our infrastructure partners include:
 
 ### [Chainstack](/service-partners/chainstack)
-[![Chainstack](../images/service-partners/chainstack-banner.png)](/service-partners/chainstack)
+[![Chainstack](./images/chainstack-banner.png)](/service-partners/chainstack)

@@ -2,11 +2,11 @@
 title: Avalanche Wallet Checker
 order: 9
 hidden: false
-featuredImage: ../images/project-showcase/omw-awc.png
+featuredImage: ./images/omw-awc.png
 description: Avalanche wallet address checker built to learn about NFT in blockchain on Ethereum like C-Chain of Avalanche
 ---
 
-![Collectors Cafe Banner](../images/project-showcase/omw-awc.png)
+![Collectors Cafe Banner](./images/omw-awc.png)
 
 &nbsp;
 # Collectors Cafe

@@ -1,8 +1,11 @@
 ---
+title: Querying with Primer (Int)
 updated: 2021-03-09
-type: "📝 Text"
+type: "📝 Article"
 order: 2
-author: Ganesh
+hidden: false
+author: gane5h
+description: Learn how to use Primer's comparison operators and combine query criteria to make compound queries
 tags: 
   - Primer
   - MongoDB

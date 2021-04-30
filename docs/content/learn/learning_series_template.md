@@ -1,11 +1,19 @@
 ---
-title: Case Study Template
-order: 0
+title: _Template_
+updated: 2021-04-30
+type: "📝 Article"
+order: 1
 hidden: true
-featuredImage: ../images/tether_analysis/cookbook-tether-banner.png
-description: Learn how to extract all USDT Issuances and compare with Tether's Transparency Dashboard.
-
+author: Your GitHub username
+featuredImage: ./guides/images/cookbook-class-a-banner.png
+description: Description of your learning content.
+tags: 
+  - Class A
+  - Beginner
+  - Log Events
 ---
+
+![Image of your content banner](./guides/images/cookbook-class-a-banner.png)
 
 # Title
 
@@ -15,6 +23,7 @@ description: Learn how to extract all USDT Issuances and compare with Tether's T
 
 </Aside>
 
+&nbsp;
 ## Introduction
 
 Intro blurb

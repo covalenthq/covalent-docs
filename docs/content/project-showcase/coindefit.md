@@ -2,11 +2,11 @@
 title: Coin Defit
 order: 4
 hidden: false
-featuredImage: ../images/project-showcase/coindefit-banner.png
+featuredImage: ./images/coindefit-banner.png
 description: Know how much profit you would have made in a Uniswap pool
 ---
 
-![Coin Defit Banner](../images/project-showcase/coindefit-banner.png)
+![Coin Defit Banner](./images/coindefit-banner.png)
 
 &nbsp;
 # Coin Defit

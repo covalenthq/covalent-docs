@@ -2,11 +2,11 @@
 title: Fantom indexing & querying data API
 order: 5
 hidden: false
-featuredImage: ../images/networks/Fantom.png
+featuredImage: ./images/Fantom.png
 description: Support for Fantom network
 ---
 
-![Recipe logo](../images/networks/Fantom.png)
+![Recipe logo](./images/Fantom.png)
 
 # Fantom Network
 

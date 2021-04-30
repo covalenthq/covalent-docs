@@ -1,10 +1,11 @@
 ---
 title: Tether Analysis
 updated: 2021-03-31
-type: "📝 Text"
+type: "📝 Article"
+order: 1
 hidden: false
-author: Harish
-featuredImage: ../images/tether_analysis/cookbook-tether-banner.png
+author: harishraisinghani
+featuredImage: ./images/tether_analysis/cookbook-tether-banner.png
 description: Learn how to easily extract all USDT Issuances and compare with Tether's Transparency Dashboard.
 tags: 
   - Class A
@@ -12,7 +13,7 @@ tags:
   - Log Events
 ---
 
-![Recipe logo](../images/tether_analysis/cookbook-tether-banner.png)
+![Recipe logo](./images/tether_analysis/cookbook-tether-banner.png)
 
 
 # Analyze Tether issuances
@@ -29,7 +30,7 @@ Tether is a blockchain-based cryptocurrency whose tokens in circulation are decl
 
 There is no shortage of controversy around Tether (see https://crypto-anonymous-2021.medium.com/the-bit-short-inside-cryptos-doomsday-machine-f8dcf78a64d3) but the purpose of this case study is to understand how we can use the Covalent API to do our own Tether analysis and see if the underlying blockchain data tells us the same story as what Tether publishes on their [Transparency Dashboard](https://wallet.tether.to/transparency).
 
-![Tether Dashboard](../images/tether_analysis/tether_dashboard.png)
+![Tether Dashboard](./images/tether_analysis/tether_dashboard.png)
 
 <Aside>
 
@@ -84,11 +85,11 @@ The contract decimal refers to the base units of USDT so a value of 1000000 USDT
 
 If we take a look a the contract code, we see that when new tokens are issued, an `event Issue(uint amount)` is logged. These tokens are deposited into the owner's address. Note on the Tether [Transparency Dashboard](https://wallet.tether.to/transparency), issued tokens are actually referred to as *Total Authorized*, as they may not be circulating. 
 
-![Tether Dashboard Eth Authorized](../images/tether_analysis/tether_dashboard_eth.png)
+![Tether Dashboard Eth Authorized](./images/tether_analysis/tether_dashboard_eth.png)
 
 On Etherscan, we can also see the transaction when the USDT contract was created: https://etherscan.io/tx/0x2f1c5c2b44f771e942a8506148e256f94f1a464babc938ae0690c6e34cd79190. 
 
-![USDT Etherscan](../images/tether_analysis/usdt_etherscan.png)
+![USDT Etherscan](./images/tether_analysis/usdt_etherscan.png)
 
 <Aside>
 
@@ -101,7 +102,7 @@ The USDT contract was deployed at block `4634748`. This will be our `starting-bl
 ### 2) Find the `Issue` event topic hash
 This step is harder to do on Etherscan because it requires having to scroll through many log events to find the `Issue` event, and even then the number of log events displayed is limited. Luckily our [Topic Hash Calculator](../../tools/topic-calculator) makes this simple to find.
 
-![USDT issue topic calculator](../images/tether_analysis/usdt_issue_topic_calc.png)
+![USDT issue topic calculator](./images/tether_analysis/usdt_issue_topic_calc.png)
 
 We simply paste in our USDT contract address, `0xdAC17F958D2ee523a2206206994597C13D831ec7` and we get the `Issue` topic hash:
 
@@ -168,5 +169,5 @@ We determined that, to date, `19,160,018,006 USDT` has been recorded as issued t
 ### Next Steps
 The reader can plot `USDT` issuances with the historical `BTC` price to determine the correlation using interactive data visualization tools like Tableau. Here is a sample dashboard with this plot:
 
-![USDT BTC Tableau](../images/tether_analysis/usdt_btc_tableau.png)
+![USDT BTC Tableau](./images/tether_analysis/usdt_btc_tableau.png)
 

@@ -1,11 +1,11 @@
 ---
 title: X Network
 hidden: true
-featuredImage: ../images/networks/Ethereum.png
+featuredImage: ./images/networks/Ethereum.png
 description: Fully indexed and providing billions of rows of data at your fingertips. 
 ---
 
-![Ethereum network banner](../images/networks/Ethereum.png)
+![Ethereum network banner](./images/networks/Ethereum.png)
 
 # X Network
 

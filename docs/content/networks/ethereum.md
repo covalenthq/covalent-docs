@@ -2,11 +2,11 @@
 title: Ethereum indexing & querying data API
 order: 1
 hidden: false
-featuredImage: ../images/networks/Ethereum.png
+featuredImage: ./images/Ethereum.png
 description: Fully indexed and providing billions of rows of data at your fingertips. 
 ---
 
-![Ethereum network banner](../images/networks/Ethereum.png)
+![Ethereum network banner](./images/Ethereum.png)
 
 # Ethereum
 

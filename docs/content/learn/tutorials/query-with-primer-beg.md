@@ -1,8 +1,11 @@
 ---
+title: Querying with Primer (Beg)
 updated: 2021-03-09
-type: "📝 Text"
+type: "📝 Article"
 order: 1
-author: Ganesh
+hidden: false
+author: gane5h
+description: Learn some of the basics of Primer
 tags: 
   - Primer
   - MongoDB

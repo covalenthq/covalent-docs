@@ -2,11 +2,11 @@
 title: Nifty NFTs
 order: 7
 hidden: false
-featuredImage: ../images/project-showcase/nifty-nfts.png
+featuredImage: ./images/nifty-nfts.png
 description: Twitter Bot showcasing inspiring NFTs and highlights the power of Covalent's API!
 ---
 
-![Nifty NFTs Banner](../images/project-showcase/nifty-nfts.png)
+![Nifty NFTs Banner](./images/nifty-nfts.png)
 
 &nbsp;
 # Nifty NFTs

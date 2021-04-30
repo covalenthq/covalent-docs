@@ -1,3 +1,9 @@
+---
+title: Token Holders
+order: 4
+hidden: false
+---
+
 import TokenHolders from "../../components/token-holders.js";
 
 # Token Holders

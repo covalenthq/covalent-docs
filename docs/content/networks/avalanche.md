@@ -2,11 +2,11 @@
 title: Avalanche indexing & querying data API
 order: 3
 hidden: false
-featuredImage: ../images/networks/Avalanche.png
+featuredImage: ./images/Avalanche.png
 description: Support for both Avalanche and Fuji C-Chain networks
 ---
 
-![Recipe logo](../images/networks/Avalanche.png)
+![Recipe logo](./images/Avalanche.png)
 
 # Avalanche Network
 

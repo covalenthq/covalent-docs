@@ -44,7 +44,7 @@ const DocsCaseStudiesData = props => {
 
   const casestudies = query.allMdx.edges
     .map(({ node }) => node)
-    .filter(page => page.fields.slug.match(/^\/casestudies\/.+/))
+    .filter(page => page.fields.slug.match(/^\/learn\/casestudies\/.+/))
     .map(page => ({
       order: page.frontmatter.order,
       title: getPageTitle(page),
@@ -155,7 +155,9 @@ class DocsCaseStudiesOverview extends React.Component {
                                 </Link>
                             </div>
                             <div className="DocsTutorials--column" data-column="author">
-                                <p>{casestudy.author}</p>
+                                <Link className="Link" to={"https://github.com/" + (casestudy.author)}>
+                                    {casestudy.author}
+                                </Link>
                             </div>
                             <div className="DocsTutorials--column" data-column="updated">
                                 <TimeAgo date={casestudy.updated} formatter={(value, unit) => (

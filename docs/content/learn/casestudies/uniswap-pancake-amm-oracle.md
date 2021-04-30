@@ -1,10 +1,11 @@
 ---
 title: Uniswap as an Oracle Price Feed
 updated: 2021-04-05
-type: "📝 Text"
+type: "📝 Article"
+order: 2
 hidden: false
-author: Ganesh
-featuredImage: ../images/uniswap-price-feed/cookbook-uniswap-banner.png
+author: gane5h
+featuredImage: ./images/uniswap-price-feed/cookbook-uniswap-banner.png
 description: Learn how to use Uniswap as a price oracle.
 tags: 
   - Class A
@@ -15,7 +16,7 @@ tags:
 
 
 
-![Recipe logo](../images/uniswap-price-feed/cookbook-uniswap-banner.png)
+![Recipe logo](./images/uniswap-price-feed/cookbook-uniswap-banner.png)
 
 
 # Uniswap as an Oracle Price Feed
@@ -69,14 +70,14 @@ For illustrative purposes, we will pick the `USDC-ETH` uniswap pool at the addre
 
 On Etherscan, we see the [events emitted](https://etherscan.io/address/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc#events) from this contract:
 
-![Etherscan Events](../images/uniswap-price-feed/etherscan.png)
+![Etherscan Events](./images/uniswap-price-feed/etherscan.png)
 
 We see that the topic hash for the `Sync` event is `0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1`. 
 
 Another way to calculate the topic hash is to use the Covalent [Topic Hash Calculator](../../tools/topic-calculator).
 
 
-![Sync Topic Calculator](../images/uniswap-price-feed/topic-calculator.png)
+![Sync Topic Calculator](./images/uniswap-price-feed/topic-calculator.png)
 
 &nbsp;
 ### 2) Use the Covalent API `v1/{chainId}/events/topics/{topic}/` endpoint to fetch the event logs

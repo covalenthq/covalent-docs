@@ -5,7 +5,7 @@ order: 2
 
 # Dungeons & Data
 
-![Dungeons & Data Logo](../../images/dnd_logo.png)
+![Dungeons & Data Logo](./images/dnd_logo.png)
 
 The purpose of the Dungeons & Data (DnD) campaign is to empower a wide community of *'Citizen Data Scientists'*, analysts and enthusiasts who can quickly and effectively analyze curated datasets with little-to-no coding and create valuable apps and case studies.
 
