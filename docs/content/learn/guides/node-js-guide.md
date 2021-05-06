@@ -1,7 +1,7 @@
 ---
-title: Working with NFTs
+title: NodeJS Guide
 updated: 2021-05-6
-type: "📝 Article"
+type: "💻 Code"
 order: 8
 hidden: false
 author: emmanuel
@@ -115,7 +115,7 @@ Open your browser or postman and go to `http://localhost:8000/index` You will se
 }
 ```
 
-Now that our App is up and running, the next step will be to add the Covalent API url path and that will give the app the capability to interact with all endpoints.
+Now that our App is up and running, the next step will be to add the Covalent API url path and that will give the app the capability to interact with all Covalent endpoints.
 
 We will update the `index.js` file as shown below
 
@@ -144,7 +144,7 @@ app.get('/token-balance', async(req, res) =>{
   }
 })
 ```
-Code explanation: This is a promise based async request which using node-fetch to make request to the API and return a json based response format in the Browser. The console log statements are there to also affirm the response object in the console. The response is below
+Code explanation: This is a promise based async request which uses node-fetch to make request to the API and return a json based response format in the Browser. The console log statements are there to also affirm the response object in the console. The response is below
 
 
 ```json
