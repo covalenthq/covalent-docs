@@ -5,7 +5,7 @@ type: "💻 Code"
 order: 4
 hidden: false
 author: aurelienft
-featuredImage: ./images/working-with-nfts.png
+featuredImage: ./images/transaction-parsing.png
 description: Learn how to parse transactions data of a native blockchain token from transactions events.
 tags:
   - Class A

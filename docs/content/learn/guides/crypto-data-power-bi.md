@@ -3,9 +3,9 @@ title: Using Power BI with Covalent API
 updated: 2021-05-04
 type: "🎥 Video"
 order: 5
-hidden: true
+hidden: false
 author: thompland777
-featuredImage: ./images/covalent-powerbi.png
+featuredImage: ./images/covalent-power-bi.png
 description: Learn how to create powerful data visualizations using Power BI and the Covalent API
 tags: 
   - Intermediate
