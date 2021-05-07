@@ -216,16 +216,3 @@ Using the code example above, you can thus write new endpoints and extend the ar
 You can use the [`dotenv`](https://www.npmjs.com/package/dotenv) package to hide your API keys.
 
 &nbsp;
-# FAQ
-
-**1. How do I render an address with a large number of NFTs?**
-
-Take for example [Pranksy](https://twitter.com/pranksynft?lang=en) who owns a large number of NFTs at the address `0xd387a6e4e84a6c86bd90c158c6028a58cc8ac459`. If you were to call the `balances_v2` endpoint with `nft=true` - the API will time out because there's a lot of off-chain metadata to fetch.
-
-Our recommendation is the following:
-
-The general idea is to have a two-level hierarchy of balances when rendering the NFTs. This is similar to how a music player like iTunes first shows a list of albums and then you can drill down to a specific album to see the tracks.
-
-In a similar vein, first quickly return all the NFTs and render them as top-level collections. You can get this data with `nft=true` and `no-nft-fetch=true`. At this point, you don't actually know how many tokens are within a collection, just that there might be some.
-
-Second, when the user choses to drill down to a collection, you can render the `token_id`s that the address owns. For this you'll have to call the NFT metadata endpoint to get the current owner. Ofcourse, you'll have to discard all `token_id`s that the address does not own.
