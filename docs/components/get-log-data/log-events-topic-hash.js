@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-import "../css/components/topic-calculator.css";
 
-const TokenHolders = () => {
+const GetTopicHashLogs = () => {
   const data = [
     {
       value: 1,
@@ -76,9 +75,27 @@ const TokenHolders = () => {
             value={address}
             onChange={handleAddress}
           />{" "}
+
+        <input
+            placeholder="Topic"
+            value={address}
+            onChange={handleAddress}
+          />{" "}
+
+         <input
+            placeholder="Enter Starting Block"
+            value={blockHeight}
+            onChange={handleBlockHeight}
+          />{" "}
         
           <input
-            placeholder="Enter Block height"
+            placeholder="Enter Ending Block"
+            value={blockHeight}
+            onChange={handleBlockHeight}
+          />{" "}
+
+        <input
+            placeholder="Sender Address"
             value={blockHeight}
             onChange={handleBlockHeight}
           />{" "}
@@ -105,4 +122,4 @@ const TokenHolders = () => {
   );
 };
 
-export default TokenHolders;
+export default GetTopicHashLogs;
