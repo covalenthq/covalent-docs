@@ -21,3 +21,6 @@ The Topic SQL Generator allows you to easily calculate topic hashes for events e
 &nbsp;
 ## [Token Holders Calculator](/tools/token-holders/)
 The Token Holders Calculator allows you to get the **complete list** of token holders and token balances for any token contract as of a specific `block_height`.  
+
+## [Get Event Logs Data](/tools/get-logs-data/)
+The Get Event Logs Data tool allows you to get the **downloadable csv** giving the set parameters `block_height`, `transaction hash` and `sender address`.  
