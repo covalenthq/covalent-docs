@@ -64,10 +64,10 @@ const GetContractLogs = () => {
     <div>
       <div className="topics">
         <p>
-          Enter the Address and the Block Height to download a list of Token Holders.
+          Enter the required information
         </p>
         <p>
-          By default it returns an example response of the token holders of the UNI token as of latest block height. Select Ethereum Mainnet from the drop down and click `submit` to see the example response.
+          By default it returns an example response based on the specified block heights. Select the network from the drop down and click `submit` to get a response.
         </p>
 
         <div>

@@ -24,8 +24,10 @@ const GetTopicHashLogs = () => {
 
   const [network, setNetwork] = useState("");
 
-  const [address, setAddress] = useState("0x1f9840a85d5af5bf1d1762f925bdaddc4201f984");
-  const [startingBlock, setStartingBlock] = useState(" ");
+  const [address, setAddress] = useState("");
+  const [topicHash, setTopicHash] = useState("");
+
+  const [startingBlock, setStartingBlock] = useState("");
   const [endingBlock, setEndingBlock] = useState("latest");
 
   const [pageNumber, setPageNumber] = useState("0");
@@ -33,6 +35,10 @@ const GetTopicHashLogs = () => {
 
   const handleAddress = (e) => {
     setAddress(e.target.value);
+  };
+
+  const handleTopicHash = (e) => {
+    setTopicHash(e.target.value);
   };
 
   const handleStartingBlock = (e) => {
@@ -51,10 +57,7 @@ const GetTopicHashLogs = () => {
     setPageSize(e.target.value);
   };
 
-  const URL_String = `https://api.covalenthq.com/v1/${network.value}/events/address/${address}/?key=ckey_API_KEY&starting-block=${startingBlock}&ending-block=${endingBlock}&page-number=${pageNumber}&page-size=${pageSize}&format=csv`;
-  // You can use the address and block height below to run tests
-  // 0x7d91e637589EC3Bb54D8213a9e92Dc6E8D12da91
-  //12044973
+  const URL_String = `https://api.covalenthq.com/v1/1/events/topics/${topicHash}/?starting-block=${startingBlock}&ending-block=${endingBlock}&sender-address=${address}&page-number=${pageNumber}&page-size=${pageSize}&format=csv`
   
   const handleSubmit = () => {
     window.location.replace(`${URL_String}`);
@@ -63,28 +66,31 @@ const GetTopicHashLogs = () => {
   return (
     <div>
       <div className="topics">
-        <p>
-          Enter the Address and the Block Height to download a list of Token Holders.
-        </p>
-        <p>
-          By default it returns an example response of the token holders of the UNI token as of latest block height. Select Ethereum Mainnet from the drop down and click `submit` to see the example response.
-        </p>
-
+       
         <div>
+          <p>Enter the Sender Address</p>
           <input
-            placeholder="Enter the Address"
             value={address}
             onChange={handleAddress}
           />{" "}
 
+<p>Enter the Topic String</p>
+<input
+            
+            value={topicHash}
+            onChange={handleTopicHash}
+          />{" "}
+
+</div>
+<div>
+  <p>Enter Starting Block</p>
          <input
-            placeholder="Enter Starting Block"
             value={startingBlock}
             onChange={handleStartingBlock}
           />{" "}
-        
+        <p>Enter Ending Block</p>
           <input
-            placeholder="Enter Ending Block"
+          
             value={endingBlock}
             onChange={handleEndingBlock}
           />{" "}
