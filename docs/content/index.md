@@ -16,7 +16,7 @@ The unified Covalent API allows you to create entirely new applications or augme
 
 &nbsp;
 ## Supported Networks
-Learn more about all the [blockhain networks](/networks) we have indexed and support. 
+Learn more about all the [blockchain networks](/networks) we have indexed and support. 
 
 &nbsp;
 ## *Proof-of-Education* Campaigns
