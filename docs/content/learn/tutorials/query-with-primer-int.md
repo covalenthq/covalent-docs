@@ -218,14 +218,14 @@ header: Comparisons operators on datetimes
 
 ### Dot operator to access to elements on an array in the result
 
-You can use the dot operator to access to an array on an array by his index. For example 
-we can access to the second parameter of a decoded event:
+You can use the dot operator to access to element of an array by his index. For example 
+you can access to the second parameter of a decoded event:
 
 ```json
 ---
-header: Access to second parameter and make a comparison
+header: Access to second element of the params array and only return result if value is 120000.
 ---
 {
-    "decoded.params.1.value": "1"      
+    "decoded.params.1.value": 120000      
 }
 ```
