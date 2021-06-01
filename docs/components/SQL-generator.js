@@ -1,4 +1,5 @@
 import React from "react"
+import { allChainData } from "./chain-info";
 
 import "../css/components/topic-calculator.css"
 
@@ -11,34 +12,52 @@ class SQLApp extends React.Component {
             error: false,
             error_message: "",
             text: "Copy to clipboard",
-            chain_id: "chain_eth_mainnet"
-
+            chain_id: "chain_eth_mainnet",
+            all_chains_data: []
         };
     }
+
+    async componentDidMount() {
+      await this._fetchAllChainsData();
+    }
+
+     _fetchAllChainsData = async () => {
+      const response = await fetch("https://api.covalenthq.com/v1/chains/?key=ckey_6b87a4a549ff46e6971c3e6341f")
+      if (response.ok) {
+        const data = await response.json()
+        this.setState({all_chains_data: data.data.items});
+      } else {
+        this.setState({error: true});
+      }
+    }
+    
+    _renderOptions = (chain_id) => {
+      if (allChainData.has(Number(chain_id))) {
+        return (<option value={allChainData.get(Number(chain_id)).dbname}>{allChainData.get(Number(chain_id)).chain_name}</option>);
+      }
+    }
+
 
     render() {
 
         var err = this.state.error ? this.state.error_message : null;
 
       return <div className="topics">
-        <div>
+        {this.state.all_chains_data.length !== 0 ? <div>
 
         <p>Enter the contract address:</p>
         <input placeholder="Contract address"
-          value={this.state.address_input}
-          onChange={this._inputAddress}
-          style={{marginRight: "1rem", border: "none"}}
+            value={this.state.address_input}
+            onChange={this._inputAddress}
+            style={{marginRight: "1rem", border: "none"}}
         />
 
         <select style={{marginRight: "1rem", height: 39}} onChange={this._inputChainId}>
-         <option value = "chain_eth_mainnet">Ethereum Mainnet</option>
-         <option value = "chain_matic_mainnet">Matic Mainnet</option>
-         <option value = "chain_bsc">Binance Smart Chain</option>
-         <option value = "chain_avalanche_mainnet">Avalanche C-Chain Mainnet</option>
-       </select>
+          {this.state.all_chains_data.map(o => this._renderOptions(o.chain_id))}
+        </select>
 
         <button onClick={this._clickNext} >Get event SQL!</button>
-      </div>
+      </div> : null}
 
       {err}
 

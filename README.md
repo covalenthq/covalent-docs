@@ -2,6 +2,7 @@
 
 The official docs site for Covalent. This is also referred to as the *Knowledge Base*.
 
+
 ## Contributing
 
 Please read the contribution guidelines [here](CONTRIBUTING.md).

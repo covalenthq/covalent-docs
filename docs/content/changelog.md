@@ -51,11 +51,11 @@ Added annualized fee field. `<data-accessibility>`
 
 
 &nbsp;
+
 ## 2021-04-30
 ### Added
 
 - Pricing Endpoint - Get historical prices by addresses v2 `<data-accessibility>`
-
 
 - Class B Endpoint - GET Pancakeswap V2 network assets -  Return a paginated list of Pancake V2 pools sorted by exchange volume. Only pools with swaps in the last 24 hours are included. `<data-accessibility>`
 - Class B Endpoint - GET Pancakeswap V2 address exchange balances - Gets Pancakeswap V2 address exchange balances. `<data-accessibility>`
@@ -90,10 +90,10 @@ Added annualized fee field. `<data-accessibility>`
 
 - Fix Primer Exceptions should be typed: Primer exceptions are now less generic. Most of them are JSONParseExceptions but we also created a few more specific ones for other cases. [Issue-332](https://github.com/covalenthq/scout/issues/332)
 
-
 - Primer enabled on all class A endpoints. Added two query parameters: `match` - to filter responses. `primer` - to filter, aggregate, sort, limit responses. [Issue-323](https://github.com/covalenthq/scout/issues/323)
 
 &nbsp;
+
 ## 2021-03-30
 ### Added
 
