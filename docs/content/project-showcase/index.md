@@ -3,13 +3,13 @@ title: Project Showcase
 order: 7
 hideChildren: false
 ---
-import DocsProjectsOverview from "../../docs/components/docs-project-showcase-overview.js"
+import DocsProjectsOverview from "../../components/docs-project-showcase-overview.js"
 
 # Project Showcase
 Our ecosystem of community developers continue to astonish us with their creativity in using the Covalent API to power their dApps! Here is a showcase of some of the best projects we have seen to date:
 
  
-<DocsProjectsOverview/>
+<DocsProjectsOverview />
 
 <!-- &nbsp;
 ## Independent Projects
