@@ -6,7 +6,7 @@ featuredImage: ../images/project-showcase/eth-hole.png
 description: A dApp to monitor the token flow from ethereum to layer2 and it’s sidechains.
 ---
 
-![EthHole Banner](../images/project-showcase/eth-hole.png)
+![EthHole Banner](../images/eth-hole.png)
 
 &nbsp;
 # EthHole.Link

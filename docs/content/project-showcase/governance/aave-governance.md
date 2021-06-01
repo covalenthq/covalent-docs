@@ -1,12 +1,18 @@
 ---
 title: Aave Governance
-order: 5
+order: 1
 hidden: false
-featuredImage: ../images/project-showcase/aave-governance-banner.png
+author: anadi2311
+updated: 2021-05-30
+featuredImage: ../images/aave-governance-banner.png
 description: A governance dashboard for the Aave Protocol
+tags:
+  - Governance
+  - Dungeons&Data
+  - Hackathons
 ---
 
-![Coin Defit Banner](./images/aave-governance-banner.png)
+![Coin Defit Banner](../images/aave-governance-banner.png)
 
 &nbsp;
 # Aave Governance Dashboard
