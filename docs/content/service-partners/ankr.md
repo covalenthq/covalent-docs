@@ -21,14 +21,17 @@ These docs will focus on the Ankr API’s that align with what Covalent offers. 
 &nbsp;
 
 ### Deploy an API
-1. Head to [app.ankr.com](app.ankr.com) and create an account. After creating an account, sign in to access your dashboard on ankr. Next click the APIs button from the left menu.
-2. Here you should see a list of your active APIs in case you deployed any. Click the blue Create button to deploy a new one.
-3. Choose the API you wish to deploy from the API Market list and click Create API.
+1. Head to [app.ankr.com](app.ankr.com) and create an account. After creating an account, sign in to access your dashboard on ankr. Next click the **APIs** button from the left menu.
+![ankr-dashboard](./images/ankr/dashboard.png)
+2. Here you should see a list of your active APIs in case you deployed any. Click the blue **Create** button to deploy a new one.
+![ankr-dashboard](./images/ankr/create.png)
+3. Choose the API you wish to deploy from the API Market list and click **Create API**.
+![ankr-dashboard](./images/ankr/deploy.png)
 Provide the **Project** name and choose the **Network** for which you wish to deploy the API and click **Next**.
-
+![ankr-dashboard](./images/ankr/network.png)
 ### Get the API endpoint
 A new API server should be deployed in a couple of minutes. You can then copy the generated endpoint and start querying:
-
+![ankr-dashboard](./images/ankr/endpoint.png)
 &nbsp;
 
 ### Binance Smart Chain
