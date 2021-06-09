@@ -9,8 +9,6 @@ hidden: True
  
 ![Template banner image](./images/covalent-logo.png) 
 
-<< check which covalent image to put here>>
-
 **Disclaimer:** The content is created andd submitted by the interested project. Covalent only reviews the standards. 
 
 &nbsp;
@@ -61,6 +59,7 @@ covalent-docs
 |--|--|--|--defi/moonshot.md
 |--|--|--|--images/moonshot.png
 |--|--|--|--governance
+|--|--|--|--multichain-analysis
 |--|--|--|--nft
 |--|--|--|--wallet
 |--public
@@ -69,10 +68,29 @@ covalent-docs
 |--static/static/images
 ...
 ```
+
 &nbsp;
-### 3.  Submitting PR
+### 3.  Featuring Project
 
-When you think you have made all the changes into the template, you can sumbit a pull-request from your forked repo to `developement` branch. **Don't create a PR to master!**
- We will review it with our standards and voila! You will be on the showcase.
+- After placing your project with appropriate tags in its respective directory go to [index.md](./index.md).
+- Select the category which corresponds to the directory you chose to keep your project.
+- Follow the following format to feature your project.
 
-**Note**: Some projects that were accepted before we formed a standard so they might not adhere to all the pre-requisites. If you are sumbmitting a PR after (decided a date), you must adhere to standards in the template.
+```
+### [GoSwapp](/project-showcase/goswapp)
+[![GoSwapp](./images/goswapp-banner.png)](/project-showcase/goswapp)
+```
+
+
+&nbsp;
+### 4.  Submitting PR
+
+When you think you have made all the changes into the template, you can sumbit a pull-request from your forked repo to `developement` branch. 
+
+`Don't create a PR to master!`
+
+We will review it with our standards and voila! You will be on the showcase.
+
+**Note**: Some projects that were accepted before we formed a standard so they might not adhere to all the pre-requisites. If you are sumbmitting a PR after `(decide a date)`, you must adhere to standards in the template.
+
+

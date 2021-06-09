@@ -2,25 +2,25 @@ import React, { useState } from "react";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
-const GetContractLogs = () => {
-  const data = [
-    {
-      value: 1,
-      label: "Ethereum",
-    },
-    {
-      value: 56,
-      label: "Binance Smart Chain",
-    },
-    {
-      value: 137,
-      label: "Polygon",
-    },
-    {
-      value: 43114,
-      label: "Avalanche C-Chain",
-    },
-  ];
+const GetContractLogs = (props) => {
+  // const data = [
+  //   {
+  //     value: 1,
+  //     label: "Ethereum",
+  //   },
+  //   {
+  //     value: 56,
+  //     label: "Binance Smart Chain",
+  //   },
+  //   {
+  //     value: 137,
+  //     label: "Polygon",
+  //   },
+  //   {
+  //     value: 43114,
+  //     label: "Avalanche C-Chain",
+  //   },
+  // ];
 
   const [network, setNetwork] = useState("");
 
@@ -71,19 +71,19 @@ const GetContractLogs = () => {
         </p>
 
         <div>
-        <p>Enter the Contract Address</p>
+          <p>Enter the Contract Address</p>
           <input
             value={address}
             onChange={handleAddress}
           />{" "}
 
-        <p>Enter Starting Block</p>
-         <input
+          <p>Enter Starting Block</p>
+          <input
             value={startingBlock}
             onChange={handleStartingBlock}
           />{" "}
-        
-        <p>Enter Ending Block</p>
+          
+          <p>Enter Ending Block</p>
           <input
             value={endingBlock}
             onChange={handleEndingBlock}
@@ -101,11 +101,11 @@ const GetContractLogs = () => {
         <Dropdown
           placeholder="Select Network"
           value={network}
-          options={data}
+          options={props.chains}
           onChange={setNetwork}
         />
 
-        <button onClick={handleSubmit}>Submit</button>
+        <button style={{marginTop: "1rem"}} onClick={handleSubmit}>Submit</button>
       </div>
     </div>
   );

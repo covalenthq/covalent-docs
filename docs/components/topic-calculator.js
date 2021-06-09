@@ -15,8 +15,28 @@ class TopicApp extends React.Component {
       selected: false,
       event_chosen: false,
       copied:false,
-      text: "Copy to clipboard"
+      text: "Copy to clipboard",
+      all_chains_data: [],
+      chain_id: "250",
     };
+  }
+
+  async componentDidMount() {
+    await this._fetchAllChainsData();
+  }
+
+  _fetchAllChainsData = async () => {
+    const response = await fetch("https://api.covalenthq.com/v1/chains/?key=ckey_6b87a4a549ff46e6971c3e6341f")
+    if (response.ok) {
+      const data = await response.json()
+      this.setState({all_chains_data: data.data.items});
+    } else {
+      this.setState({error: true});
+    }
+  }
+  
+  _renderOptions = (chain_id, label) => {
+      return (<option value={chain_id}>{label}</option>);
   }
 
   //call render first
@@ -26,17 +46,22 @@ class TopicApp extends React.Component {
       var err = this.state.error ? this.state.error_message : null;
 
       return <div className="topics">
-        <div>
+        {this.state.all_chains_data.length !== 0 ? <div>
 
       {/* and print the input box here */}
         <p>Enter the contract address you want to generate topic hashes for:</p>
         <input placeholder="Contract address"
           value={this.state.address_input}
           onChange={this._inputAddress}
+          style={{marginRight: "1rem", border: "none"}}
         />
 
-        <button style={{marginLeft: "1rem"}} onClick={this._clickNext} >Get events!</button>
-      </div>
+        <select style={{marginRight: "1rem", height: 39}} onChange={this._inputChainId}>
+          {this.state.all_chains_data.map(o => this._renderOptions(o.chain_id, o.label))}
+        </select>
+
+        <button onClick={this._clickNext} >Get events!</button>
+      </div> : null}
 
        {/* print error here */}
       {err}
@@ -121,7 +146,7 @@ class TopicApp extends React.Component {
   _clickNext = () => {
 
     if (this.state.address_input.length === "0xc00e94cb662c3520282e6f5717214004a7f26888".length) {
-      fetch("https://api.covalenthq.com/v1/1/events/address/" +
+      fetch(`https://api.covalenthq.com/v1/${this.state.chain_id}/events/address/` +
         this.state.address_input + "/abi/?&key=ckey_4d5b231f1a584413ae6c3715bcf")
       .then(response => response.json())
       .then((data)=> {
@@ -180,6 +205,12 @@ copyToClipboard = (contents) => {
 
 
 };
+
+  _inputChainId = (e) => {
+    this.setState({
+      chain_id: e.target.value
+    })
+  }
 
 
   _inputAddress = (e) => {

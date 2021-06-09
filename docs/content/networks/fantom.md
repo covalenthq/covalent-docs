@@ -25,9 +25,11 @@ Fantom code is completely open source. Anyone can read it, check on the progress
 | Property              | Value                |
 | --------------------- | -------------------- |
 | Network name          | Fantom Opera         |
-| Chain ID              | `250`                |
+| Mainnet chainId       | `250`                |
+| Testnet chainId       | `4002`                |
 | Famtom Block Explorer | https://ftmscan.com/ |
 | Block time            | ~2 seconds           |
+
 
 </TableWrap>
 
@@ -38,7 +40,7 @@ Fantom code is completely open source. Anyone can read it, check on the progress
 
 <Aside>
 
-All **Class A** endpoints are supported for the Fantom mainnet. You can query the network via the unified API by changing the `chainId`.
+All **Class A** endpoints are supported for the Fantom mainnet and testnet. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 
@@ -81,7 +83,7 @@ The Fantom token `FTM` is the native token of Fantom. This is similar to Ether i
 
 ### Token mapping
 
-Covalent maintains an on-chain real-time mapping of token addresses between Ethereum mainnet and the Fantom chain. These addresses are used to reverse-lookup prices on Fantom and also to return the right token logo urls.
+Covalent maintains an on-chain real-time mapping of token addresses between Ethereum mainnet and the Fantom-Opera chain. These addresses are used to reverse-lookup prices on Fantom and also to return the right token logo urls.
 
 Some example of mapped tokens:
 
@@ -94,4 +96,4 @@ For the current token mapping list, see: https://netapi.anyswap.net/bridge/v2/in
 
 ### Token prices
 
-For tokens that have a mapping back to Ethereum mainnet, Covalent is able to return the mapped prices.
+For tokens that have a mapping back to Ethereum mainnet, the Covalent API is able to return the mapped prices.

@@ -13,3 +13,6 @@ Our infrastructure partners include:
 
 ### [Chainstack](/service-partners/chainstack)
 [![Chainstack](./images/chainstack-banner.png)](/service-partners/chainstack)
+
+### [ANKR](/service-partners/ankr)
+[![Chainstack](./images/ankr-banner.png)](/service-partners/ankr)

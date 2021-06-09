@@ -1,28 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import "../css/components/topic-calculator.css";
 
 const TokenHolders = () => {
-  const data = [
-    {
-      value: 1,
-      label: "Ethereum",
-    },
-    {
-      value: 56,
-      label: "Binance Smart Chain",
-    },
-    {
-      value: 137,
-      label: "Polygon",
-    },
-    {
-      value: 43114,
-      label: "Avalanche C-Chain",
-    },
-  ];
+  // const data = [
+  //   {
+  //     value: 1,
+  //     label: "Ethereum",
+  //   },
+  //   {
+  //     value: 56,
+  //     label: "Binance Smart Chain",
+  //   },
+  //   {
+  //     value: 137,
+  //     label: "Polygon",
+  //   },
+  //   {
+  //     value: 43114,
+  //     label: "Avalanche C-Chain",
+  //   },
+  // ];
 
+  const temp = [];
+  
   const [network, setNetwork] = useState("");
 
   const [address, setAddress] = useState("0x1f9840a85d5af5bf1d1762f925bdaddc4201f984");
@@ -30,6 +32,25 @@ const TokenHolders = () => {
 
   const [pageNumber, setPageNumber] = useState("0");
   const [pageSize, setPageSize] = useState("999999999");
+  const [chainData, setChainData] = useState([]);
+
+  useEffect(() => {
+    fetchAllChainsData()
+  }, [])
+
+  const fetchAllChainsData = async () => {
+    const response = await fetch("https://api.covalenthq.com/v1/chains/?key=ckey_6b87a4a549ff46e6971c3e6341f")
+    if (response.ok) {
+      const data = await response.json()
+      for (var i = 0; i < data.data.items.length; i++) {
+          temp[i] = {
+            value: data.data.items[i].chain_id,
+            label: data.data.items[i].label
+          } 
+      }
+      setChainData(temp); 
+    }
+  }
 
   const handleNetwork = (e) => {
     setNetwork(e);
@@ -62,7 +83,7 @@ const TokenHolders = () => {
 
   return (
     <div>
-      <div className="topics">
+      {chainData.length !== 0 ? <div className="topics">
         <p>
           Enter the Address and the Block Height to download a list of Token Holders.
         </p>
@@ -95,12 +116,12 @@ const TokenHolders = () => {
         <Dropdown
           placeholder="Select Network"
           value={network}
-          options={data}
+          options={chainData}
           onChange={setNetwork}
         />
 
         <button style={{marginTop: "1rem"}} onClick={handleSubmit}>Submit</button>
-      </div>
+      </div> : null }
     </div>
   );
 };
