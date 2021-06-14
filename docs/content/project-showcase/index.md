@@ -16,6 +16,10 @@ Our ecosystem of community developers continue to astonish us with their creativ
 ### [Coin Defit](/project-showcase/coindefit)
 [![Coin Defit](./images/coindefit-banner.png)](/project-showcase/coindefit)
 
+### [AppDEX](/project-showcase/appdex)
+[![AppdDEX](./images/appdex.png)](/project-showcase/appdex)
+
+
 &nbsp;
 ## OneMillionWallet Hackathons
 
