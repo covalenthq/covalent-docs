@@ -171,7 +171,7 @@ This endpoint is helpful if you want to retrieve metadata for a particular NFT t
 
 Covalent offers the query language **Primer** which makes it easy for users to further process and transform the records in the Covalent API responses for their custom use-cases.
 
-You can read more about [Primer](/tutorials).
+You can read more about [Primer](/learn/tutorials).
 
 You can use the simplest query parameter of Primer, `match` to return NFT token balances ONLY for an address. Querying the same address as above we have:
 

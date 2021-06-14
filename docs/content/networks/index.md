@@ -48,7 +48,6 @@ We currently support the following networks:
 | [RSK Testnet](/networks/rsk)               | `31`     |
 | [Arbitrum Testnet](/networks/arbitrum)               | `421611`     |
 
-
 </TableWrap>
 
 ## Upcoming Networks
