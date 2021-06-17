@@ -16,7 +16,7 @@ hidden: True
 
 Following are the minimum requirements that must met for showcasing at Covalent: 
 - Fork/clone the repo to your local machine.
-- Introduce your project to us by using the [template](./showcase-template.md)..
+- Introduce your project to us by using the [template](./showcase-template.md).
 - When changes are complete, create a PR and submit it here.
 
 &nbsp;
@@ -47,7 +47,7 @@ Next, choose the category that relates to your project the most. There is a fold
 
 The template can be found [here](./showcase-template.md). 
 
-For example, let's say your project is named "moonshot", has image "moonshot.png" and related to DeFi. Then, you would need to copy this file inside the following folder:
+For example, let's say your project is named "project-name", has logo "project-showcase-logo.png" and related to DeFi. Then, you would need to copy this file inside the following folder and change it's name to `project-name.md`. Then you would follow the [template](./showcase-template.md) to create a content and a banner `project-showcase.png`. After that you will put that banner under `images`.
 
 
 ```
@@ -55,9 +55,9 @@ covalent-docs
 |--docs
 |--|--content
 |--|--|--project-showase
-|--|--|--|--dao
-|--|--|--|--defi/moonshot.md
-|--|--|--|--images/moonshot.png
+|--|--|--|--defi/project-name.md
+|--|--|--|--dex
+|--|--|--|--images/project-showcase.png
 |--|--|--|--governance
 |--|--|--|--multichain-analysis
 |--|--|--|--nft
@@ -91,6 +91,6 @@ When you think you have made all the changes into the template, you can sumbit a
 
 We will review it with our standards and voila! You will be on the showcase.
 
-**Note**: Some projects that were accepted before we formed a standard so they might not adhere to all the pre-requisites. If you are sumbmitting a PR after `(decide a date)`, you must adhere to standards in the template.
+**Note**: Some projects that were accepted before we formed a standard so they might not adhere to all the pre-requisites. If you are sumbmitting a PR after `June 15th, 2021`, you must adhere to standards in the template.
 
 

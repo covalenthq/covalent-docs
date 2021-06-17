@@ -1,7 +1,7 @@
 ---
 title: Template #this will be depicted in the navigation bar
 featuredImage: ../images/covalent-logo.png #path to your image in the folder
-description: This is our moonshot project. ## small description of your project
+description: This is our project. ## small description of your project
 hidden: True #change it to false
 #tags: Governance, Independent Projects  ## uncomment tags and include appropriate tags
 ---
@@ -13,15 +13,16 @@ hidden: True #change it to false
 -->
 
 
-# MoonShot 
+# Project Name
 <!---
 Title should be in title case:
 #Title
 -->
 
-![Template banner image](./images/covalent-logo.png) 
-
-Insert Logo with the specified dimensions: 2000px * 500 px
+![Template banner image](./images/project-showcase-template.jpg) 
+<!---
+Learn how to create banner in Image section below.
+-->
 
 **Disclaimer:** The content is created andd submitted by the interested project. Covalent only reviews the standards.
 
@@ -30,7 +31,7 @@ Insert Logo with the specified dimensions: 2000px * 500 px
 
 This section should cover:
 - A high level introduction of your project. 
-- At what stage is your project and on which network/blockchain it exists.
+- At what stage is your project and on which networks/blockchains it exists.
 - How covalent brought value to you and/or how you will bring value to Covalent's ecoystem.
 
 &nbsp;
@@ -43,7 +44,7 @@ This section contains the content who want to put emphasis on your project showc
     - Which endpoints are being used and/or planning to use?
     - How Covalent APIs helped you to achieve your project goal?
     - How Covalent align with the future vision of your project? (optional)
-- Show working images(max 3) of the infrastructure piece that's being powered by Covalent or a link to a working prototype.
+- Show working images(max 3) of the infrastructure piece that's being powered by Covalent or a link to a working prototype. Refer [images](#images)
 - Link to Github Repos (optional: if open-souced)
 - Link to Communication channels. 
 ---------
@@ -66,7 +67,7 @@ There's no need to include this section. This is just for your reference. Delete
 
 2. When a bullet list refers to some parameter definitions, use the following structure:
 
-    - `Def` - This is a dummy definitition. 
+    - `Def` - This is a dummy definitition. You can also use `single quotes to emphasize on something.`
 
 ```
 Some text here:
@@ -85,12 +86,65 @@ Some text here:
 
 &nbsp;
 ### Images
-1. Add images in `../images/you-image.png`. Either `png` or `svg` can be used.
-2. Use the following structure to bring images in the your markdown file. 
+There are two different kinds of images needed for showcasing your project:
 
-```
-![Image metadata](../images/your-image.png)
-```
+1. A banner that will be used to feature your project on the index page. 
+    - You can create the banner by this [figma template](https://www.figma.com/file/6W6x6WaqxhcZ0QnvVsKsKd/Covalent-Project-Thumbnail-Template?node-id=0%3A1).
+    - Add banner in `../images/you-banner.png`. Either `png`, `jpg` or `svg` can be used.
+    ```
+    covalent-docs
+    |--docs
+    |--|--content
+    |--|--|--project-showase
+    |--|--|--|--dao
+    |--|--|--|--defi/project-name.md
+    |--|--|--|--images/your-banner.png
+    |--|--|--|--governance
+    |--|--|--|--multichain-analysis
+    |--|--|--|--nft
+    |--|--|--|--wallet
+    |--public
+    |--resources/_gen
+    |--s
+    |--static/static/images
+    ...
+    ```
+    - Use the following structure to bring images in the your markdown file under the [Project Name](#project-name)
+    ```
+    ![Image metadata](../images/your-image.png)
+    ```
+    - Add the image under the category that you chose in [index.md](index.md). For example, if your project falls under [defi](./index.md#defi), then follow this format and paste it below `DeFi`. Don't forget to check if it pointing to the right project.
+
+    ```
+    ### [Project Name](/project-showcase/defi/project-name)
+    [![Coin Defit](./images/your-banner.png)](/project-showcase/defi/project-name)
+    ```
+
+2. Screenshots (max 3) of your working prototype.
+    - Create a folder by your `project-name` in `image` directory.
+    - Put your screenshots in this folder 
+    ```
+    covalent-docs
+    |--docs
+    |--|--content
+    |--|--|--project-showase
+    |--|--|--|--dao
+    |--|--|--|--defi/project-name.md
+    |--|--|--|--images/project-name/screenshot-1.png
+    |--|--|--|--governance
+    |--|--|--|--multichain-analysis
+    |--|--|--|--nft
+    |--|--|--|--wallet
+    |--public
+    |--resources/_gen
+    |--s
+    |--static/static/images
+    ...
+    ```
+    -  Refer the screenshots in the content when you are describing the project. 
+    ```
+    ![Image metadata](../images/project-name/screenshot-1ß.png)
+    ```
 
 &nbsp;
 ### Tables

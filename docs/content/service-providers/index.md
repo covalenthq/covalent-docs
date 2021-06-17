@@ -1,9 +1,9 @@
 ---
-title: Service Partners
+title: Service Providers
 order: 8
 ---
 
-# Service Partners
+# Service Providers
 Covalent is pleased to partner with industry-leading service providers offering complementary services to help host, manage and expand our best-in-class API.
 
 ## Infrastructure
@@ -11,8 +11,8 @@ Covalent works closely with the technical and business teams of the partner node
 
 Our infrastructure partners include:
 
-### [Chainstack](/service-partners/chainstack)
+### [Chainstack](/service-providers/chainstack)
 [![Chainstack](./images/chainstack-banner.png)](/service-partners/chainstack)
 
-### [ANKR](/service-partners/ankr)
+### [ANKR](/service-providers/ankr)
 [![Chainstack](./images/ankr-banner.png)](/service-partners/ankr)

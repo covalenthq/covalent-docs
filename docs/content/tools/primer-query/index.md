@@ -14,3 +14,4 @@ The guides below serve as a knowledge resource to give you an indepth understand
 
 * [Querying with Primer: Beginner](../../learn/tutorials/query-with-primer-beg)
 * [Querying with Primer: Intermediate](../../learn/tutorials/query-with-primer-int)
+* [Querying Historical Aave Borrow rate with Primer](../../learn/tutorials/query-historical-aave-borrow-rate-with-primer)

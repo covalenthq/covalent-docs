@@ -17,7 +17,7 @@ class TopicApp extends React.Component {
       copied:false,
       text: "Copy to clipboard",
       all_chains_data: [],
-      chain_id: "250",
+      chain_id: "1",
     };
   }
 
@@ -80,7 +80,7 @@ class TopicApp extends React.Component {
     })
 
     return <div className="topics">
-        <p>Found {a.length} Topics:</p>
+        <p>Found {a.length} Topics events that were emitted:</p>
           {a.map(item => {
            //return <li><label><input type="radio" name="signature" value={item.topic_hash} onClick={this._pickRadio}/> {item.signature}</label></li>;
              return <div>

@@ -17,6 +17,10 @@ The projects are divided in following high-level categories:
 
 
 
+### [AppDEX](/project-showcase/appdex)
+[![AppdDEX](./images/appdex.png)](/project-showcase/appdex)
+
+
 &nbsp;
 ## DeFi
 
