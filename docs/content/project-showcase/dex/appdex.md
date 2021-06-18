@@ -31,5 +31,5 @@ We use covalent API for getting contract logs, token holders information and ass
 &nbsp;
 ### Developers
 
-- Mavrick Jang: *Telegram: @mavrickthekeeper*
+- Luong Le: *Discord: @emotion916*
 
