@@ -72,15 +72,13 @@ covalent-docs
 &nbsp;
 ### 3.  Featuring Project
 
-- After placing your project with appropriate tags in its respective directory go to [index.md](./index.md).
-- Select the category which corresponds to the directory you chose to keep your project.
+- After placing your project with appropriate tags in its respective directory go to [index.md](./index.md) of that directory.
 - Follow the following format to feature your project.
 
 ```
-### [GoSwapp](/project-showcase/goswapp)
-[![GoSwapp](./images/goswapp-banner.png)](/project-showcase/goswapp)
+## [Project Name](./project-name/)
+[![Project Name](./images/your-project-showcase-banner.png)](./project-name)
 ```
-
 
 &nbsp;
 ### 4.  Submitting PR

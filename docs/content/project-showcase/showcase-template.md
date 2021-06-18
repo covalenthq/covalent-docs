@@ -7,7 +7,7 @@ hidden: True #change it to false
 ---
 <!---
 # You can add upto 4 - 5 tags. Out of which following 2 tags are must
-## 1) DeFi/Governance/NFT/Wallet/ {Any new folder requested}
+## 1) DeFi/Governance/NFT/Wallet/MultiChain Analysis/Dex/ {Any new folder requested}
 ## 2) Independent Projects / Dungeons&Data / OneMillionWallet Hackathons/ ETHGlobal Hackathons/ Alchemists
 ## 3) Upto 3 custom tags that you want to introduce.
 -->
@@ -19,7 +19,7 @@ Title should be in title case:
 #Title
 -->
 
-![Template banner image](./images/project-showcase-template.jpg) 
+![Template banner image](./images/project-showcase-template-banner.jpg) 
 <!---
 Learn how to create banner in Image section below.
 -->
@@ -31,22 +31,22 @@ Learn how to create banner in Image section below.
 
 This section should cover:
 - A high level introduction of your project. 
-- At what stage is your project and on which networks/blockchains it exists.
-- How covalent brought value to you and/or how you will bring value to Covalent's ecoystem.
+- At what stage is your project and on which networks/blockchains it exists?
+- Was is part of a Hackathon by Covalent or is it and Independent project? If it was part of hackathon, please point a link to it.
+- How covalent brought value to you and/or how you will bring value to Covalent's ecoystem?
 
 &nbsp;
-## Content 
-This section contains the content who want to put emphasis on your project showcase.
+## Minimum Content
+This section contains the direction and guidlines for the content that will go in your project showcase.
 
-&nbsp;
-### Minimum Content
 - A brief description of how your project utilizes Covalent which must include:
     - Which endpoints are being used and/or planning to use?
     - How Covalent APIs helped you to achieve your project goal?
-    - How Covalent align with the future vision of your project? (optional)
+    - How Covalent aligns with the future vision of your project? 
 - Show working images(max 3) of the infrastructure piece that's being powered by Covalent or a link to a working prototype. Refer [images](#images)
-- Link to Github Repos (optional: if open-souced)
-- Link to Communication channels. 
+- Link to Github Repos (`optional`: put only if open-souced).
+- Link to Communication channels and social channels.
+
 ---------
 
 &nbsp;
@@ -76,7 +76,7 @@ Some text here:
  - `Def2` — some text here
 ```
 
-3. You can use number to describe steps/
+3. You can use numbers to describe steps.
 
 ```
 1. Step 1
@@ -86,11 +86,12 @@ Some text here:
 
 &nbsp;
 ### Images
-There are two different kinds of images needed for showcasing your project:
+There are two different kinds of images required for showcasing your project:
 
 1. A banner that will be used to feature your project on the index page. 
     - You can create the banner by this [figma template](https://www.figma.com/file/6W6x6WaqxhcZ0QnvVsKsKd/Covalent-Project-Thumbnail-Template?node-id=0%3A1).
-    - Add banner in `../images/you-banner.png`. Either `png`, `jpg` or `svg` can be used.
+    - Add it to `../images/`
+    For example, if you create a banner with name `your-project-showcase-banner.png` Add banner in `../images/your-project-showcase-banner.png`. Either `png`, `jpg` or `svg` can be used.
     ```
     covalent-docs
     |--docs
@@ -98,7 +99,7 @@ There are two different kinds of images needed for showcasing your project:
     |--|--|--project-showase
     |--|--|--|--dao
     |--|--|--|--defi/project-name.md
-    |--|--|--|--images/your-banner.png
+    |--|--|--|--images/your-project-showcase-banner.png
     |--|--|--|--governance
     |--|--|--|--multichain-analysis
     |--|--|--|--nft
@@ -113,11 +114,11 @@ There are two different kinds of images needed for showcasing your project:
     ```
     ![Image metadata](../images/your-image.png)
     ```
-    - Add the image under the category that you chose in [index.md](index.md). For example, if your project falls under [defi](./index.md#defi), then follow this format and paste it below `DeFi`. Don't forget to check if it pointing to the right project.
+    - Add the image under the in the index of category that you chose . For example, if your project falls under [defi](./index.md#defi), then open [index.md](./defi/index.md).Follow this format and paste it below the last project. Don't forget to check if it pointing to the right project.
 
     ```
-    ### [Project Name](/project-showcase/defi/project-name)
-    [![Coin Defit](./images/your-banner.png)](/project-showcase/defi/project-name)
+    ## [Project Name](./project-name)
+    [![Project Name](./images/your-project-showcase.png)](./project-name)
     ```
 
 2. Screenshots (max 3) of your working prototype.
