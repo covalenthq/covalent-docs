@@ -4,7 +4,7 @@ The official docs site for Covalent. This is also referred to as the *Knowledge 
 
 ## Project Showcase
 
-The directions on how to showcase your project is [here](./docs/content/project-showcase/submit-project). 
+The directions on how to showcase your project is [here](./docs/content/project-showcase/submit-project.md). 
 
 ## Contributing
 
