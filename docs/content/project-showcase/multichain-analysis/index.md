@@ -9,3 +9,6 @@ hideChildren: false
 
 ## [EthHole](./ethhole)
 [![EthHole](../images/eth-hole.png)](./ethhole)
+
+## [GoSwapp](./goswapp)
+[![GoSwapp](../images/goswapp-banner.png)](./goswapp)

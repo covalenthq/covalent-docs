@@ -47,7 +47,7 @@ Next, choose the category that relates to your project the most. There is a fold
 
 The template can be found [here](./showcase-template.md). 
 
-For example, let's say your project is named "project-name", has logo "project-showcase-logo.png" and related to DeFi. Then, you would need to copy this file inside the following folder and change it's name to `project-name.md`. Then you would follow the [template](./showcase-template.md) to create a content and a banner `project-showcase.png`. After that you will put that banner under `images`.
+For example, let's say your project is named "project-name", has logo "project-showcase-logo.png" and related to `tools`. Then, you would need to copy this file inside the following folder and change it's name to `project-name.md`. Then you would follow the [template](./showcase-template.md) to create a content and a banner `project-showcase.png`. After that you will put that banner under `images`.
 
 
 ```
@@ -55,7 +55,7 @@ covalent-docs
 |--docs
 |--|--content
 |--|--|--project-showase
-|--|--|--|--defi/project-name.md
+|--|--|--|--toold/project-name.md
 |--|--|--|--dex
 |--|--|--|--images/project-showcase.png
 |--|--|--|--governance

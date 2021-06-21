@@ -1,5 +1,5 @@
 ---
-title: DeFi
+title: Tools
 order: 1
 hiddent: false
 hideChildren: false
@@ -11,6 +11,4 @@ hideChildren: false
 ## [Coin Defit](./coindefit)
 [![Coin Defit](../images/coindefit-banner.png)](./coindefit)
 
-## [GoSwapp](./goswapp)
-[![GoSwapp](../images/goswapp-banner.png)](./goswapp)
 
