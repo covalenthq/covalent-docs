@@ -39,7 +39,7 @@ Moonbeam is much more than just an EVM implementation: it’s a highly specializ
 
 <Aside>
 
-All **Class A** endpoints are supported for the Moonbeam network. You can query the network via the unified API by changing the `chainId`.
+All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Moonbeam network. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 

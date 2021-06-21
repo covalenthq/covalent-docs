@@ -39,7 +39,7 @@ description: Supporting a faster, cheaper, EVM-compatible network
 
 <Aside>
 
-All __Class A__ endpoints are supported for the BSC mainnet. You can query either network via the unified API by changing the `chainId`.
+All [__Class A__](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the BSC mainnet. You can query either network via the unified API by changing the `chainId`.
 
 </Aside>
 

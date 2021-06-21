@@ -8,7 +8,7 @@ hidden: false
 
 ## Previous Visuals
 
-_*Alpha Alarm*_ provides daily DeFi visuals for all major blockchain netwroks. Follow us on [Twitter](https://twitter.com/AlphaAlarm_HQ) and join the conversation on [Telegram](https://t.me/alphalarm_hq) or [Discord](https://discord.gg/M4aRubV).
+_*Alpha Alarm*_ provides daily DeFi visuals for all major blockchain networks. Follow us on [Twitter](https://twitter.com/AlphaAlarm_HQ) and join the conversation on [Telegram](https://t.me/alphalarm_hq) or [Discord](https://discord.gg/M4aRubV).
 
 ---
 
