@@ -1,64 +1,19 @@
 ---
 title: Project Showcase
 order: 7
-hideChildren: true
+hideChildren: false
 ---
 
 # Project Showcase
-Our ecosystem of community developers continue to astonish us with their creativity in using the Covalent API to power their dApps! Here is a showcase of some of the best projects we have seen to date:
+Our ecosystem of community developers continue to astonish us with their creativity in using the Covalent API to power their dApps! 
 
-&nbsp;
-## Independent Projects
+The projects are divided in following high-level categories:
 
-### [GoSwapp](/project-showcase/goswapp)
-[![GoSwapp](./images/goswapp-banner.png)](/project-showcase/goswapp)
+- [Dex](/dex)
+- [Governance](/governance)
+- [MultiChain Analysis](/multichain-analysis)
+- [Wallet](/wallet)
+- [NFT](/nft)
+- [Tools](/tools)
 
-### [Coin Defit](/project-showcase/coindefit)
-[![Coin Defit](./images/coindefit-banner.png)](/project-showcase/coindefit)
-
-### [AppDEX](/project-showcase/appdex)
-[![AppdDEX](./images/appdex.png)](/project-showcase/appdex)
-
-
-&nbsp;
-## OneMillionWallet Hackathons
-
-### [Hestia](/project-showcase/hestia)
-[![Hestia](./images/hestia-banner.png)](/project-showcase/hestia)
-
-### [Dash Monke](/project-showcase/dash-monke)
-[![Dash Monke](./images/dashmonke-banner.png)](/project-showcase/dash-monke)
-
-### [Avalanche Wallet Checker](/project-showcase/omw-awc)
-[![Avalanche Wallet Checker](./images/omw-awc.png)](/project-showcase/omw-awc)
-
-&nbsp;
-# ETHGlobal Hackathons
-
-## [NFT Hackathon](https://www.covalenthq.com/blog/nfthack-winners-announcement/)
-### [Collectors Cafe](/project-showcase/collectors-cafe)
-[![Collectors Cafe](./images/collectors-cafe-banner.png)](/project-showcase/collectors-cafe)
-
-### [NFTree Token](/project-showcase/nftree)
-[![NFTree](./images/nftree.png)](/project-showcase/nftree)
-
-## [Scaling Ethereum](https://www.covalenthq.com/blog/scaling-ethereum-winners/) 
-### [CoinPort](/project-showcase/coinport)
-[![CoinPort](./images/coin-port.png)](/project-showcase/coin-port)
-
-### [EthHole.Link](/project-showcase/ethhole)
-[![EthHole](./images/eth-hole.png)](/project-showcase/eth-hole)
-
-### [PixelProperty](/project-showcase/pixel-property)
-[![NFTree](./images/pixel-property.png)](/project-showcase/pixel-property)
-&nbsp;
-## Dungeons & Data Challenges
-
-### [Aave Governance](/project-showcase/aave-governance)
-[![Aave Governance](./images/aave-governance-banner.png)](/project-showcase/aave-governance)
-
-&nbsp;
-## Alchemists Buidlers
-### [Nifty NFTS](/project-showcase/nifty-nfts)
-![Nifty NFTs](./images/nifty-nfts.png)
-
+Check them out and don't forget to support them by following them on their social channels or joining their groups! 

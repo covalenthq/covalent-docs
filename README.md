@@ -2,11 +2,13 @@
 
 The official docs site for Covalent. This is also referred to as the *Knowledge Base*.
 
+## Project Showcase
+
+The directions on how to showcase your project is [here](./docs/content/project-showcase/submit-project.md). 
 
 ## Contributing
 
 Please read the contribution guidelines [here](CONTRIBUTING.md).
-
 
 ## Running docs site locally
 Covalent uses the [Cloudflare documentation engine](https://developers.cloudflare.com/docs-engine/) for the docs site.

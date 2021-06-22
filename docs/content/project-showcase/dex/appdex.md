@@ -6,7 +6,7 @@ featuredImage: ../images/appdex.png
 description: AppDEX is used to track and forecast market movements using real-time data and predictive indexes.
 ---
 
-![AppDEX Banner](./images/appdex.png)
+![AppDEX Banner](../images/appdex.png)
 
 &nbsp;
 # AppDEX

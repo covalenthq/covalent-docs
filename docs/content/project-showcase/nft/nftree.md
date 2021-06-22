@@ -1,15 +1,21 @@
 ---
 title: NFTree
-order: 8
+order: 3
 hidden: false
-featuredImage: ../images/project-showcase/nftree.png
+author: anadi2311
+updated: 2021-05-30
+featuredImage: ../images/nftree.png
 description: This project allows users to save and invest crypto in a fun new way and create NFT art at the same time.
+tags:
+  - NFT
+  - EthGlobal
+  - Hackathons
 ---
 
-![NFTree Banner](../images/project-showcase/nftree.png)
+![NFTree Banner](../images/nftree.png)
 
 &nbsp;
-# Nifty NFTs
+# NFTree
 
 ### Website
 https://nftreetoken.com/
@@ -23,7 +29,7 @@ I love that it uses human inputs like ticker symbols and dates rather than contr
 
 &nbsp;
 ### Use of Covalent API
-Hitting API and getting json to convert block numbers to dates, get historical prices in date ranges. Used the COvalent API to get NFT holdings for an address to display images in wallet/gallert.
+Hitting API and getting json to convert block numbers to dates, get historical prices in date ranges. Used the Covalent API to get NFT holdings for an address to display images in wallet/gallery.
 
 &nbsp;
 ### Event
