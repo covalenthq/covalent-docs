@@ -57,34 +57,34 @@ The following universal endpoints work with multiple Uniswap clones across multi
 
 <Definitions>
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/health/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/health/?`
   - Get the health status of the Uniswaplike v2 dex. Returns the latest sync block.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/ecosystem/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/ecosystem/?`
   - Get Uniswaplike v2 Ecosystem data. Returns total volume and total liquidity chart data over the last 30 days.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/pools/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/pools/?`
   - Get Uniswaplike v2 pool data.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/pools/address/{address}/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/pools/address/{address}/?`
   - Get Uniswaplike v2 pool data by address. Includes 7 day and 30 day volume and liquidity chart data.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/pools/address/{address}/transactions/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/pools/address/{address}/transactions/?`
   - Get Uniswaplike v2 pool transactions by address. Returns the latest 20 swap, mint and burn events.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/tokens/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/tokens/?`
   - Get Uniswaplike v2 token data.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/tokens/address/{address}/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/tokens/address/{address}/?`
   - Get Uniswaplike v2 pool data by address. Includes 7 day and 30 day volume, liquidity and pricing chart data.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/tokens/address/{address}/transactions/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/tokens/address/{address}/transactions/?`
   - Get Uniswaplike v2 pool token transactions by address. Returns the latest 20 swap, mint and burn events.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/address/{address}/balances/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/address/{address}/balances/?`
   - Get Uniswaplike v2 address exchange balances. Returns the LP balances of the address.
 
-- `https://api.covalenthq.com/v1/{chain_id}/uniswaplikev2service/{dexname}/address/{address}/transactions/?`
+- `https://api.covalenthq.com/v1/{chain_id}/xy=k/{dexname}/address/{address}/transactions/?`
   - Get Uniswaplike v2 address exchange liquidity transactions.
 
 </Definitions>
