@@ -31,9 +31,10 @@ Learn how to create banner in Image section below.
 
 This section should cover:
 - A high level introduction of your project. 
-- At what stage is your project and on which networks/blockchains it exists?
-- Was is part of a Hackathon by Covalent or is it and Independent project? If it was part of hackathon, please point a link to it.
-- How covalent brought value to you and/or how you will bring value to Covalent's ecoystem?
+- At what stage is your project and on which networks/blockchains does it exist?
+- Was your project built as part of a hackathon or is it independently built? If it was part of hackathon, please indicate which one listed [here ](../campaigns)
+- How was the Covalent API useful for your project?
+- How will your project bring value to Covalent's ecoystem?
 
 &nbsp;
 ## Minimum Content
@@ -44,15 +45,15 @@ This section contains the direction and guidlines for the content that will go i
     - How Covalent APIs helped you to achieve your project goal?
     - How Covalent aligns with the future vision of your project? 
 - Show working images(max 3) of the infrastructure piece that's being powered by Covalent or a link to a working prototype. Refer [images](#images)
-- Link to Github Repos (`optional`: put only if open-souced).
-- Link to Communication channels and social channels.
+- Link to Github Repos (`optional`: add only if open-sourced).
+- Links to communication and social channels.
 
 ---------
 
 &nbsp;
 ## Docs Standard
 
-There's no need to include this section. This is just for your reference. Delete this when submitting your PR.
+There is no need to include this section. This is just for your reference. Delete this when submitting your PR.
 
 
 &nbsp;
