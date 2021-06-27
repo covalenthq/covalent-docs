@@ -14,17 +14,17 @@ hidden: True
 &nbsp;
 ## Process
 
-Following are the minimum requirements that must met for showcasing your project with Covalent: 
+Following is the high-level overview of the process that will be followed:
 - Fork this repo.
 - Introduce your project to us by using this [project template](./showcase-template.md).
-- When changes are complete, create a PR.
+- When changes are complete, create a PR to `developement`.
 
 &nbsp;
 ## Get Started
 This guide will help you understand the entire process and getting started.
 
 &nbsp;
-### Fork/Clone the Repo
+### 1. Fork/Clone the Repo
 
 The general idea is to fork this repository, modify your version with your changes, and then submit a PR.
 
@@ -37,14 +37,14 @@ cd covalent-docs
 
 
 &nbsp;
-### 1. Choose Category 
+### 2. Choose Category 
 
 Next, choose the category that relates to your project the most. There is a folder per category. If you think we are missing a category, contact us throught any of these channels and we will create a new folder.
 
 [Discord](https://discord.com/invite/fgZPpq69Dd) | [Telegram](https://t.me/CovalentHQ)
 
 &nbsp;
-### 2. Copy and Edit Template
+### 3. Copy and Edit Template
 
 The template can be found [here](./showcase-template.md). 
 
@@ -71,7 +71,7 @@ covalent-docs
 ```
 
 &nbsp;
-### 3.  Feature Your Project
+### 4.  Feature Your Project
 
 - After placing your project with appropriate tags in its respective directory go to [index.md](./index.md) of that directory.
 - Follow the following format to feature your project.
@@ -82,7 +82,7 @@ covalent-docs
 ```
 
 &nbsp;
-### 4.  Submit PR
+### 5.  Submit PR
 
 When you think you have made all the changes into the template, you can submit a pull-request from your forked repo to the `development` branch. 
 
