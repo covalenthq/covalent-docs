@@ -7,7 +7,7 @@ hidden: True #change it to false
 ---
 <!---
 # You can add upto 4 - 5 tags. Out of which following 2 tags are must
-## 1) DeFi/Governance/NFT/Wallet/MultiChain Analysis/Dex/ {Any new folder requested}
+## 1) Tools/Governance/NFT/Wallet/MultiChain Analysis/Dex/ {Any new folder requested}
 ## 2) Independent Projects / Dungeons&Data / OneMillionWallet Hackathons/ ETHGlobal Hackathons/ Alchemists
 ## 3) Upto 3 custom tags that you want to introduce.
 -->
@@ -99,7 +99,7 @@ There are two different kinds of images required for showcasing your project:
     |--|--content
     |--|--|--project-showase
     |--|--|--|--dao
-    |--|--|--|--defi/project-name.md
+    |--|--|--|--tools/project-name.md
     |--|--|--|--images/your-project-showcase-banner.png
     |--|--|--|--governance
     |--|--|--|--multichain-analysis
@@ -115,7 +115,7 @@ There are two different kinds of images required for showcasing your project:
     ```
     ![Image metadata](../images/your-image.png)
     ```
-    - Add the image under the in the index of category that you chose . For example, if your project falls under [defi](./index.md#defi), then open [index.md](./defi/index.md).Follow this format and paste it below the last project. Don't forget to check if it pointing to the right project.
+    - Add the image under the in the index of category that you chose . For example, if your project falls under [tools](./index.md#tools), then open [index.md](./tools/index.md).Follow this format and paste it below the last project. Don't forget to check if it pointing to the right project.
 
     ```
     ## [Project Name](./project-name)
@@ -131,7 +131,7 @@ There are two different kinds of images required for showcasing your project:
     |--|--content
     |--|--|--project-showase
     |--|--|--|--dao
-    |--|--|--|--defi/project-name.md
+    |--|--|--|--tools/project-name.md
     |--|--|--|--images/project-name/screenshot-1.png
     |--|--|--|--governance
     |--|--|--|--multichain-analysis
