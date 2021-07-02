@@ -111,8 +111,3 @@ We use two different packages to build our documentation:
 
 All of the [Covalent API](https://www.covalenthq.com/docs/api/) interactive features are built using Java's `@OpenAPI` annotations.
 
-&nbsp;
-
-## Deployment
-
-Simply pushing to the `master` branch will deploy to the live site. Therefore, our recommended workflow is to deploy to the `development` branch and open a pull request.
