@@ -16,6 +16,9 @@ Our ecosystem of community developers continue to astonish us with their creativ
 ### [Coin Defit](/project-showcase/coindefit)
 [![Coin Defit](./images/coindefit-banner.png)](/project-showcase/coindefit)
 
+### [All chain](/project-showcase/coindefit)
+[![All chain](./images/allchain-xyz.png)](/project-showcase/allchain-xyz)
+
 ### [AppDEX](/project-showcase/appdex)
 [![AppdDEX](./images/appdex.png)](/project-showcase/appdex)
 
