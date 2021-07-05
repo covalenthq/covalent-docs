@@ -39,7 +39,7 @@ The [Polygon / Matic Network](https://matic.network/) brings massive scale to Et
 
 <Aside>
 
-All __Class A__ endpoints are supported for the Matic mainnet and the Mumbai testnet. You can query either network via the unified API by changing the `chainId`.
+All [__Class A__](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Matic mainnet and the Mumbai testnet. You can query either network via the unified API by changing the `chainId`.
 
 </Aside>
 
@@ -97,5 +97,6 @@ Some example of mapped tokens:
 For tokens that have a mapping back to Ethereum mainnet, Covalent is able to return the mapped prices.
 
 ### Infrastructure Providers
-The following Covalent service partners provide infrastructure for this blockchain network:
-* [Chainstack](../../service-partners/chainstack)
+The following Covalent service providers provide infrastructure for this blockchain network:
+* [Chainstack](../../service-providers/chainstack)
+* [Ankr](../../service-providers/ankr)

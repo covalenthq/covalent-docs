@@ -6,7 +6,7 @@ featuredImage: ../images/project-showcase/pixel-property.png
 description: A fun and engaging app for artists and marketers to come together and enjoy.
 ---
 
-![EthHole Banner](../images/project-showcase/pixel-property.png)
+![Pixel Property Banner](../images/pixel-property.png)
 
 &nbsp;
 # Pixel Property

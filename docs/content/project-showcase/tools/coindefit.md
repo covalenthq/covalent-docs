@@ -1,12 +1,17 @@
 ---
 title: Coin Defit
-order: 4
+order: 3  
 hidden: false
-featuredImage: ../images/project-showcase/coindefit-banner.png
+author: anadi2311
+updated: 2021-05-30
+featuredImage: ../images/coindefit-banner.png
 description: Know how much profit you would have made in a Uniswap pool
+tags: 
+  - DeFi
+  - Independent Projects
 ---
 
-![Coin Defit Banner](./images/coindefit-banner.png)
+![Coin Defit Banner](../images/coindefit-banner.png)
 
 &nbsp;
 # Coin Defit

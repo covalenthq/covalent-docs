@@ -40,7 +40,7 @@ Fantom code is completely open source. Anyone can read it, check on the progress
 
 <Aside>
 
-All **Class A** endpoints are supported for the Fantom mainnet and testnet. You can query the network via the unified API by changing the `chainId`.
+All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Fantom mainnet and testnet. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 

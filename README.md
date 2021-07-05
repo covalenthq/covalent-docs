@@ -2,11 +2,13 @@
 
 The official docs site for Covalent. This is also referred to as the *Knowledge Base*.
 
+## Project Showcase
+
+The directions on how to showcase your project is [here](./docs/content/project-showcase/submit-project.md). 
 
 ## Contributing
 
 Please read the contribution guidelines [here](CONTRIBUTING.md).
-
 
 ## Running docs site locally
 Covalent uses the [Cloudflare documentation engine](https://developers.cloudflare.com/docs-engine/) for the docs site.
@@ -109,8 +111,3 @@ We use two different packages to build our documentation:
 
 All of the [Covalent API](https://www.covalenthq.com/docs/api/) interactive features are built using Java's `@OpenAPI` annotations.
 
-&nbsp;
-
-## Deployment
-
-Simply pushing to the `master` branch will deploy to the live site. Therefore, our recommended workflow is to deploy to the `development` branch and open a pull request.

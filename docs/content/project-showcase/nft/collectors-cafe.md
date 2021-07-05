@@ -1,12 +1,18 @@
 ---
 title: Collectors Cafe
-order: 3
+order: 1
 hidden: false
-featuredImage: ../images/project-showcase/collectors-cafe-banner.png
+author: anadi2311
+updated: 2021-05-30
+featuredImage: ../images/collectors-cafe-banner.png
 description: A social network to discover, exhibit and trade NFTs
+tags:
+  - NFT
+  - EthGlobal
+  - Hackathons
 ---
 
-![Collectors Cafe Banner](./images/collectors-cafe-banner.png)
+![Collectors Cafe Banner](../images/collectors-cafe-banner.png)
 
 &nbsp;
 # Collectors Cafe
