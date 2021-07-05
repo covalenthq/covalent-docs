@@ -5,14 +5,14 @@ type: "📝 Article"
 order: 1
 hidden: false
 author: gane5h
-featuredImage: ./images/crypto-investing.png
+featuredImage: ../images/crypto-investing.png
 description: Learn about how we make every new employee invest in crypto as part of their onboarding.
 tags: 
   - Beginner
   - Onboarding
 ---
 
-![Recipe logo](./images/crypto-investing.png)
+![Recipe logo](../images/crypto-investing.png)
 
 # Crypto Investing Exercise
 

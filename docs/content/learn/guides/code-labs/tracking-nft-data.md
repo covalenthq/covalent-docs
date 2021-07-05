@@ -5,7 +5,7 @@ type: "📝 Article"
 order: 3
 hidden: false
 author: gane5h
-featuredImage: ./images/working-with-nfts.png
+featuredImage: ../images/working-with-nfts.png
 description: Learn how to quickly extract detailed NFT data including balances, transactions with decoded log events and detailed metadata.
 tags:
   - Class A
@@ -13,7 +13,7 @@ tags:
   - NFT
 ---
 
-![Working with NFTs logo](./images/working-with-nfts.png)
+![Working with NFTs logo](../images/working-with-nfts.png)
 
 # Working with NFTs
 

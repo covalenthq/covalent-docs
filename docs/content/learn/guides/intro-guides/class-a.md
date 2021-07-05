@@ -5,14 +5,14 @@ type: "📝 Article"
 order: 2
 hidden: false
 author: gane5h
-featuredImage: ./images/cookbook-class-a-banner.png
+featuredImage: ../images/cookbook-class-a-banner.png
 description: Learn about the core endpoints that make the Covalent API best-in-class.
 tags: 
   - Class A
   - Beginner
 ---
 
-![Class A Banner logo](./images/cookbook-class-a-banner.png)
+![Class A Banner logo](../images/cookbook-class-a-banner.png)
 
 
 # Class A Endpoints

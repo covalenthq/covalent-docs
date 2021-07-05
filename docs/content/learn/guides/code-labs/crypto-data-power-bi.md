@@ -5,7 +5,7 @@ type: "🎥 Video"
 order: 5
 hidden: false
 author: thompland777
-featuredImage: ./images/covalent-power-bi.png
+featuredImage: ../images/covalent-power-bi.png
 description: Learn how to create powerful data visualizations using Power BI and the Covalent API
 tags: 
   - Intermediate
@@ -14,7 +14,7 @@ tags:
   - AAVE
 ---
 
-![Covalent Power BI](./images/covalent-power-bi.png)
+![Covalent Power BI](../images/covalent-power-bi.png)
 
 # Using Power BI with the Covalent API
 

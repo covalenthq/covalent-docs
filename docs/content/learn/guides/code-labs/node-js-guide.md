@@ -5,13 +5,13 @@ type: "💻 Code"
 order: 8
 hidden: false
 author: emmanuel
-featuredImage: ./images/node-js-guide.png
+featuredImage: ../images/node-js-guide.png
 description: Learn how to quickly extract detailed data from the Covalent API across all endpoints using NodeJS.
 tags:
   - Intermediate
 ---
 
-![NodeJS guide](./images/node-js-guide.png)
+![NodeJS guide](../images/node-js-guide.png)
 
 # NodeJS Guide
 

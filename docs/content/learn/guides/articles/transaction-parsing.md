@@ -5,7 +5,7 @@ type: "💻 Code"
 order: 4
 hidden: false
 author: aurelienft
-featuredImage: ./images/transaction-parsing.png
+featuredImage: ../images/transaction-parsing.png
 description: Learn how to parse transactions data of a native blockchain token from transactions events.
 tags:
   - Class A
@@ -13,9 +13,9 @@ tags:
   - Transactions
 ---
 
-import EmbeddedREPL from "../../../components/embedded-repl.js";
+import EmbeddedREPL from "../../../../components/embedded-repl.js";
 
-![Transaction Parsing logo](./images/transaction-parsing.png)
+![Transaction Parsing logo](../images/transaction-parsing.png)
 
 
 # Transaction Parsing

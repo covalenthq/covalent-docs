@@ -5,7 +5,7 @@ type: "📝 Article"
 order: 3
 hidden: false
 author: harishraisinghani
-featuredImage: ./images/uniswapclone.png
+featuredImage: ../images/uniswapclone.png
 description: Learn about set of universal endpoints which can be applied to any supported Uniswap clone.
 tags: 
   - Uniswap Clone
@@ -13,7 +13,7 @@ tags:
   - Beginner
 ---
 
-![Uniswap Clone Banner](./images/uniswapclone.png)
+![Uniswap Clone Banner](../images/uniswapclone.png)
 
 
 # Uniswap Clone Endpoints
