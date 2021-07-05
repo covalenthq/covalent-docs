@@ -29,9 +29,9 @@ With a useful user interface, Allchain Covalent API will become a must-have tool
 
 The data was used in JSON format.
 
-The `/v1/chain_id/address/address/balances_v2/` and `/v1/chain_id/address/address/transfers_v2/` endpoint was used.
+The **Get token balances for address** `/v1/chain_id/address/address/balances_v2/` and **Get transactions** `/v1/chain_id/address/address/transfers_v2/` endpoints were used.
 
-SetInterval function is used to recall API once every 30 seconds. This leads to the result that every data is always updating without any user actions.
+`SetInterval` function is used to recall API once every 30 seconds. This leads to the result that every data is always updating without any user actions.
 
 &nbsp;
 

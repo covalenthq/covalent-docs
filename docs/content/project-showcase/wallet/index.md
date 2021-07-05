@@ -19,7 +19,5 @@ hideChildren: false
 ## [Allchain.xyz](./allchain-xyz)
 [![Allchain](../images/allchain-xyz.png)](./allchain-xyz)
 
-## [Dash Monke](./dash-monke)
-[![Dash Monke](../images/dashmonke-banner.png)](./dash-monke)
 
 
