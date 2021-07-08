@@ -28,8 +28,9 @@ We currently support the following networks:
 | [Binance Smart Chain](/networks/bsc)     | `56`      |
 | [Matic](/networks/matic)                 | `137`     |
 | [Fantom](/networks/fantom)               | `250`     |
-| [RSK](/networks/rsk)               | `30`     |
-| [Arbitrum](/networks/arbitrum)               | `42161`     |
+| [RSK](/networks/rsk)                     | `30`     |
+| [Arbitrum](/networks/arbitrum)           | `42161`     |
+| [Palm](/networks/palm)                   | `11297108109`     |
 
 </TableWrap>
 
@@ -48,6 +49,7 @@ We currently support the following networks:
 | [Binance Smart Chain Testnet](/networks/bsc)     | `97`   |
 | [RSK Testnet](/networks/rsk)               | `31`     |
 | [Arbitrum Testnet](/networks/arbitrum)               | `421611`     |
+| [Palm](/networks/palm)                   | `11297108099`     |
 
 </TableWrap>
 
