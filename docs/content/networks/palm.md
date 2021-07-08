@@ -39,7 +39,7 @@ Creators using the Palm ecosystem will benefit from super low gas fees, and the 
 
 <Aside>
 
-All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Moonbeam network. You can query the network via the unified API by changing the `chainId`.
+All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Palm network. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 
@@ -78,4 +78,4 @@ All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 
 ### Palm token
 
-The Palm ecosystem will ultimately be driven by a native token, `$PALM`. It is expected that `$PALM` will provide up to 99% more energy efficiency than Proof of Work-based blockchain networks. Thus, providing artists a more sustainable solution today while Ethereum upgrades to Proof of Stake.
+The Palm ecosystem will ultimately be driven by a native token, `$PALM`. It is expected that the Palm network will be up to 99% more energy efficiency than typical Proof of Work-based blockchain networks and thus providing artists a more sustainable solution today while Ethereum upgrades to a Proof-of-Stake consensus model.
