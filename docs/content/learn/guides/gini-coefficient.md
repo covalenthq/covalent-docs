@@ -4,7 +4,7 @@ updated: 2021-05-04
 type: "🎥 Video"
 order: 9
 hidden: false
-author: Eva
+author: Wvaeu
 featuredImage: ./images/gini-coefficient.png
 description: Learn how to calculate the Gini Coefficient using the Covalent API
 tags: 
