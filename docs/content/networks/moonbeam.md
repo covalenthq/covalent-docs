@@ -79,20 +79,3 @@ All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 ### Moonbeam token
 
 The Moonbeam token `GLMR` is the native token of the Moonbeam network. This is similar to Ether in Ethereum. To interact with the Moonbeam network, `GLMR` tokens are required to pay gas fees. The Covalent API response returns `gas_*` fields in fiat units.
-
-<!-- ### Token mapping
-
-Covalent maintains an on-chain real-time mapping of token addresses between Ethereum mainnet and the Moonbeam network. These addresses are used to reverse-lookup prices on Moonbeam and also to return the right token logo urls.
-
-Some example of mapped tokens:
-
-| Token | Ethereum mainnet                           | Moonbeam                             |
-| ----- | ------------------------------------------ | ------------------------------------------ |
-| USDT  | 0xdac17f958d2ee523a2206206994597c13d831ec7 | 0x1ffbd1e3584f139ca42d77ef99ef99550ecf46a8 |
-| YFI   | 0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e | 0xc396b190f251d7f79c583fd06347a09781f085c9 |
-
-For the current token mapping list, see: 
-
-### Token prices
-
-For tokens that have a mapping back to Ethereum mainnet, Covalent is able to return the mapped prices. -->
