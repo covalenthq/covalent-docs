@@ -39,7 +39,7 @@ Creators using the Palm ecosystem will benefit from super low gas fees, and the 
 
 <Aside>
 
-All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Moonbeam network. You can query the network via the unified API by changing the `chainId`.
+All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Palm network. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 
