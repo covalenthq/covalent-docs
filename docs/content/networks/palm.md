@@ -78,4 +78,4 @@ All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 
 ### Palm token
 
-The Palm ecosystem will ultimately be driven by a native token, `$PALM`. It is expected that `$PALM` will provide up to 99% more energy efficiency than Proof of Work-based blockchain networks. Thus, providing artists a more sustainable solution today while Ethereum upgrades to Proof of Stake.
+The Palm ecosystem will ultimately be driven by a native token, `PALM`. It is expected that `PALM` will provide up to 99% more energy efficiency than Proof of Work-based blockchain networks. Thus, providing artists a more sustainable solution today while Ethereum upgrades to Proof of Stake.
