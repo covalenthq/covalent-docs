@@ -71,5 +71,3 @@ All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 </Definitions>
 
 <a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent's API Reference</a>
-
----
