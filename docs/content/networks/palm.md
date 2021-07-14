@@ -71,11 +71,3 @@ All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 </Definitions>
 
 <a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent's API Reference</a>
-
----
-
-## Appendix
-
-### Palm token
-
-The Palm ecosystem will ultimately be driven by a native token, `$PALM`. It is expected that the Palm network will be up to 99% more energy efficiency than typical Proof of Work-based blockchain networks and thus providing artists a more sustainable solution today while Ethereum upgrades to a Proof-of-Stake consensus model.
