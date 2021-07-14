@@ -2,8 +2,8 @@
 title: GetBlock
 order: 3
 hidden: false
-featuredImage: ./images/ankr-banner.png
-description: he service allows you to request on-chain information from a node without the need to set up one manually. It supports JSON-RPC, REST, and WebSockets APIs.
+featuredImage: ./images/getblock-banner.png
+description: The service allows you to request on-chain information from a node without the need to set up one manually. It supports JSON-RPC, REST, and WebSockets APIs.
 ---
 
 # GetBlock

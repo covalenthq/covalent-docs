@@ -12,7 +12,10 @@ Covalent works closely with the technical and business teams of the partner node
 Our infrastructure partners include:
 
 ### [Chainstack](/service-providers/chainstack)
-[![Chainstack](./images/chainstack-banner.png)](/service-partners/chainstack)
+[![Chainstack](./images/chainstack-banner.png)](/service-providers/chainstack)
 
 ### [ANKR](/service-providers/ankr)
-[![Chainstack](./images/ankr-banner.png)](/service-partners/ankr)
+[![ANKR](./images/ankr-banner.png)](/service-providers/ankr)
+
+### [GetBlock](/service-providers/getblock)
+[![GetBlock](./images/getblock-banner.png)](/service-providers/getblock)
