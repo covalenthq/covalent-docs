@@ -1,21 +1,24 @@
 ---
-title: Moonbeam indexing & querying data API
-order: 6
+title: Palm indexing & querying data API
+order: 9
 hidden: false
-featuredImage: ./images/Moonbeam.png
-description: Support for the Moonbeam network
+featuredImage: ./images/Palm.png
+description: Support for the Palm NFTs network
 ---
 
-![Moonbeam banner](./images/Moonbeam.png)
+![Palm banner](./images/Palm.png)
 
-# Moonbeam Network
+# Palm
 
 ## Introduction
 
-[Moonbeam](https://moonbeam.network/) is an Ethereum-compatible smart contract parachain on Polkadot. 
+[Palm](https://palm.io/) is a new NFT ecosystem for Culture and Creativity, built efficiently with Ethereum.
 
-Moonbeam is much more than just an EVM implementation: it’s a highly specialized Layer 1.5 chain that mirrors Ethereum’s Web3 RPC, accounts, keys, subscriptions, logs, and more. The Moonbeam platform extends the base Ethereum feature set with additional features such as on-chain governance, staking, and cross-chain integrations.
+Palm NFT Studio collaborates with creatives, artists, marketplaces, and rights holders to bring projects and platforms into the Palm ecosystem.
 
+Together, with some of the biggest names in fine art, cryptoart, and entertainment, Palm is building a new creative studio and NFT ecosystem on Ethereum that is both scalable and sustainable.
+
+Creators using the Palm ecosystem will benefit from super low gas fees, and the Palm ecosystem will reward both creators and participants. The Palm ecosystem was designed from the ground up to be as flexible as artists are creative. 
 
 
 ### Quick facts
@@ -24,12 +27,9 @@ Moonbeam is much more than just an EVM implementation: it’s a highly specializ
 
 | Property              | Value                |
 | --------------------- | -------------------- |
-| Moonbeam Testnet Moonbase Alpha chainId          | `1287`         |
-| Moonbeam Polkadot (not live yet)             | `1284`                |
-| Moonriver Kusama (not live yet) | `1285` |
-| Blockchain Explorer|https://moonbase-blockscout.testnet.moonbeam.network/|
-| Block time            | ~2 seconds           |
-| Data refresh latency|~12 seconds|
+| Palm Mainnet chainId  | `11297108109`        |
+| Palm Testnet chainId  | `11297108099`        |
+| Token Explorer        |https://ethplorer.io/address/0x0516cbb0bdea3a8c782d3ec6388283e2860fdc8b|
 
 
 </TableWrap>
@@ -39,7 +39,7 @@ Moonbeam is much more than just an EVM implementation: it’s a highly specializ
 
 <Aside>
 
-All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Moonbeam network. You can query the network via the unified API by changing the `chainId`.
+All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Palm network. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 
@@ -71,11 +71,3 @@ All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 </Definitions>
 
 <a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent's API Reference</a>
-
----
-
-## Appendix
-
-### Moonbeam token
-
-The Moonbeam token `GLMR` is the native token of the Moonbeam network. This is similar to Ether in Ethereum. To interact with the Moonbeam network, `GLMR` tokens are required to pay gas fees. The Covalent API response returns `gas_*` fields in fiat units.
