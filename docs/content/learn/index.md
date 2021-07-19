@@ -16,3 +16,6 @@ Our guides address a specific question or problem and assumes some basic knowled
 
 ## [Case Studies](/learn/casestudies)
 Our case studies are deep dives into interesting blockchain topics and concepts and use the Covalent API to explore the underlying data behind those topics and concepts. 
+
+## [References](/learn/references)
+Our references highlights all the rich learning content that are available outside of this doc. It contains resources in article and video formats which provide a frame of learning for utilizing the Covalent API. 

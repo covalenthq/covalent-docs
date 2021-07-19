@@ -97,6 +97,7 @@ For tokens that have a mapping back to Ethereum mainnet, Covalent is able to ret
 
 
 ### Infrastructure Providers
-The following Covalent service providers provide infrastructure for this blockchain network:
+The following provide infrastructure for this blockchain network:
 * [Chainstack](../../service-providers/chainstack)
 * [Ankr](../../service-providers/ankr)
+* [GetBlock](../../service-providers/getblock)
