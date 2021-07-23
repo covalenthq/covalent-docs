@@ -1,16 +1,16 @@
 ---
-title: SpiritSwap Analytics
+title: SpiritSwap Overview
 order: 3
 hidden: false
-featuredImage: ../images/spiritswap-analytics.png
+featuredImage: ../images/spiritswap-overview.png
 description: A web application which gather various data such as pools, statistics, tokens, etc from the SpiritSwap DEX. 
 ---
 
-![SpiritSwap Analytics Banner](../images/spiritswap-analytics.png)
+![SpiritSwap Analytics Banner](../images/spiritswap-overview.png)
 
 &nbsp;
 
-# SpiritSwap Analytics
+# SpiritSwap Overview
 
 ### Website
 
@@ -55,4 +55,4 @@ The project was built at [#OneMillionWallets - Fantom 2021](https://www.covalent
 
 ### Developers
 
-- Quentin Gosset: _Discord - StuxR_
+- Quentin Gosset: _Discord - @StuxR#3487_
