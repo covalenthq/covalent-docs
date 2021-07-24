@@ -20,6 +20,8 @@ hideChildren: false
 ## [Nifty NFTS](./nifty-nfts)
 [![Nifty NFTs](../images/nifty-nfts.png)](./nifty-nfts)
 
+## [Burst NFTS](./burst-nft)
+[![Burst NFTs](../images/burst-nft.png)](./burst-nft)
 ## [Pixel Property](./pixel-property)
 [![Pixel Property](../images/pixel-property.png)](./pixel-property)
 
