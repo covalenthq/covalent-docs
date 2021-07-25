@@ -21,3 +21,9 @@ hideChildren: false
 
 ## [SpiritSwap Analytics](./spiritswap-analytics)
 [![SpiritSwap Analytics](../images/spiritswap-analytics.png)](./spiritswap-analytics)
+
+## [Crypto Trust](./crypto-trust)
+[![Crypto Trust](../images/crypto-trust.png)](./crypto-trust)
+
+## [d-Pad Cafe](./dpad-cafe)
+[![Crypto Trust](../images/dpad-cafe.png)](./dpad-cafe)

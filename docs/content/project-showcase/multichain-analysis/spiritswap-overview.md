@@ -6,7 +6,7 @@ featuredImage: ../images/spiritswap-overview.png
 description: A web application which gather various data such as pools, statistics, tokens, etc from the SpiritSwap DEX. 
 ---
 
-![SpiritSwap Analytics Banner](../images/spiritswap-overview.png)
+![SpiritSwap Overview Banner](../images/spiritswap-overview.png)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ http://hackathon.quentingosset.com/
 
 ### Use of Covalent API
 
-Spirit Swap Analytics is a web application, which allows users to manage a multi-chain wallet to be able to analyze a user's portfolio without having to connect to all the user wallets manually. **1 interface => XXXXX wallets!**. 
+Spirit Swap Overview is a web application, which allows users to manage a multi-chain wallet to be able to analyze a user's portfolio without having to connect to all the user wallets manually. **1 interface => XXXXX wallets!**. 
 
 &nbsp;
 
