@@ -29,8 +29,8 @@ Creators using the Palm ecosystem will benefit from super low gas fees, and the 
 | --------------------- | -------------------- |
 | Palm Mainnet chainId  | `11297108109`        |
 | Palm Testnet chainId  | `11297108099`        |
-| Token Explorer        |https://ethplorer.io/address/0x0516cbb0bdea3a8c782d3ec6388283e2860fdc8b|
-
+| Palm Block Explorer   |https://explorer.palm.io/|
+| Palm Documentation    |https://docs.palm.io//|
 
 </TableWrap>
 
