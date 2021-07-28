@@ -1,10 +1,10 @@
 ---
 title: FAQ
-order: 8
+order: 11
 ---
 
 # Frequently Asked Questions
-These questions serve as a self serve resource for using the [Covalent API](https://www.covalenthq.com/docs/api/) and provide additional informational required to query the Covalent API.
+These questions serve as a self serve resource for using the [Covalent API](https://www.covalenthq.com/docs/api/) and provide additional information required to query the Covalent API.
 
 &nbsp;
 ## How do I get an API KEY?
@@ -43,7 +43,7 @@ To set a Chain Id on an API request, simply change the `{chain_id}` query parame
 - Users can make 20 concurrent API calls using a single API key.
 - For decoded log events and other endpoints where you are asked to specify a block range, you are limited to a million block range after which point you need to make a follow up call using the pagination info.
 
-To inquire about possibily adjusting any API use limits, please contact partnerships@covalenthq.com. 
+To inquire about possibily adjusting any API use limits, please contact media@covalenthq.com. 
 
 &nbsp;
 ## I only get back 100 items (or rows) of data when I expected a lot more.
