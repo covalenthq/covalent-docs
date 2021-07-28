@@ -1,6 +1,6 @@
 ---
 title: Project Showcase
-order: 9
+order: 8
 hideChildren: false
 ---
 
