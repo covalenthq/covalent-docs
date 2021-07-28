@@ -1,6 +1,6 @@
 ---
 title: Service Providers
-order: 8
+order: 10
 ---
 
 # Service Providers
