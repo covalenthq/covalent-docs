@@ -1,6 +1,6 @@
 ---
 title: Arbitrum indexing & querying data API
-order: 8
+order: 9
 hidden: false
 featuredImage: ./images/Arbitrum.png
 description: Support for Arbitrum network

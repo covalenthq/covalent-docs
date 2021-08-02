@@ -1,6 +1,6 @@
 ---
 title: Palm indexing & querying data API
-order: 9
+order: 10
 hidden: false
 featuredImage: ./images/Palm.png
 description: Support for the Palm NFTs network

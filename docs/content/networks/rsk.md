@@ -1,6 +1,6 @@
 ---
 title: RSK indexing & querying data API
-order: 7
+order: 8
 hidden: false
 featuredImage: ./images/RSK.png
 description: Support for RSK network

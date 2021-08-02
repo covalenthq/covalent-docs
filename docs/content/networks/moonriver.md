@@ -1,6 +1,6 @@
 ---
 title: Moonriver indexing & querying data API
-order: 9
+order: 7
 hidden: false
 featuredImage: ./images/Moonriver.png
 description: Support for the Moonriver network
