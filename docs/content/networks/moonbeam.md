@@ -26,7 +26,7 @@ Moonbeam is much more than just an EVM implementation: it’s a highly specializ
 | --------------------- | -------------------- |
 | Moonbeam Testnet Moonbase Alpha chainId          | `1287`         |
 | Moonbeam Polkadot (not live yet)             | `1284`                |
-| Moonriver Kusama (not live yet) | `1285` |
+| [Moonriver Kusama](./moonriver) (not live yet) | `1285` |
 | Blockchain Explorer|https://moonbase-blockscout.testnet.moonbeam.network/|
 | Block time            | ~2 seconds           |
 | Data refresh latency|~12 seconds|
