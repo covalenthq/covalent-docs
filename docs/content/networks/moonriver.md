@@ -24,6 +24,7 @@ Moonriver is a companion network to Moonbeam and provides a permanently incentiv
 | Property              | Value                |
 | --------------------- | -------------------- |
 | Moonriver Kusama (not live yet) | `1285` |
+| Blockchain Explorer|https://blockscout.moonriver.moonbeam.network/|
 
 
 </TableWrap>
