@@ -12,7 +12,7 @@ description: Support for the Moonriver network
 
 ## Introduction
 
-[Moonriver](https://moonbeam.network/networks/moonriver/) is an Ethereum-compatible Solidity Smart Contracts on Kusama.
+[Moonriver](https://moonbeam.network/networks/moonriver/) is an Ethereum-compatible Solidity Smart Contracts Parachain on Kusama.
 
 Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions. Once proven, the same code ships to Moonbeam on Polkadot. Moonriver is a Community-Led Sister Parachain on Kusama.
 
