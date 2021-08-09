@@ -25,4 +25,9 @@ hideChildren: false
 ## [Stack WatchOS Wallet](./stacks-watchos-wallet)
 [![Stack WatchOS Wallet](../images/stacks-watchos-wallet.png)](./stacks-watchos-wallet)
 
+## [RSK Wallet](./rsk-wallet)
+[![RSK Wallet](../images/rsk-wallet.png)](./rsk-wallet)
+
+## [SOVY Wallet](./sovy-wallet)
+[![SOVY Wallet](../images/sovy-wallet.png)](./sovy-wallet)
 

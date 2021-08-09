@@ -27,3 +27,6 @@ hideChildren: false
 
 ## [d-Pad Cafe](./dpad-cafe)
 [![Crypto Trust](../images/dpad-cafe.png)](./dpad-cafe)
+
+## [Sovryn Dashboard](./sovryn-dashboard)
+[![Crypto Trust](../images/sovryn-dashboard.png)](./sovryn-dashboard)
