@@ -31,6 +31,7 @@ We currently support the following networks:
 | [RSK](/networks/rsk)                     | `30`     |
 | [Arbitrum](/networks/arbitrum)           | `42161`     |
 | [Palm](/networks/palm)                   | `11297108109`     |
+| [Moonriver](/networks/moonriver)         | `1285` **COMING SOON** |
 
 </TableWrap>
 
