@@ -18,5 +18,8 @@ These Guides serve as a handy resource to provide you the basic to advanced know
 &nbsp;
 - [Analyze](./analyze): These are step by step guides using code examples and videos to teach the reader how to use the Covalent API.
 
+&nbsp;
+- [Frontend](./frontend): These are step by step guides using code examples to teach the reader how to use the Covalent API via Frontend frameworks and Libraries.
+
 
 <!-- <DocsGuidesOverview/> -->
