@@ -3,12 +3,12 @@ title: ReactJS
 order: 1
 hidden: false
 featuredImage: ../images/fe-reactjs.jpg
-description: Frontend Guide - ReactJS
+description: Front-end Guide - ReactJS
 ---
 
 ![Banner](../images/fe-reactjs.jpg)
 
-# Frontend Guide - ReactJS
+# Front-end Guide - ReactJS
 <Aside>
 
 **Outcome:** Learn how to consume the Covalent API using the ReactJS frontend Library. Guides includes using `fetch` or `axios` and hiding your API Keys using the `dotenv` library.
@@ -16,8 +16,8 @@ description: Frontend Guide - ReactJS
 </Aside>
 
 ## Introduction
-Building with the Covalent API is a breeze! A cool breeze! You can take that literally! I am always of the opinion that Covalent represents the easiest point of entry for web2 developers and data scientists to begin and immediately start making sense of Blockchain data!
-In this article using a simple app to consume one endpoint GET All Chain Status, I’ll explain how you can start consuming the Covalent API as a web2developer using either Axios or Fetch library to make requests to the API and display it in your app. We will use the create-react-app library to initialize the project.
+Building with the Covalent API is a breeze! A cool breeze! You can take that literally! I am always of the opinion that Covalent represents the easiest point of entry for web2 developers and data scientists to begin and immediately start making sense of blockchain data!
+In this article using a simple app to consume one endpoint GET All Chain Status, I’ll explain how you can start consuming the Covalent API as a web2 developer using either Axios or Fetch library to make requests to the API and display it in your app. We will use the create-react-app library to initialize the project.
 
 ![image](../images/get-all-chain.png)
 
@@ -140,7 +140,7 @@ try {
 
 You can confirm that the data is returned by checking the console response.
 
-### Display data on the Frontend
+### Display data on the Front-end
 This is by far the simplest part of the entire process! All you have to do is map over the itemsarray in the response and return the information which you so desire. For this use case, we will simply return the data in an unordered list.
 
 First, clean out the code in the header block in the app.js file leaving only the divstatement, you can add text such as Welcome in between the divs and save. Now, you will see the text “Welcome” displayed on the screen. Using curly braces, we will map over the items and display each item name.
@@ -207,5 +207,5 @@ export default App;
 ```
 
 ### Conclusion
-There you have it, how to consume the Covalent API using React Hooks and display the data on the frontend! You can begin with this as a starting point and style your app and also consume multiple endpoints.
+There you have it, how to consume the Covalent API using React Hooks and display the data on the front-end! You can begin with this as a starting point and style your app and also consume multiple endpoints.
 If you have any further questions, you can reach the DevRel team on the [Covalent Discord](https://covalenthq.com/discord) server.
