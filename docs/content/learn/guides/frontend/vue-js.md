@@ -3,7 +3,7 @@ title: VueJS
 order: 2
 hidden: false
 featuredImage: ../images/fe-vuejs.jpg
-description: Frontend Guide - VueJS
+description: Front-end Guide - VueJS
 ---
 
 ![Banner](../images/fe-vuejs.jpg)
@@ -12,13 +12,13 @@ description: Frontend Guide - VueJS
 
 <Aside>
 
-**Outcome:** Learn how to consume the Covalent API using the VueJS frontend framework. We will builf a simple VueJS app consuming the `balances_v2` endpoint using `fetch` to return the Covalent API data.
+**Outcome:** Learn how to consume the Covalent API using the VueJS front-end framework. We will builf a simple VueJS app consuming the `balances_v2` endpoint using `fetch` to return the Covalent API data.
 
 </Aside>
 
 
 # Introduction
-The Covalent API is ideal for development teams building blockchain dApps and infrastructure requiring real time access to Blockchain data. This is because it is simply the fastest way for teams to access granular and historical on-chain data without code, unlocking One Billion possibilities. Hence, why Covalent API is described as the `no code` solution. 
+The Covalent API is ideal for development teams building blockchain dApps and infrastructure requiring real time access to Blockchain data. This is because it is simply the fastest way for teams to access granular and historical on-chain data without code, unlocking 'One Billion possibilities'. Hence, this is why the Covalent API is described as the `no code` solution. 
 
 The Covalent API is RESTful. The default return format for all endpoints is `JSON`. `CSV` format is supported for some endpoints. A Covalent API key must be passed as a query parameter with all requests using: `key=API_KEY`
 
@@ -128,6 +128,6 @@ Now the app should look like this:
 ![image](../images/vue-get-balances.png)
 
 ## Conclusion
-There you have it, how to consume the Covalent API using the VueJS frontend framework! You can begin with this as a starting point and style your app and also consume multiple endpoints. Beginning from here, you can thus build whatever you want!
+There you have it, how to consume the Covalent API using the VueJS front-end framework! You can begin with this as a starting point and style your app and also consume multiple endpoints. Beginning from here, you can thus build whatever you want!
 
 If you have any further questions, you can reach the DevRel team on the [Covalent Discord](https://covalenthq.com/discord) server.
