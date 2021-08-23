@@ -205,7 +205,30 @@ function App() {
 
 export default App;
 ```
+### Using `dotenv` to hide your API KEYS
+Dotenv is a zero-dependency module that loads environment variables from a `.env` file into `process.env`. Storing configuration in the environment separate from code, as a result enabling a developer to hide app credentials which are not to be exposed to the public.
 
-### Conclusion
+In the root of your project directory, add a file `.env`
+The `.env` file will hold credentials which you do not want to expose publicily such as your `API-KEY`.
+
+First we have to install `dotenv` using the command
+
+`yarn add dotenv`
+
+Open the `.env` file and set the API KEYS using the following syntax
+
+`API_KEY="Your-API-KEY"`
+
+At the top of your `app.js` file, just after the ReactJS import, import the `dotenv` package:
+
+`require('dotenv').config()`
+
+This then gives you the ability to call the API KEYS into the `app.js` using `process.env` arguments. 
+
+Update the `await` call in the code:
+
+`const response = await fetch("https://api.covalenthq.com/v1/chains/status/?key=process.env.API_KEY")`
+
+## Conclusion
 There you have it, how to consume the Covalent API using React Hooks and display the data on the frontend! You can begin with this as a starting point and style your app and also consume multiple endpoints.
 If you have any further questions, you can reach the DevRel team on the [Covalent Discord](https://covalenthq.com/discord) server.
