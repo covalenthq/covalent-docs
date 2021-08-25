@@ -11,9 +11,9 @@ description: Klaytn is an enterprise-grade, service-centric platform that brings
 
 ## Introduction
 
-The [Klaytn Network](https://www.klaytn.com/) is an enterprise-grade, service-centric platform that brings user-friendly blockchain experience to millions. It combines the best features of both public blockchains (decentralized data & control, distributed governance) and private blockchains (low latency, high scalability) via an efficient 'hybrid' design. Klaytn enables businesses and entrepreneurs today to capture value using blockchain technology.
-
-
+The [Klaytn Network](https://klaytn.foundation/) is a global public blockchain platform developed by Ground X, the blockchain affiliate of the leading South Korean Internet company, Kakao.
+Klaytn is a service-centric blockchain platform providing an intuitive development environment and friendly end-user experience. It is built upon solid reliability and significant stability with substantial service development for mass adoption.
+The platform allows real-world applications of large scale to be produced right away so that our end-users can make full use of services without much expertise in blockchain or cryptocurrency.
 
 ### Quick facts
 
