@@ -23,6 +23,7 @@ Every change to our API matters and reflects our belief in one of the following 
 | [May](./may)           | [Kovan]](../networks/kovan) Indexed |
 | [June](./june)         | [RSK]](../networks/rsk) Indexed. [Arbitrum]](../networks/arbitrum) Indexed  |
 | [July](./july)         | [Palm]](../networks/palm) Indexed. `animation _url` for NFTs    |
+| [August](./august)         | Check if a Network `is_testnet`    |
 
 
 

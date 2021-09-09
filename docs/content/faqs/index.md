@@ -40,10 +40,25 @@ To set a Chain Id on an API request, simply change the `{chain_id}` query parame
 
 &nbsp;
 ## Are there any API use limits?
-- Users can make 20 concurrent API calls using a single API key.
+- Users can make 20 concurrent API calls using a single API key. But there are provisions to increase the limit of concurrent API requests depending on the specific case and the request that has been made. Refer next section on how to request increase in concurrency limit.
 - For decoded log events and other endpoints where you are asked to specify a block range, you are limited to a million block range after which point you need to make a follow up call using the pagination info.
 
-To inquire about possibily adjusting any API use limits, please contact support@covalenthq.com. 
+&nbsp;
+## How to increase concurrent API calls?
+
+In most of the cases, we have noticed that clients don't actually need higher concurrency; they need to either:
+
+- for random access, distribute/queue their load at a gateway level, to smooth unpredicted spikes.
+- for per-client polling, distribute their clients' polls within the polling period using client-ID hashing.
+
+Following are some steps we strictly recommend before requesting higher concurrency to optimize code on client side:
+
+1. Create a queue for the requests you are submitting to us.
+2. Have `N` worker threads pull requests from that queue and synchronously submit them, only taking another request from the queue when the previous one completes.
+3. Tweak the concurrency-level `N` value. At a certain level, you should not see any `429` errors or socket hangups given the limit rules in our middleware. The ideal `N` is currently ~`24`, but this could be changed at any time to protect our architecture from DoS attacks. Please verify and find the optimal `N` for yourself (or write code that dynamically lowers `N` incrementally upon receiving a 429 error).
+
+If you still face concurrency issues, please fill out this [TypeForm](https://covalenthq.typeform.com/to/husUVmhA). 
+
 
 &nbsp;
 ## I only get back 100 items (or rows) of data when I expected a lot more.
