@@ -71,6 +71,6 @@ All __Class A__ endpoints are supported for the HECO mainnet and the HECO testne
 ## Appendix
 
 
-### Klaytn Gas token
+### HECO Gas token
 
 HT token is the native token of the HECO network. This is similar to Ether in Ethereum. To interact with the HECO network, HT tokens are required to pay as gas fees. HT serves as a means of payment and exchange for all applications running in the HECO ecosystem. Covalent's  responses automatically returns `gas_*` fields in the HT units.
