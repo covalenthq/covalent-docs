@@ -2,11 +2,11 @@
 title: Polyjuice L2 Network
 order: 13
 hidden: false
-featuredImage: ./images/Nervos.png
+featuredImage: ./images/Polyjuice.png
 description: Polyjuice is an L2 network running on the Nervos blockchain. It is an Ethereum-compatible layer inside of an optimistic rollup, which allows for low cost, high speed transactions with a familiar user and developer experience.
 ---
 
-![Polyjuice network banner](./images/Nervos.png)
+![Polyjuice network banner](./images/Polyjuice.png)
 
 # Polyjuice L2 Network
 
