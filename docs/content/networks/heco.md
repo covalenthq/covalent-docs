@@ -25,7 +25,7 @@ HECO has built a developed Defi ecosystem, with wallets, assets, and application
 |HECO Mainnet chainId|`128`|
 |HECO Testnet chainId|`256`|
 |HECO Blockchain Explorer|https://hecoinfo.com/|
-|Block time|~1 second|
+|Block time|~3 seconds|
 
 </TableWrap>
 
