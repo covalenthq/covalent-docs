@@ -25,7 +25,7 @@ Every change to our API matters and reflects our belief in one of the following 
 | [July](./july)         | [Palm]](../networks/palm) Indexed. `animation _url` for NFTs    |
 | [August](./august)         | Check if a Network `is_testnet`    |
 | [September](./september)         | We added compatibility for RNS |
-
+| [October](./october)         | New fiat currencies |
 
 
 
