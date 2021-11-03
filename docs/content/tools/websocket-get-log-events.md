@@ -1,33 +1,30 @@
 ---
-title: Websocket connection 
+title: WebSocket Connections
 order: 3
 hidden: false
 author: anadipandharkar
-description: Learn how to open a websocket connection to endpoints
+description: Learn how to open a WebSocket connection to API endpoints
 ---
 
 
-# How to subscribe to websocket connection
+# Subscribe to a WebSocket connection
 
-We support below mentioned endpoint currently. If you want to raise websocket support on new one or give feedback on this one, please use our [governance forum](https://gov.covalenthq.com/c/dev/api/14).
+Currently, we support WebSocket connections to the following endpoints:
 
+1. [Get log events by Contract Address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
 
+2. [Get log events by topic hashes](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
 
-## 1. [Get log events by Contract Address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
+If you would like to request WebSocket support for new endpoints or provide feedback on existing ones, please use our [governance forum](https://gov.covalenthq.com/c/dev/api/14).
 
-## 2. [Get log events by topic hashes](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
+The idea of WebSocket support on log event endpoints came about by observing how API users were pinging these endpoints repeatedly in order to watch if an event happened to trigger an action on the client side. In order to optimize our API calls, we are now introducing WebSocket subscriptions on the above two log event endpoints. 
 
+The ideal way to use the WebSocket connection is as a notification service for certain log events. Then a follow-up API call should be made. An example use case is while creating an NFT Marketplace where the application is interested in watching for `mint`, `transfer`, `transferSingle` and various other log events to trigger different type of actions and renders on the client side. Using WebSockets, the application can subscribe to the `mint` event of a specific contract to watch if a new NFT has been created. Once confirmed, the application can call [get external NFT metadata endpoint](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/tokens/{contract_address}/nft_metadata/{token_id}/) to fetch the NFT details.
 
-The idea of websocket support on log-events endpoints originated when we observed a pattern across our users api-requests. Users were pinging log-events endpoint constantly in order to watch if an event has happened to trigger some action on the client side. In order to optimize the usage of our api calls, we introduced websocket subscription on the two log-events endpoints. 
-
-The idea way to use the websocket connection would be to use it as a notification service to watch if certain log-event occur then you call the API that you are concerned with. 
-At present, it works better with get_log_events_by_contract_address than get_log_events_by_topic_hash. Currently open for Beta testing, we would be happy to directly engage to get user requirements. We can improve it according to a devloper's needs and requirements around the use case that you are building. 
-
-
-An example use case can be creating an NFT Marketplace. The application is interested in watching for `mint`, `transfer`, `transferSingle` and various other events to trigger different type of action and rendering on Client side. For instance, they can subscribe to `mint` event of a specific contract address to watch if a new NFT has been created. Once confirmed, they call [get external NFT metadata endpoint](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/tokens/{contract_address}/nft_metadata/{token_id}/) to fetch NFT details.
+**The WebSocket connection feature is in beta and should thus be used accordingly.** 
 
 
-
+## Code Example
 Refer the following code to open up a subscription.
 
 ```jsx
@@ -97,4 +94,4 @@ function reconnect(socketUrl, successCallback) {
 }
 ```
 
-You can reach out to product expert by writing an email to **[this](anadi@covalenthq.com)** or write on [governance forum](https://gov.covalenthq.com/c/dev/api/14) directly to engage with our vibrant community for help.
+We would love to get your feedback and improve this feature based on your use case. Please contact one of our product experts **[here](anadi@covalenthq.com)** or use our [governance forum](https://gov.covalenthq.com/c/dev/api/14).
