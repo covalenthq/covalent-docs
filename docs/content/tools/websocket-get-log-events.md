@@ -28,22 +28,22 @@ The ideal way to use the WebSocket connection is as a notification service for c
 Refer the following code to open up a subscription.
 
 ```jsx
-var Stomp = require('stompjs');
+let Stomp = require('stompjs');
+
 function successCallback() {
   
-    var sub1 = client.subscribe("/v1/1/events/address/0x7be8076f4ea4a4ad08075c2508e481d6c946d12b/", function(message){
-        console.log("========================================SUB1 START=============================================================")
+    let sub1 = client.subscribe("/v1/1/events/address/0x7be8076f4ea4a4ad08075c2508e481d6c946d12b/", function(message){
+         // user can do anything with message.body because it is the log event object returned
         console.log("This is sub1 data: " + message.body)
-        console.log("========================================SUB1 END=============================================================")
     });
 
 }
-var url = "wss://api.covalenthq.com/v1/";
-var client = Stomp.overWS(url);
+let url = "wss://api.covalenthq.com/v1/";
+let client = Stomp.overWS(url);
 client.heartbeat.incoming = 0;
 client.heartbeat.outgoing = 10000;
 
-var timeout = 5000;
+let timeout = 5000;
 client.connect({}, function (frame) {
     console.log("Connected: " + frame);
     successCallback();
@@ -53,12 +53,12 @@ client.connect({}, function (frame) {
     client.disconnect(function() {
         setTimeout(() => {
             reconnect("wss://api.covalenthq.com/v1/", successCallback);
-        },5000);
+        },timeout);
 
     });
 });
 
-var mytimeOut;
+let mytimeOut;
 function reconnect(socketUrl, successCallback) {
 
     if (client.connected) {
