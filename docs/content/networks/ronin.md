@@ -1,7 +1,7 @@
 ---
 title: Ronin Network
 order: 14
-hidden: false
+hidden: true
 featuredImage: ./images/Ronin.png
 description: Ronin is an Ethereum-linked sidechain made specifically for Axie Infinity. A Ronin was a samurai without a master in feudal Japan and Ronin represents the Axie desire to take the destiny of our product into our own hands.
 ---

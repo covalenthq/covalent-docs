@@ -34,7 +34,7 @@ We currently support the following networks:
 | [Moonriver](/networks/moonriver)         | `1285` |
 | [Klaytn](/networks/klaytn)               | `8217` |
 | [HECO](/networks/heco)               | `128` |
-| [RONIN](/networks/ronin)               | `2020` |
+
 
 </TableWrap>
 
