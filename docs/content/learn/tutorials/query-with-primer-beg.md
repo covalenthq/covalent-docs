@@ -134,6 +134,27 @@ header: Query with dot notation
 }
 ```
 
+### Embedded records within an array or list
+
+It's possible to `match` based on deeply nested embedded documents in a list / array response using `$elemmatch` with or without the dot notation (`{"transfers":{"$elemmatch":{"to_address":"0x845e9d5fb5bbf5fcb88dcb5253c0906222c8d704"}}}`) if a field within the list is nested you can use (`field.nested_field`). The syntax is extensible to infinite depth: `field.nested_field.second_nested_field`.
+
+```json
+---
+header: Query with $elemmatch for matching within a list / array response and possible nested query with dot notation
+---
+{
+   "transfers":{
+      "$elemmatch":{
+         "to_address":"0x845e9d5fb5bbf5fcb88dcb5253c0906222c8d704"
+      }
+   }
+}
+```
+Example query to get ERC20 token transfer by address
+```
+https://api.covalenthq.com/v1/1/address/ENTER_ADDRESS_VALUE_HERE/transfers_v2/?quote-currency=USD&format=JSON&contract-address=ENTER_TOKEN_CONTRACT_ADDRESS_HERE&key=YOUR_API_KEY&match={"ENTER_ELEMENT_KEY_FOR_LISTED_OBJECT_PARENT_HERE":{"$elemmatch":{"ENTER_TARGET_MATCH_ITEM_KEY_HERE":"ENTER_TARGET_MATCH_ITEM_VALUE_HERE"}}}
+```
+
 ## Querying Compound's Governance
 
 Now we will put to use the Primer concepts we were introduced to in the previous section against Compound's Governance contracts.
