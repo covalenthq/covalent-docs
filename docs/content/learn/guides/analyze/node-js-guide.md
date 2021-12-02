@@ -105,6 +105,9 @@ module.exports = app;
 To run the app, Open `package.json` file add the following line under `scripts`:
 - `"start" : "nodemon index"`
 
+Note: you will need to be running node-fetch v2 in order for this code to work. To install V2
+- `npm install node-fetch@2`
+
 In the terminal, run the command: `$ nodemon index` you should see the following message: `App running on port 8000!` 
 
 Open your browser or postman and go to `http://localhost:8000/index` You will see the following json response: 
@@ -123,7 +126,7 @@ We will update the `index.js` file as shown below
 
 //add the code below before app.get()
 const url = 'https://api.covalenthq.com/v1'
-const key = 'ckey_onemillionwallets' //example key
+const key = 'ckey_onemillionwallets' //example key, replace with your API key
 const chain_id = '1' //ethereum network chainID on Covalent
 const address = '0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3' //example address
 
@@ -131,7 +134,7 @@ const address = '0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3' //example address
 //add the code below after app.get()
 app.get('/token-balance', async(req, res) =>{
   try {
-      const data = await fetch(`${url}/${chain_id}/address/${address}/balances_v2`, 
+      const data = await fetch(`${url}/${chain_id}/address/${address}/balances_v2/?&key=${key}`, 
                                 { 
                                     headers: { 'content-type': 'application/json' }
                                 }
@@ -144,7 +147,11 @@ app.get('/token-balance', async(req, res) =>{
   }
 })
 ```
-Code explanation: This is a promise based async request which uses node-fetch to make request to the API and return a json based response format in the Browser. The console log statements are there to also affirm the response object in the console. The response is below
+
+
+Code explanation: This is a promise based async request which uses node-fetch to make request to the API and return a json based response format in the Browser. The console log statements are there to also affirm the response object in the console.
+
+Open your browser or postman and go to `http://localhost:8000/token-balance` You will see the following json response: 
 
 
 ```json
