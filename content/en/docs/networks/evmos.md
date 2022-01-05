@@ -12,7 +12,7 @@ description: Evmos is an application-agnostic Cosmos chain that will be interope
 
 ## Introduction
 
-Evmos is a scalable and interoperable Ethereum, built on Proof-of-Stake with fast-finality. Evmos is an application-agnostic Cosmos chain that will be interoperable with the Ethereum mainnet, and Ethereum Virtual Machine (EVM) compatible environments, and other Byzantine Fault Tolerance (BFT) chains via Inter-Blockchain Communication (IBC), making it easy for users and developers to interact seamlessly between chains. Evmos aims to be the EVM Hub of Cosmos, making it easy for smart contracts to deploy and communicate within the Cosmos ecosystem.
+Evmos is a scalable and interoperable Ethereum compatible network. It is built on the consensus mechanism of Proof-of-Stake with fast-finality. Evmos is an application-agnostic Cosmos chain that will be interoperable with the Ethereum mainnet, and Ethereum Virtual Machine (EVM) compatible environments, and other Byzantine Fault Tolerance (BFT) chains via Inter-Blockchain Communication (IBC), making it easy for users and developers to interact seamlessly between chains. Evmos aims to be the EVM Hub of Cosmos, making it easy for smart contracts to deploy and communicate within the Cosmos ecosystem.
 
 ### Quick facts
 
