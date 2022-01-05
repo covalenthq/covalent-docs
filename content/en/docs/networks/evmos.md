@@ -1,18 +1,18 @@
 ---
-title: EVMOS
+title: Evmos
 order: 18
 hidden: false
 featuredImage: /static/images/networks/banners/Evmos.png
 description: Evmos is an application-agnostic Cosmos chain that will be interoperable with the Ethereum mainnet.
 ---
 
-![EVMOS network banner](/static/images/networks/banners/Evmos.png)
+![Evmos network banner](/static/images/networks/banners/Evmos.png)
 
-# EVMOS
+# Evmos
 
 ## Introduction
 
-EVMOS is an application-agnostic Cosmos chain that will be interoperable with the Ethereum mainnet, and Ethereum Virtual Machine (EVM) compatible environments, and other Byzantine Fault Tolerance (BFT) chains via Inter-Blockchain Communication (IBC), making it easy for users and developers to interact seamlessly between chains. EVMOS aims to be the EVM Hub of Cosmos, making it easy for smart contracts to deploy and communicate within the Cosmos ecosystem.
+Evmos is a scalable and interoperable Ethereum, built on Proof-of-Stake with fast-finality. Evmos is an application-agnostic Cosmos chain that will be interoperable with the Ethereum mainnet, and Ethereum Virtual Machine (EVM) compatible environments, and other Byzantine Fault Tolerance (BFT) chains via Inter-Blockchain Communication (IBC), making it easy for users and developers to interact seamlessly between chains. Evmos aims to be the EVM Hub of Cosmos, making it easy for smart contracts to deploy and communicate within the Cosmos ecosystem.
 
 ### Quick facts
 
@@ -20,7 +20,7 @@ EVMOS is an application-agnostic Cosmos chain that will be interoperable with th
 
 |Property|Value|
 |---|---|
-|EVMOS Testnet chainId|`9000`|
+|Evmos Testnet chainId|`9000`|
 |Cosmos Blockchain Explorer|explorer.evmos.org|
 |Block time|~7 seconds|
 
@@ -31,7 +31,7 @@ EVMOS is an application-agnostic Cosmos chain that will be interoperable with th
 
 <Aside>
 
-All __Class A__ endpoints are supported for the EVMOS mainnet and the EVMOS testnet. You can query either network via the unified API by changing the `chainId`.
+All __Class A__ endpoints are supported for the Evmos mainnet and the Evmos testnet. You can query either network via the unified API by changing the `chainId`.
 
 </Aside>
 
