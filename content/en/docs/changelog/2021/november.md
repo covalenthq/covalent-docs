@@ -1,7 +1,8 @@
 ---
-title: November
+title: November 2021
 order: 11
 hidden: false
+description: Block Height Improved.
 ---
 
 ## 2021-11-30
