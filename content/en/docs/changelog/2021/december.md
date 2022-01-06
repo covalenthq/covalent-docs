@@ -9,7 +9,7 @@ description: Astar-Shiden, IoTeX networks indexed.
 
 ### ADDED
 
-- Since the introduction of the `XY=K` suite of endpoints, developers using our API have been given the powers to build projects across our supported Decentralized Exchanges (DEXes). To make the experience even more easy for developers, we have added a new `XY=K` endpoint, [GET XY=K Supported DEXes](https://www.covalenthq.com/docs/api/#/0/Class-B/Get-XY=K-Network-Exchange-Tokens/lng=en), which will make it easy for developers using our API to know the current number of supported endpoints and also see the `swap fee` for each DEX. Developers can also get the list of DEX names and chain ids to be used as XY=K endpoint parameters. The returned data includes: `factory_contract_address` and `router_contract_address`. `<data-accessibility>`
+- Since the introduction of the [XY=K](https://www.covalenthq.com/blog/xyk-announcement/) suite of endpoints, developers using our API have been given the powers to build projects across our supported Decentralized Exchanges (DEXes). To make the experience even more easy for developers, we have added a new `XY=K` endpoint, [GET XY=K Supported DEXes](https://www.covalenthq.com/docs/api/#/0/Class-B/Get-XY=K-Network-Exchange-Tokens/lng=en), which will make it easy for developers using our API to know the current number of supported endpoints and also see the `swap fee` for each DEX. Developers can also get the list of DEX names and chain ids to be used as XY=K endpoint parameters. The returned data includes: `factory_contract_address` and `router_contract_address`. Here is a demostration on [replit](https://replit.com/@Covalent-Templates/xyk-DEX-Dashboard-Template?v=1).`<data-accessibility>`
 
 ```javascript
 {
