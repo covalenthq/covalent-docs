@@ -91,7 +91,7 @@
       - 
         title: Evmos
         link: /docs/networks/evmos/
-        icon: "//covalenthq.com/static/images/blockchains/svgs/evmos.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/evmos.svg?v2"
         banner:
         published: true
       - 
