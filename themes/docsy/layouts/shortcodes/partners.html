@@ -1,26 +1,14 @@
-{{ $expandCount := len .Site.Data.partners.expand }}
+{{ $arr := getJSON "https://www.covalenthq.com/static/js/partners.json" }}
 
 <div id="ecosystem" class="covalent-light pt-12 pb-24 max-w-4xl">
     <div class=" sm:mt-8 sm:mb-4 grid place-items-center grid-cols-5 md:grid-cols-5 sm:grid-cols-2 z-10">
-      {{ range .Site.Data.partners.display }}
-      <div class="col-span-1 flex md:px-0 md:justify-start lg:responsive-box-2x border-l border-b border-t border-r">
+      {{ range first 10 $arr }}
+      <div class="col-span-1 flex md:px-0 md:justify-start lg:responsive-box-2x border-l border-b border-t border-r cursor-pointer">
+        <a href="{{ .link }}" rel="noopener" target="_blank">
           <img class="md:w-80 h-full w-full sm:w-full" src="{{ .img }}" />
+        </a>  
       </div>
       {{ end }}
-      {{ range .Site.Data.partners.expand }}
-        <div class="expand-hidden col-span-1 flex md:px-0 md:justify-start lg:responsive-box-2x border-l border-b border-t border-r hidden">
-            <img class="md:w-80 h-full w-full sm:w-full" src="{{ .img }}" />
-        </div>
-      {{ end }}
-      <div class="expand sm:hidden font-semibold uppercase center text-black bg-white tracking-widest px-8 flood-white cursor-pointer col-span-1 flex md:px-0 md:justify-start h-full w-full lg:responsive-box-2x border-l border-b border-t border-r  md:pl-3 md:text-xs lg:text-lg" >
-          View all
-      </div>
     </div>
 </div>
 
-<script>
-    if("{{ $expandCount }}" < 5){
-      document.querySelector(".expand").style.display = "none"
-    }
-  </script>
-  <script src="/static/js/expand.js"></script>

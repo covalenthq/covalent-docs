@@ -1,0 +1,42 @@
+{{ $openApi := getJSON "https://api.covalenthq.com/v1/openapiv2/?lang=en&key=ckey_docs" }}
+{{ $endpoint := .Get `endpoint` }}
+{{ $link := .Get `link` }}
+
+
+{{ range $openApi }}        
+{{ $title := trim .title ` ` }}
+    {{ if eq $endpoint $title }}
+    <div class="grid-cols-5 relative endpoint md:flex-col-reverse md:flex sm:flex-col-reverse sm:flex py-8">
+        <div class="col-span-3 sm:order-last md:order-last">
+            <div class="text-base lg:max-w-none">
+                <div class="mt-2 max-w-2xl text-5xl font-sans font-light leading-20 tracking-tight text-gray-900 sm:text-4xl md:text-2xl">
+                    {{ $title }}
+                </div>
+                <div class="text-base tracking-widest text-covalent-pink font-semibold uppercase my-8 flex sm:mb-4 md:mb-4 sm:mt-4 md:mt-4 md:text-sm sm:text-sm">
+                    {{ .classType }}
+                </div>
+                <div class="relative z-10 text-base mx-auto lg:max-w-4xl lg:mx-0">
+                    <div class="text-xl text-gray-800 mb-8">
+                        {{ .description }}
+                    </div>
+                </div>
+                <div class="sticky sm:relative md:relative top-4 ml-auto my-12">
+                    <div class="bg-gray-100 p-10 shadow-md relative  max-w-4xl">
+                        <div class="bg-white py-3 px-3 ct-base whitespace-nowrap overflow-scroll code w-full flex">
+                            <span class="font-semibold text-gray-600 mr-1">GET </span> {{ .path }}
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ $link }}" rel="noopener" target="_blank" href="">
+                    <button class="covalent-button-pink ct-base-bold w-full lg:max-w-sm">
+                       Try it live
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+        <hr class="mb-12 mt-10" />
+    {{ end }}
+{{ end }}
+
+

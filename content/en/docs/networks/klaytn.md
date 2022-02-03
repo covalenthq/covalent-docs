@@ -40,7 +40,7 @@ All __Class A__ endpoints are supported for the Klaytn mainnet `Cypress` and the
 
 </Aside>
 
-
+<!-- 
 <Definitions>
 
 - `api.covalenthq.com/v1/{chainId}/address/{address}/balances_v2/` 
@@ -61,8 +61,34 @@ All __Class A__ endpoints are supported for the Klaytn mainnet `Cypress` and the
 - `api.covalenthq.com/v1/{chainId}/events/topics/{topic}/` 
   - Return a paginated list of decoded log events with one or more topic hashes separated by a comma.
 
-</Definitions>
+</Definitions> -->
 
+<div>
+  {{< open-api
+      endpoint="Get token balances for address"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-token-balances-for-address/lng=en"
+  >}}
+    {{< open-api
+      endpoint="Get transactions for address"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-transactions-for-address/lng=en"
+  >}}
+    {{< open-api
+      endpoint="Get ERC20 token transfers for address"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-a-block/lng=en"
+  >}}
+      {{< open-api
+      endpoint="Get token holders as of any block height"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-token-holders-as-of-any-block-height/lng=en"
+  >}}
+      {{< open-api
+      endpoint="Get log events by contract address"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-log-events-by-contract-address/lng=en"
+  >}}
+      {{< open-api
+      endpoint="Get log events by topic hash(es)"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-log-events-by-topic-hash(es)/lng=en"
+  >}}
+</div>
 
 
 <a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent's API Reference</a>
