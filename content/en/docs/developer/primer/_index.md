@@ -1,5 +1,7 @@
 ---
 title: Primer
+weigth: 7
+order: 1
 ---
 
 ## What is Primer 

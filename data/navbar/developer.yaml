@@ -17,10 +17,6 @@
         link: /docs/tools/get-log-data
         published: false
       - 
-        title: Primer
-        link: /docs/tools/primer-query
-        published: false
-      - 
         title: Token Holders
         link: /docs/tools/token-holders
         published: false
@@ -34,7 +30,7 @@
         published: false
   -
     title: Primer
-    link: /docs/developer/primer/
+    link: /docs/developer/primer
     published: true
     subsection:
         -

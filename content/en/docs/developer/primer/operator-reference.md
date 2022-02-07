@@ -116,9 +116,24 @@ We have the following top-level query parameters.
 
 Primer is currently available on these endpoints:
 
-* [Get log events by contract address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
+<div>
+  {{< open-api
+      endpoint="Get log events by contract address"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-log-events-by-contract-address/lng=en"
+  >}}
+    {{< open-api
+      endpoint="Get log events by topic hash(es)"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-log-events-by-topic-hash(es)/lng=en"
+  >}}
+    {{< open-api
+      endpoint="Get a transaction"
+      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-ERC20-token-transfers-for-address/lng=en"
+  >}}
+</div>
+
+<!-- * [Get log events by contract address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
 * [Get log events by topic hash(es)](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
-* [Get transactions](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/transactions_v2/)
+* [Get transactions](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/transactions_v2/) -->
 
 ## 3.1 | Basic _Sort_
 

@@ -10,8 +10,7 @@
 
   <div class="bg-white">
 
-    <div
-      class="h-16 pl-5 pr-5 fixed left-0 right-0 bg-covalent-blue-dark text-white flex justify-between z-50 transition-all duration-500">
+    <div class="h-16 pl-5 pr-5 fixed left-0 right-0 bg-covalent-blue-dark text-white flex justify-between z-50 transition-all duration-500">
       <div class="flex place-self-center mr-40">
         <h1 class="w-max text-white ct-lg uppercase ml-2 font-sans transition">
           <a href="/docs/"><img class="h-8 place-self-center mr-2 inline-block"
@@ -19,11 +18,16 @@
           <div class="place-self-center inline-block">Covalent Docs</div></a>
         </h1>
       </div>
-
-      <a href="/platform/#/auth/register/"
-        class="place-self-center flex-none bg-covalent-pink hover:bg-opacity-5 text-white hover:bg-opacity-90 px-4 py-2 hover:no-underline lg:mb-0 md:mb-0 sm:mb-0">
-        Get an API Key
-      </a>
+      <div class="flex">
+        <div class=" place-self-center sm:hidden md:hidden float-right mx-2  md:mx-2 mt-2 sm:clear-both sm:pb-4 sm:mx-6 mb-2 font-sans">
+          <a class="text-white tracking-wide text-lg md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
+          href="https://www.covalenthq.com/platform/#/auth/login">Sign in</a>
+        </div>  
+        <div class=" place-self-center sm:hidden md:hidden float-right mx-2 md:mx-2 mt-2 sm:clear-both sm:pb-4 sm:mx-6 mb-2 font-sans">
+          <a class="text-white tracking-wide text-lg md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
+          href="/platform/#/auth/register/">Get an API Key</a>
+        </div>  
+      </div>
 
     </div>
 
