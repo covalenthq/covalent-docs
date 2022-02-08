@@ -66,7 +66,7 @@
     }
 
     a{  
-        @apply text-covalent-pink ;
+        @apply text-covalent-pink;
     }
 
     ul {
@@ -83,11 +83,11 @@
     }
 
     .highlight {
-        @apply bg-gray-300 py-1 px-2;
+        @apply bg-gray-100 py-8 pl-8 pr-12 my-8 shadow-md whitespace-normal overflow-x-auto  rounded-md;
 
         code, pre {
 
-            @apply font-mono bg-gray-300 text-white px-0 py-0  rounded-md;
+            @apply font-mono bg-gray-100 text-white px-0 py-0  rounded-md;
 
         }
 
@@ -119,7 +119,7 @@
 
         tbody {
             td {
-                @apply px-6 py-4 whitespace-nowrap  text-gray-500;
+                @apply px-6 py-4 text-gray-500;
             }
         }
     }
