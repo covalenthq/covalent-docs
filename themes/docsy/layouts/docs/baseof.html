@@ -13,9 +13,9 @@
     <div class="h-16 pl-5 pr-5 fixed left-0 right-0 bg-covalent-blue-dark text-white flex justify-between z-50 transition-all duration-500">
       <div class="flex place-self-center mr-40">
         <h1 class="w-max text-white ct-lg uppercase ml-2 font-sans transition">
-          <a href="/docs/"><img class="h-8 place-self-center mr-2 inline-block"
+          <a class="flex" href="/docs/"><img class="h-8 place-self-center mr-2 inline-block"
             src="https://www-covalenthq-com-git-apidocs-v3-covalenthq.vercel.app/static/images/covalent-logo-white.svg">
-          <div class="place-self-center inline-block">Covalent Docs</div></a>
+          <div class="place-self-center">Covalent Docs</div></a>
         </h1>
       </div>
       <div class="flex">
@@ -28,14 +28,13 @@
           href="/platform/#/auth/register/">Get an API Key</a>
         </div>  
       </div>
-
     </div>
 
 
 
   <div class="pt-16">
     <div class="-max-w-3xl -mx-auto -max-w-7xl -px-8 flex">
-      <div id="side-nav" class="flex fixed h-screen ">
+      <div class="flex fixed h-screen ">
         {{ partial "sidebar.html" . }}
         <div class="left-0 bottom-0 w-4 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex items-center transition-all cursor-pointer text-gray-200 " onclick="collapse()">
           <div id="chev-left" style="display:block" class="flex justify center fill-current text-white opacity-80  w-6 h-6">
@@ -64,7 +63,7 @@
         </div>
         </div>
       </div>
-      <main class="w-full overflow-y-scroll mt-6 main-content ml-72 pl-20 h-full md:pl-12 sm:p-0 min-h-screen" id="main">
+      <main class="w-full overflow-y-scroll mt-6 main-content ml-64 pl-24 h-full md:pl-12 sm:p-0 min-h-screen" id="main">
 
         {{ partial "version-banner.html" . }}
 
@@ -93,15 +92,19 @@
 
     function collapse (){
       if(navState){
-        nav.style.left = "-285px"
-        main.style.marginLeft = "3rem"
+        nav.style.left = "-68rem"
+        nav.style.width = "0px"
+        nav.style.padding = "0px"
+        main.style.marginLeft = "0rem"
         navState = false
         left.style.display = "none"
         right.style.display = "block"
 
       }else{
-        nav.style.left = "0"
-        main.style.marginLeft = "18rem"
+        nav.style.left = null
+        nav.style.width = null
+        nav.style.padding = null
+        main.style.marginLeft = null
         navState = true
         left.style.display = "block"
         right.style.display = "none"
@@ -121,6 +124,35 @@
         element[i].innerHTML = svgCode;
       });
     }
+
+    const switchGetAPI = () => {
+      const getAPI = document.querySelector("#getAPI");
+      const dashboard = document.querySelector("#dashboard");
+      getAPI.classList.add("hidden")
+      dashboard.classList.remove("hidden")
+    }
+
+    const checkForAPIKey = ()=> {
+      const cname = "_cov_key"
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(";");
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          switchGetAPI()
+          clearInterval(interval);
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    const interval = setInterval(checkForAPIKey, 500);
+    
   </script>
 
 
