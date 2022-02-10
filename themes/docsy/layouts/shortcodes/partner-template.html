@@ -1,0 +1,17 @@
+
+{{ $type := .Get `type`}}
+{{ $link := .Get `link`}}
+{{ $aName := .Get `a`}}
+
+{{ if eq $type "chainId" }}
+    {{ .Page.Params.chainId }}
+{{ else if eq $type "partner" }}
+    {{ .Page.Params.partner}}
+{{ else if eq $type "network" }}
+    {{ range .Page.Params.network }}
+        {{ .name }} - <code>{{ .chainId }}</code><br><br>
+    {{ end }}
+{{ else if eq $type "link" }}
+    <a href="{{ $link }}{{ .Page.Params.partner }}&utm_medium=docs">{{ $aName }}</a>
+{{ end }}
+

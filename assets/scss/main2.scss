@@ -83,7 +83,8 @@
     }
 
     .highlight {
-        @apply bg-gray-100 py-8 pl-8 pr-12 my-8 shadow-md whitespace-normal overflow-x-auto  rounded-md;
+
+        @apply bg-gray-100 py-8 pl-8 pr-12 my-8 shadow-md whitespace-normal overflow-x-auto max-w-5xl  rounded-md;
 
         code, pre {
 

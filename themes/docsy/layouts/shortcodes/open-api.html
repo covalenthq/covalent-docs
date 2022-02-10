@@ -7,7 +7,7 @@
 {{ $title := trim .title ` ` }}
     {{ if eq $endpoint $title }}
     <div class="pb-12 pt-8">
-        <div class="bg-gray-100 grid-cols-5 relative endpoint md:flex-col-reverse md:flex sm:flex-col-reverse sm:flex shadow-xl px-12 py-12">
+        <div class="bg-gray-100 max-w-5xl grid-cols-5 relative endpoint md:flex-col-reverse md:flex sm:flex-col-reverse sm:flex shadow-xl px-12 py-12">
             <div class="col-span-3 sm:order-last md:order-last">
                 <div class="text-base lg:max-w-none">
                     <div class="mt-2 max-w-2xl text-5xl font-sans font-light leading-20 tracking-tight text-gray-900 sm:text-4xl md:text-2xl">
