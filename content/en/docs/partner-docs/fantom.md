@@ -12,7 +12,7 @@ To get started, sign up for an [**API Key**](https://www.covalenthq.com/platform
 
 |   *JSON support*    | *CSV support* |
 | :-----------: | :-----------: |
-| ![Developer Mode](https://www.covalenthq.com/static/images/partner-docs/developer_mode.jpg) | ![Analyst Mode](https://www.covalenthq.com/static/images/partner-docs/analyst_mode.jpg)|
+| ![Developer Mode](https://www.covalenthq.com/static/images/partner-docs/developer_mode.png) | ![Analyst Mode](https://www.covalenthq.com/static/images/partner-docs/analyst_mode.png)|
 
 The Covalent API is RESTful and offers the following out-of-the-box for *Fantom*:
 
