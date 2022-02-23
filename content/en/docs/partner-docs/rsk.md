@@ -68,7 +68,7 @@ import requests
 
 API_KEY = 'YOUR API KEY'
 base_url = 'https://api.covalenthq.com/v1'
-fantom_chain_id = '30'
+rsk_chain_id = '30'
 demo_address = '0xFEC4f9D5B322Aa834056E85946A32c35A3f5aDD8'
 
 def get_wallet_balance(chain_id, address):
