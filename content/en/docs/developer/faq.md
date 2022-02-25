@@ -64,11 +64,9 @@ Simply append key=API_KEY as a query parameter to all requests. The main advan
 
 **### ******1.3 What are Chain IDs and how do I set this parameter on a request?********
 
-Chain IDs are the unique integer ID of an EVM supported blockchain network. A global list of EVM network Chain IDs can be found here: https://chainlist.org/
+Chain IDs are the unique integer ID of an EVM supported blockchain network. A global list of EVM network Chain IDs can be found [here](https://chainlist.org/)
 
-Covalent network documentation can be found [here](https://www.covalenthq.com/docs/api/#overview--supported-networks)
-
-To set a Chain Id on an API request, simply change the `{chain_id}` query parameter to the value mentioned in the list of supported networks.
+To set a Chain Id on an API request, simply change the `{chain_id}` query parameter to the value mentioned in the list of [supported networks](https://www.covalenthq.com/docs/api/#overview--supported-networks)
 
 **### ******1.4 Are there any API use limits?********
 
