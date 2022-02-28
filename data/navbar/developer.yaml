@@ -60,6 +60,10 @@
     published: true
     subsection:
       - 
+        title: January 2022
+        link: /docs/changelog/2022/january/
+        published: true
+      - 
         title: December 2021
         link: /docs/changelog/2021/december/
         published: true
