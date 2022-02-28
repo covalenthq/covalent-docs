@@ -9,7 +9,10 @@ description: Annotation to NFT market endpoints.
 
 ### ADDED
 
-- Added supported protocols annotation to NFT market endpoints. The newly added supported protocols annotation improves the user experience calling the CovalentOpenAPI, and which also includes an array of protocols for the two NFT market endpoints. [Get NFT market global view](https://www.covalenthq.com/docs/api/#/0/Get%20NFT%20market%20global%20view/USD/1) and [Get historical data for NFT collection](https://www.covalenthq.com/docs/api/#/0/Get%20historical%20data%20for%20NFT%20collection/USD/1) `<data-accessibility>`
+- Added annotations to NFT market endpoints for supported protocols. These annotations improve the user experience calling the Covalent OpenAPI, which also includes an array of protocols for the two NFT market endpoints. `<data-accessibility>`
+  - [Get NFT market global view](https://www.covalenthq.com/docs/api/#/0/Get%20NFT%20market%20global%20view/USD/1)
+  - [Get historical data for NFT collection](https://www.covalenthq.com/docs/api/#/0/Get%20historical%20data%20for%20NFT%20collection/USD/1) 
+
 
 ![image](../images/supported_networks.png)
 
@@ -23,7 +26,7 @@ description: Annotation to NFT market endpoints.
 
 [BeamSwap](https://beamswap.io/) is a decentralized exchange (DEX) with an automated market maker (AMM), providing liquidity and peer-to-peer transactions, built on the Moonbeam network.
 
-- The Class B AAave endpoint has been updated to display supply positions with Borrows. This is achieved via the AaveV2Service. Example query: `https://api.covalenthq.com/v1/1/address/0xd9976b0627ca845ed639bbb3850da958c20485f9/stacks/aave_v2/balances/` `<data-accessibility>`
+- The Class B Aave endpoint has been updated to display supply positions with `Borrows`. This is achieved via the `AaveV2Service`. Example query: `https://api.covalenthq.com/v1/1/address/0xd9976b0627ca845ed639bbb3850da958c20485f9/stacks/aave_v2/balances/` `<data-accessibility>`
 
 - NFT market cap improvements, filled in missing contract names, added more market support and chain support. `<data-accessibility>`
 
@@ -34,5 +37,5 @@ description: Annotation to NFT market endpoints.
 
 ### BUG FIXES
 
-- Fixed Pancakeswap null check - 500 for missing ticker symbol [Issue-1379](https://github.com/covalenthq/scout/issues/1379)
-- Fixed duplicate gas wallet balance items, fixes Balances Timeout on Ronin/Axie [Issue-1345](https://github.com/covalenthq/scout/issues/1345)
+- Fixed PancakeSwap null check - 500 for missing ticker symbol [Issue-1379](https://github.com/covalenthq/scout/issues/1379)
+- Fixed duplicate gas wallet balance items, fixes balances timeout on Ronin/Axie [Issue-1345](https://github.com/covalenthq/scout/issues/1345)
