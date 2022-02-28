@@ -60,6 +60,14 @@
     published: true
     subsection:
       - 
+        title: March 2022
+        link: /docs/changelog/2022/march/
+        published: false
+      - 
+        title: February 2022
+        link: /docs/changelog/2022/february/
+        published: true
+      - 
         title: January 2022
         link: /docs/changelog/2022/january/
         published: true
