@@ -26,10 +26,9 @@ The endpoint path is appended to the API host (without repeating the `/v1/`). Fo
 then an example of the full request URL is simply:
 
 ```
-https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B/balances_v2
+https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B/balances_v2/
 ```
-
-
+<p>&nbsp;</p>
 All Covalent API endpoints are called using `GET` requests.
 
 Each request must include your `API_KEY` passed either in the request header (Basic Auth) or as a query parameter (see below).
@@ -41,11 +40,9 @@ Your `API_KEY` starts with `ckey_`.
 We recommend that you should always use Basic Auth over authenticating via query parameter **when possible.** Authentication via query parameter is offered for all endpoints to make it very simple for developers to use the Covalent API:
 
 ```
-
 curl -X GET https://api.covalenthq.com/v1/ENDPOINT/?key=YOUR_API_KEY
-
 ```
-
+&nbsp;  
 This works well when embedding the API in applications like Google Sheets or as iFrames that do not support more sophisticated auth methods.
 However, a key benefit of using Basic Auth is that your request can reliably take advantage of our caching mechanism for better query performance.
 
