@@ -17,33 +17,45 @@ These FAQs are a self-serve support resource for the [Covalent API](https://www.
 &nbsp;
 ## 1. General Use
 ### 1.1 How do I query an endpoint?
-The API host for all requests is `https://api.covalenthq.com/v1/`. The endpoint path is appended to the API host (without repeating the `/v1/`). For example, if the endpoint is `/v1/{chain_id}/address/{address}/balances_v2/`, then an example of the full request URL is simply:
+The API host for all requests is `https://api.covalenthq.com/v1/`. 
+
+The endpoint path is appended to the API host (without repeating the `/v1/`). For example, if the endpoint is: 
+
+![Query Endpoint](/static/images/faq/query-endpoint.png)
+
+then an example of the full request URL is simply:
+
 ```
 https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B/balances_v2
 ```
 
+
 All Covalent API endpoints are called using `GET` requests.
 
 Each request must include your `API_KEY` passed either in the request header (Basic Auth) or as a query parameter (see below).
-
-![Query Endpoint](/static/images/faq/query-endpoint.png)
 
 Your `API_KEY` starts with `ckey_`.
 
 &nbsp;
 ### 1.2 When should I use Basic Auth over authenticating via query parameter?
 We recommend that you should always use Basic Auth over authenticating via query parameter **when possible.** Authentication via query parameter is offered for all endpoints to make it very simple for developers to use the Covalent API:
+
 ```
+
 curl -X GET https://api.covalenthq.com/v1/ENDPOINT/?key=YOUR_API_KEY
+
 ```
+
 This works well when embedding the API in applications like Google Sheets or as iFrames that do not support more sophisticated auth methods.
 However, a key benefit of using Basic Auth is that your request can reliably take advantage of our caching mechanism for better query performance.
+
 ```
 curl -X GET https://api.covalenthq.com/v1/ENDPOINT/ \    
     -u API_KEY:   
     -H ‘Content-Type: application/json’
     # The colon prevents curl from asking for a password
 ```
+
 where `API_KEY` is passed as the username with no password.
 
 &nbsp;
@@ -54,9 +66,9 @@ See the full list of Covalent API [supported networks](https://www.covalenthq.co
 
 &nbsp;
 ### 1.4 What are the current API rate limits?
-The following API limits are currently in place:
-1. **5** requests per second per API key (~13M requests per month)
-2. **1,000,000** block range per request for endpoints (such as decoded log events) requiring a block range
+The following API use limits are currently in place:
+- **5** requests per second per API key (~13M requests per month)
+- **1,000,000** block range per request for endpoints (such as decoded log events) requiring a block range
 
 &nbsp;
 ### 1.5 What if I need a higher API rate limit?
@@ -65,9 +77,9 @@ In most of the cases, we have noticed that clients don’t actually need higher 
 - **Per-client polling:** distribute their clients’ polls within the polling period using client-ID hashing.
 
 Here are some steps we recommend to optimize the client-side code:
-* Create a queue for the requests you are submitting to us.
-* Have `N` worker threads pull requests from that queue and synchronously submit them, only taking another request from the queue when the previous one completes.
-* Tweak the concurrency-level `N` value. At a certain level, you should not see any `429` errors or socket hangups given the limit rules in our middleware. The ideal `N` is currently ~`24`, but this could be changed at any time to protect our architecture from DoS attacks. Please verify and find the optimal `N` for yourself (or write code that dynamically lowers `N` incrementally upon receiving a `429` error).
+- Create a queue for the requests you are submitting to us.
+- Have `N` worker threads pull requests from that queue and synchronously submit them, only taking another request from the queue when the previous one completes.
+- Tweak the concurrency-level `N` value. At a certain level, you should not see any `429` errors or socket hangups given the limit rules in our middleware. The ideal `N` is currently ~`24`, but this could be changed at any time to protect our architecture from DoS attacks. Please verify and find the optimal `N` for yourself (or write code that dynamically lowers `N` incrementally upon receiving a `429` error).
 
 &nbsp;
 ### 1.6 Why do I only get back 100 items (or rows) of data?
@@ -85,6 +97,7 @@ By default, the API returns 100 items in a single page. To get all the data, sim
 &nbsp;
 ### 1.8 How do I get data in `CSV` format?
 Just use the query parameter `format=csv` in your request. For example:
+
 ```
 https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B/balances_v2/?key=YOUR_API_KEY&format=csv
 ```
@@ -107,16 +120,16 @@ We can offer you a one-time bulk export of NFT metadata for a specific collectio
 &nbsp;
 ## 2. Class A Endpoints
 ### 2.1 Why is the `logo_url` sometimes missing in the response of `Get token balances for address`?
-We fetch the logos from the Trust Wallet [repository](https://github.com/trustwallet/assets). If your logo is not available here, the token balances endpoint will not be able to fetch it.
+We fetch the logos from the Trust Wallet [repository](https://github.com/trustwallet/assets). If your logo is not available there, the token balances endpoint will not be able to fetch it.
 
 Use the Trust Wallet [Assets web app](https://assets.trustwallet.com/) to add your token and corresponding logo. 
 
 &nbsp;
-### 2.2 Why are some NFT collections not found using the `Get historical data for NFT collection` endpoint, even when they are found using the `Get NFT external metadata for contract`?
+### 2.2 Why are some NFT collections not found using the `Get historical data for NFT collection` endpoint, even though they are found using the `Get NFT external metadata for contract`?
 
-The `Get historical data for NFT Collection` only supports collections that have had sales on the [supported NFT marketplaces](https://www.covalenthq.com/docs/api/#/0/Get%20historical%20data%20for%20NFT%20collection/USD/137). 
+The `Get historical data for NFT Collection` only supports collections that have had *sales activity* on a [supported NFT marketplaces](https://www.covalenthq.com/docs/api/#/0/Get%20historical%20data%20for%20NFT%20collection/USD/137). 
 
-`Get NFT external metadata for contract` supports all chains and collections.
+`Get NFT external metadata for contract` supports *all* chains and collections.
 
 <!-- &nbsp;
 ### 2.X Why is the `nft_data` array sometimes empty in the response of `Get token balances for address`?
@@ -125,7 +138,7 @@ This appears to happen when the NFT collection is minted on Polygon Mainnet usin
 &nbsp;
 ### 2.3 Why does the call to `Get token balances for address` sometimes timeout when using the `nft=true` option?
 
-Timouts using the `nft=true` option are likely due to corresponding timeouts with an external service call made by our API to fetch the NFT metadata. You can confirm this by making the same call and setting `no-nft-fetch=true` and see if that returns successfully.
+Timouts using the `nft=true` option are likely due to corresponding timeouts with an *external service call* made by our API to fetch the NFT metadata. You can confirm this by making the same call and setting `no-nft-fetch=true` and see if that returns successfully.
 
 &nbsp;
 ### 2.4 What is a “dust” token?
@@ -137,9 +150,9 @@ When fetching token balances for an externally owned account (EOA), if a token's
 &nbsp;
 ## 3. Class B Endpoints
 ### 3.1 Why are there data issues with the PancakeSwap endpoints?
-The standalone PancakeSwap Class B endpoints are no longer maintained as PancakeSwap is now a supported DEX under the `XY=K`. 
+The standalone PancakeSwap Class B endpoints are no longer maintained as PancakeSwap is now a supported DEX under the `XY=K` category of endpoints. 
 
-You can try the PancakeSwap `XY=K` endpoints [here](https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20address%20exchange%20balances/USD/56) using the `pancakeswap_v2` `dexname` and a`chain_id=56` for BSC Mainnet.
+You can try the PancakeSwap `XY=K` endpoints [here](https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20address%20exchange%20balances/USD/56) using `pancakeswap_v2` ast the `dexname` and a`chain_id=56` for BSC Mainnet.
 
 
 ---
