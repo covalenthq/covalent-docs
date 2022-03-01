@@ -28,7 +28,7 @@ then an example of the full request URL is simply:
 ```
 https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B/balances_v2/
 ```
-<p>&nbsp;</p>
+&nbsp;  
 All Covalent API endpoints are called using `GET` requests.
 
 Each request must include your `API_KEY` passed either in the request header (Basic Auth) or as a query parameter (see below).
@@ -52,7 +52,7 @@ curl -X GET https://api.covalenthq.com/v1/ENDPOINT/ \
     -H ‘Content-Type: application/json’
     # The colon prevents curl from asking for a password
 ```
-
+&nbsp;  
 where `API_KEY` is passed as the username with no password.
 
 &nbsp;
@@ -98,7 +98,7 @@ Just use the query parameter `format=csv` in your request. For example:
 ```
 https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B/balances_v2/?key=YOUR_API_KEY&format=csv
 ```
-
+&nbsp;  
 Using our [API Reference](https://www.covalenthq.com/docs/api), you can also switch to Analyst Mode in the global settings and download files directly in CSV format. 
 
 &nbsp;
@@ -149,7 +149,7 @@ When fetching token balances for an externally owned account (EOA), if a token's
 ### 3.1 Why are there data issues with the PancakeSwap endpoints?
 The standalone PancakeSwap Class B endpoints are no longer maintained as PancakeSwap is now a supported DEX under the `XY=K` category of endpoints. 
 
-You can try the PancakeSwap `XY=K` endpoints [here](https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20address%20exchange%20balances/USD/56) using `pancakeswap_v2` ast the `dexname` and a`chain_id=56` for BSC Mainnet.
+You can try the PancakeSwap `XY=K` endpoints [here](https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20address%20exchange%20balances/USD/56) using `pancakeswap_v2` as the `dexname` and a`chain_id=56` for BSC Mainnet.
 
 
 ---
