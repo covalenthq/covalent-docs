@@ -92,6 +92,7 @@ By default, the API returns 100 items in a single page. To get all the data, sim
 - **429: Too Many Requests** - The client has surpassed its rate limit. This may also be indicated by the server *503: Network Error*.
 - **500: Request Timeout** - This error response is given when the query will take longer than approximately 90 seconds.
 - **503: Network Error** - The API server cannot handle the request at the time, which might be due to a high number of concurrent requests or if a server is momentarily down. Retry your request in a couple minutes or reduce the number of concurrent requests.
+- **503: Insufficient Storage** - The API server is unreachable to new queries as the backlog of existing queries is full. We will likely be aware of this and in the process of addressing the queries consuming the resources.
 - **562: Failed to connect to upstream third-party service** - The API server can’t reach the external server where the data is hosted at the moment. This is intentionally done in order to avoid returning erroneous data.
 
 
@@ -143,7 +144,6 @@ Timouts using the `nft=true` option are likely due to corresponding timeouts wit
 
 &nbsp;
 ### What is a “dust” token?
-
 When fetching token balances for an externally owned account (EOA), if a token's `quote` value is less than `0.10` USD equivalent, it is classified as `dust`.
 
 
