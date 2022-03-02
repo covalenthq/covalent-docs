@@ -92,7 +92,7 @@ By default, the API returns 100 items in a single page. To get all the data, sim
 - **429: Too Many Requests** - The client has surpassed its rate limit. This may also be indicated by the server *503: Network Error*.
 - **500: Request Timeout** - This error response is given when the query will take longer than approximately 90 seconds.
 - **503: Network Error** - The API server cannot handle the request at the time, which might be due to a high number of concurrent requests or if a server is momentarily down. Retry your request in a couple minutes or reduce the number of concurrent requests.
-- **507: Insufficient Storage** - The API server is unreachable to new queries as the backlog of existing queries is full. We are likely aware of the issue and in the process of addressing the queries consuming the resources.
+- **507: Insufficient Storage** - The API server is unreachable to new queries as the backlog of existing queries is full. We are likely aware of the issue and reviewing the queries consuming the resources.
 - **562: Failed to connect to upstream third-party service** - The API server can’t reach the external server where the data is hosted at the moment. This is intentionally done in order to avoid returning erroneous data.
 
 
