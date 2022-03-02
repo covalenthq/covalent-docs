@@ -165,7 +165,7 @@ Token quote rates are currently fetched in BTC and then coverted into USD, causi
 
 We have API support staff available on [Discord](https://covalenthq.com/discord). Please ask all questions in the `#feedback-and-support` channel.
 
-&nbsp;
+<!-- &nbsp;
 ### 5.2 How can I showcase my project with Covalent?
-We'd love to showcase your work to our community of partners and developers! Please complete this short [typeform](https://covalenthq.typeform.com/showcase) to submit your project details. 
+We'd love to showcase your work to our community of partners and developers! Please complete this short [typeform](https://covalenthq.typeform.com/showcase) to submit your project details.  -->
 
