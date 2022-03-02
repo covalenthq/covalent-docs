@@ -63,18 +63,17 @@ See the full list of Covalent API [supported networks](https://www.covalenthq.co
 
 &nbsp;
 ### 1.4 What are the current API rate limits?
-The following API use limits are currently in place:
 - **5** requests per second per API key (~13M requests per month)
 - **1,000,000** block range per request for endpoints (such as decoded log events) requiring a block range
 
 &nbsp;
 ### 1.5 What if I need a higher API rate limit?
 In most of the cases, we have noticed that clients don’t actually need higher rate limits as they can do the following:
-- **Random access:** distribute/queue their load at a gateway level to smooth unpredicted spikes
-- **Per-client polling:** distribute their clients’ polls within the polling period using client-ID hashing.
+- Random access: distribute/queue their load at a gateway level to smooth unpredicted spikes
+- Per-client polling: distribute their clients’ polls within the polling period using client-ID hashing.
 
 Here are some steps we recommend to optimize the client-side code:
-- Create a queue for the requests you are submitting to us.
+- Create a queue for your requests.
 - Have `N` worker threads pull requests from that queue and synchronously submit them, only taking another request from the queue when the previous one completes.
 - Tweak the concurrency-level `N` value. At a certain level, you should not see any `429` errors or socket hangups given the limit rules in our middleware. The ideal `N` is currently ~`24`, but this could be changed at any time to protect our architecture from DoS attacks. Please verify and find the optimal `N` for yourself (or write code that dynamically lowers `N` incrementally upon receiving a `429` error).
 
@@ -149,7 +148,7 @@ When fetching token balances for an externally owned account (EOA), if a token's
 ### 3.1 Why are there data issues with the PancakeSwap endpoints?
 The standalone PancakeSwap Class B endpoints are no longer maintained as PancakeSwap is now a supported DEX under the `XY=K` category of endpoints. 
 
-You can try the PancakeSwap `XY=K` endpoints [here](https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20address%20exchange%20balances/USD/56) using `pancakeswap_v2` as the `dexname` and a`chain_id=56` for BSC Mainnet.
+You can try the PancakeSwap `XY=K` endpoints [here](https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20address%20exchange%20balances/USD/56) using `pancakeswap_v2` as the `dexname` and `chain_id=56` for BSC Mainnet.
 
 
 ---
@@ -167,5 +166,6 @@ Token quote rates are currently fetched in BTC and then coverted into USD, causi
 We have API support staff available on [Discord](https://covalenthq.com/discord). Please ask all questions in the `#feedback-and-support` channel.
 
 &nbsp;
-### 5.2 How can I partner with Covalent on my project?
-We are delighted to hear that you are considering partnering with us! For inquiries, please contact us at media@covalenthq.com.
+### 5.2 How can I showcase my project with Covalent?
+We'd love to showcase your work to our community of partners and developers! Please complete this short [typeform](https://covalenthq.typeform.com/showcase) to submit your project details. 
+
