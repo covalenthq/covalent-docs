@@ -5,7 +5,7 @@ weight: 99
 ---
 
 # FAQs
-These FAQs are a self-serve support resource for the [Covalent API](https://www.covalenthq.com/docs/api/) and broken down into the following sections:
+These FAQs are a self-serve support resource for the [Covalent API](https://www.covalenthq.com/docs/api/) and organized into the following sections:
 1. [General Use](#general-use)
 2. [Class A Endpoints](#class-a-endpoints)
 3. [Class B Endpoints](#class-b-endpoints)
