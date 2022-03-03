@@ -24,7 +24,7 @@ The Covalent API is RESTful and offers the following out-of-the-box for *RSK*:
 | **Request volume limit** | None |
 | **Request rate limit** | 5 requests per second |
 | **Base URL** | https://api.covalenthq.com/v1/|
-| **Networks & `chain_id`** | Mainnet - `250` <br> Testnet - `4002`|
+| **Networks & `chain_id`** | Mainnet - `30` <br> Testnet - `31`|
 | **Supported Endpoints** | **Class A Universal** <br>- [Balances](https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/1) <br> - [Transactions](https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/1) <br> - [Transfers](https://www.covalenthq.com/docs/api/#/0/Get%20ERC20%20token%20transfers%20for%20address/USD/1) <br> - [Token Holders](https://www.covalenthq.com/docs/api/#/0/Get%20token%20holders%20as%20of%20any%20block%20height/USD/1) <br> - [Log Events (Contract Address)](https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20contract%20address/USD/1) <br> - [Log Events (Topic Hash)](https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20topic%20hash(es)/USD/1)
 
 Try the supported endpoints directly in your browser from our [API Reference](https://covalenthq.com/docs/api/?utm_source=rsk&utm_medium=partner-docs) or use the following code examples. **The JSON response format is the same for all endpoints:**
