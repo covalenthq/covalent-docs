@@ -81,7 +81,7 @@ def get_wallet_balance(chain_id, address):
 
 
 # Example address request
-get_wallet_balance(fantom_chain_id, demo_address)
+get_wallet_balance(rsk_chain_id, demo_address)
 ```
 
 &nbsp;
