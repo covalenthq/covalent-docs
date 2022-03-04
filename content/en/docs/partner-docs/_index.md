@@ -32,7 +32,7 @@ The Covalent API is RESTful and offers the following out-of-the-box for *Blockch
 | **Request rate limit** | 5 requests per second |
 | **Base URL** | https://api.covalenthq.com/v1/|
 | **Networks & `chain_id`** | Network(s) - `0000`|
-| **Supported Endpoints** | **Class A Universal** <br>- [Balances](https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/1) <br> - [Transactions](https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/1) <br> - [Transfers](https://www.covalenthq.com/docs/api/#/0/Get%20ERC20%20token%20transfers%20for%20address/USD/1) <br> - [Token Holders](https://www.covalenthq.com/docs/api/#/0/Get%20token%20holders%20as%20of%20any%20block%20height/USD/1) <br> - [Log Events (Contract Address)](https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20contract%20address/USD/1) <br> - [Log Events (Topic Hash)](https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20topic%20hash(es)/USD/1)
+| **Supported Endpoints** | **Class A Universal** <br>- [Balances](https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/1/?utm_source=blockchain&utm_medium=partner-docs) <br> - [Transactions](https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/1/?utm_source=blockchain&utm_medium=partner-docs) <br> - [Transfers](https://www.covalenthq.com/docs/api/#/0/Get%20ERC20%20token%20transfers%20for%20address/USD/1/?utm_source=blockchain&utm_medium=partner-docs) <br> - [Token Holders](https://www.covalenthq.com/docs/api/#/0/Get%20token%20holders%20as%20of%20any%20block%20height/USD/1/?utm_source=blockchain&utm_medium=partner-docs) <br> - [Log Events (Contract Address)](https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20contract%20address/USD/1/?utm_source=blockchain&utm_medium=partner-docs) <br> - [Log Events (Topic Hash)](https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20topic%20hash(es)/USD/1/?utm_source=blockchain&utm_medium=partner-docs)
 
 Try the supported endpoints directly in your browser from our [API Reference](https://covalenthq.com/docs/api/?utm_source=blockchain&utm_medium=partner-docs) or use the following code examples. **The JSON response format is the same for all endpoints:**
 ```
@@ -105,7 +105,7 @@ The Covalent API supports a broad range of Web3 data use cases including:
 | DEXs & Trading| Predictive Analytics| Governance | Pricing |
 
 
-Check out our collection of ready-to-ship [**Code Templates**](https://covalenthq.notion.site/dbf062042f4a463a950f0047b9df9ec1?v=2f7a0d7267034526a641ce7215dd7512/?utm_source=blockchain&utm_medium=partner-docs) you can use immediately to build Web3 data-powered dApps.
+Check out our collection of ready-to-ship [**Code Templates**](https://covalenthq.notion.site/dbf062042f4a463a950f0047b9df9ec1?v=2f7a0d7267034526a641ce7215dd7512/?utm_source=blockchain&utm_medium=partner-docs) that you can use to build your Web3 data-powered dApps.
 
 &nbsp;
 # Resources
