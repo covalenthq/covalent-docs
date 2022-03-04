@@ -9,6 +9,7 @@ Instructions:
 1. Find and replace `blockchain` with the name of the blockchain partner (including the URLs and code snippets). This is case sensitive so replace `Blockchain` using a capital first letter of the partner's name. 
 2. Find and replace `Network` with the name of the blockchain. This may include both 'Mainnet' and 'Testnet' as the networks.  
 3. Check that all chainId/chain_id values have been updated to use the partner's support chain Id (mainnet Id by default)
+4. Also update the URLs listed under 'Class A Universal' so that they use the partnner's chainID instead of the default chainID of 1. For example: https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/250/?utm_source=fantom&utm_medium=partner-docs
 -->
 
 # Introduction
