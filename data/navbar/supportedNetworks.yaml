@@ -100,4 +100,10 @@
         icon: "//covalenthq.com/static/images/blockchains/svgs/astar.svg"
         banner:
         published: true
+      - 
+        title: Harmony
+        link: /docs/networks/harmony/
+        icon: "//covalenthq.com/static/images/blockchains/svgs/harmony.svg"
+        banner:
+        published: true
                    
