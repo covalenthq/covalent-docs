@@ -12,7 +12,13 @@ description: Harmony is the next generation sharding-based blockchain that is fu
 
 ## Introduction
 
-Harmony is a ....
+[Harmony](https://harmony.one) is an open and fast blockchain. The production mainnet supports 4 shards of 1000 nodes, capable of running Ethereum applications with 2-second transaction finality, and 1000 times lower fees than Ethereum.
+
+Harmony is your open platform for assets, collectibles, identity, governance. The secure bridges offer cross-chain asset transfers with Ethereum, Binance and 3 other chains.
+
+Harmony's Effective Proof-of-Stake (EPoS) reduces centralization while supporting stake delegation, reward compounding and double-sign slashing.
+
+Harmony aims to build an open network of nodes operated and governed by a large community. This node community is called Pangaea.
 
 ### Quick facts
 
@@ -20,9 +26,9 @@ Harmony is a ....
 
 |Property|Value|
 |---|---|
-|Harmony Testnet chainId|`000`|
-|Cosmos Blockchain Explorer|https://explorer.harmony.one/|
-|Block time|~7 seconds|
+|Harmony Mainnet (`Shard 0`) chainId|`1666600000`|
+|Harmony Blockchain Explorer|https://explorer.harmony.one/|
+|Block time|~2 seconds|
 
 </TableWrap>
 
@@ -31,57 +37,34 @@ Harmony is a ....
 
 <Aside>
 
-All __Class A__ endpoints are supported for the Harmony mainnet and the Harmony testnet. You can query either network via the unified API by changing the `chainId`.
+All __Class A__ endpoints are supported for the Harmony mainnet. You can query either network via the unified API by changing the `chainId`.
 
 </Aside>
-
-
-<!-- <Definitions>
-
-- `api.covalenthq.com/v1/{chainId}/address/{address}/balances_v2/` 
-  - Get token balances for `address`. Return a list of all ERC20 and NFT token balances including ERC721 and ERC1155 along with their current spot prices.
-
-- `api.covalenthq.com/v1/{chainId}/address/{address}/transactions_v2/` 
-  - Retrieve all transactions for `address` including their decoded log events. This endpoint does a deep-crawl of the blockchain to retrieve all kinds of transactions that references the address.
-
-- `api.covalenthq.com/v1/{chainId}/address/{address}/transfers_v2/` 
-  - Get ERC20 token transfers for `address` alongwith historical token prices.
-
-- `api.covalenthq.com/v1/{chainId}/tokens/{contract_address}/token_holders/` 
-  - Return a paginated list of token holders `contract_address` as of any historical block height.
-
-- `api.covalenthq.com/v1/{chainId}/events/address/{contract_address}/` 
-  - Return a paginated list of decoded log events emitted by a particular smart contract.
-
-- `api.covalenthq.com/v1/{chainId}/events/topics/{topic}/` 
-  - Return a paginated list of decoded log events with one or more topic hashes separated by a comma.
-
-</Definitions> -->
 
 <div>
   {{< open-api
       endpoint="Get token balances for address"
-      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-token-balances-for-address/lng=en"
+      link="https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/1666600000"
   >}}
     {{< open-api
       endpoint="Get transactions for address"
-      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-transactions-for-address/lng=en"
+      link="https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/1666600000"
   >}}
     {{< open-api
       endpoint="Get ERC20 token transfers for address"
-      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-a-block/lng=en"
+      link="https://www.covalenthq.com/docs/api/#/0/Get%20ERC20%20token%20transfers%20for%20address/USD/1666600000"
   >}}
       {{< open-api
       endpoint="Get token holders as of any block height"
-      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-token-holders-as-of-any-block-height/lng=en"
+      link="https://www.covalenthq.com/docs/api/#/0/Get%20token%20holders%20as%20of%20any%20block%20height/USD/1666600000"
   >}}
       {{< open-api
       endpoint="Get log events by contract address"
-      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-log-events-by-contract-address/lng=en"
+      link="https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20contract%20address/USD/1666600000"
   >}}
       {{< open-api
       endpoint="Get log events by topic hash(es)"
-      link="https://www.covalenthq.com/docs/api/#/0/Class-A/Get-log-events-by-topic-hash(es)/lng=en"
+      link="https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20topic%20hash(es)/USD/1666600000"
   >}}
 </div>
 
