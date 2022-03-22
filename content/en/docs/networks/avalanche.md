@@ -12,7 +12,7 @@ favicon: avalanche-avax-logo
 ![Recipe logo](/static/images/networks/banners/Avalanche.png)
 
 # Avalanche Network
-[Covalent is supporting Subnets!](https://www.covalenthq.com/blog/covalent-chainstack-avalanche-subnets/
+[Covalent is supporting subnets!](https://www.covalenthq.com/blog/covalent-chainstack-avalanche-subnets/
 )
 
 ## Introduction
