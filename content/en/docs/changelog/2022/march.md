@@ -10,10 +10,13 @@ description:
 ### ADDED
 
 - We've added a new image field to our NFT market data endpoints which displays the first token image of any NFT collection. This simplifies the experience and reduces the number of API calls when creating a collection dashboard like the one you can see we recently released [here.](https://github.com/covalenthq/nft-dashboard-template/)
-- SushiSwap DEX support has been added to our `XY=K` endpoints, and we've also extended its token price support for Harmony One blockchain
-- Axie is now supported through the NFT market data endpoints, enabling users to query supported NFT data for the Ronin chain
-- Mimo, a leading DEX on IoTeX, is now supported through our `XY=K` endpoints. This extends the price coverage for IoTeX beyond what CoinGecko currently supports. 
+- We've made multiple additions to our `XY=K` endpoints: 
+   * SushiSwap DEX support has been added, and we've also extended its token price support for Harmony One blockchain.
+   * Mimo, a leading DEX on IoTeX, is now supported. This extends the price coverage for IoTeX beyond what CoinGecko currently supports.
+   * We've added Claimswap just in time for an upcoming hackathon with Klaytn blockchain. We've also improved the token price coverage.
+- Axie is now supported through the NFT market data endpoints, enabling users to query supported NFT data for the Ronin chain. 
 - The Harmony blockchain is now fully indexed! Users can query all on-chain data through our Class A endpoints. **Harmony Mainnet chainID: 1666600000. IoTeX Testnet chainID: 1666700000.**
+
 
 ### UPDATED
 
@@ -31,19 +34,19 @@ Markets</th>
 <tbody>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Ethereum</td>
-<td>OpenSea, Rarible, Foundation, Refinable, NFTrade, LooksRare, CryptoPunks, Zora, Aavegotchi</td>
+<td>OpenSea, Rarible, Foundation, Refinable, NFTrade, LooksRare, CryptoPunks, Zora, Aavegotchi, PlayDapp</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Polygon</td>
-<td>OpenSea, Refinable, NFTrade, Aavegotchi</td>
+<td>OpenSea, Refinable, NFTrade, Aavegotchi, NFTKEY, PlayDapp</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Avalanche</td>
-<td>TofuNFT, NFTrade</td>
+<td>TofuNFT, NFTrade, NFTKEY</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Fantom</td>
-<td>Artion, TofuNFT</td>
+<td>Artion, TofuNFT, NFTKEY</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Arbitrum</td>
@@ -63,7 +66,11 @@ Markets</th>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Harmony</td>
-<td>**wait for info from Adam**</td>
+<td>**Davinci, Metatrone, NFTKEY</td>
+</tr>
+<tr class="text-xl border border-covalent-purple-dark">
+<td>Klaytn</td>
+<td>**OpenSea</td>
 </tr>
 </tbody>
 </table>
