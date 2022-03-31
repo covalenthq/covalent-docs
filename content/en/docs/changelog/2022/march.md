@@ -20,7 +20,7 @@ description:
 
 ### UPDATED
 
-- We've made significant updates to our NFT endpoints `Get NFT market global view` and `Get historical data for NFT collection`. Supported chains and markets now include:
+- We've made significant updates to our NFT endpoints `Get NFT market global view` and `Get historical data for NFT collection`. Find the current list of supported chains and marketplaces below. Note that some markets are still catching up. 
 
 <table class="table table-auto border-collapse border border-t-2 border-l-2 border-r-2 border-covalent-purple-dark">
 <thead>
@@ -34,11 +34,15 @@ Markets</th>
 <tbody>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Ethereum</td>
-<td>OpenSea, Rarible, Foundation, Refinable, NFTrade, LooksRare, CryptoPunks, Zora, Aavegotchi, PlayDapp</td>
+<td>Cryptopunks, Decentraland, Foundation, LooksRare, NFTrade, OpenSea, OpenSeav2, PlayDapp, Rarible, Refinable, Superrare, Zora</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Polygon</td>
-<td>OpenSea, Refinable, NFTrade, Aavegotchi, NFTKEY, PlayDapp</td>
+<td>Aavegotchi, Decentraland, NFTKEY, NFTrade, OpenSea, PlayDapp, Refinable</td>
+</tr>
+<tr class="text-xl border border-covalent-purple-dark">
+<td>Binance</td>
+<td>NFTrade, NFTKEY, Refinable</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Avalanche</td>
@@ -57,20 +61,24 @@ Markets</th>
 <td>TofuNFT</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
-<td>Moonbeam</td>
-<td>TofuNFT, Moonbeans</td>
+<td>Moonbeam Mainnet</td>
+<td>TofuNFT</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Moonriver</td>
-<td>TofuNFT, NFTrade</td>
+<td>TofuNFT, NFTrade, Moonbeans</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Harmony</td>
-<td>**Davinci, Metatrone, NFTKEY</td>
+<td>Davinci, Metatrone, NFTKEY</td>
 </tr>
 <tr class="text-xl border border-covalent-purple-dark">
 <td>Klaytn</td>
-<td>**OpenSea</td>
+<td>OpenSea</td>
+</tr>
+<tr class="text-xl border border-covalent-purple-dark">
+<td>Axie</td>
+<td>Axie</td>
 </tr>
 </tbody>
 </table>
