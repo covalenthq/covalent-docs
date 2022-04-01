@@ -2,7 +2,7 @@
 title: March 2022
 weight: -15
 hidden: false
-description: 
+description: New DEXs added to XY=K endpoints, NFT market data updates and expansion. 
 ---
 
 ## 2022-03-31
