@@ -15,7 +15,7 @@ description: New DEXs added to XY=K endpoints, NFT market data updates and expan
    * Mimo, a leading DEX on IoTeX, is now supported. This extends the price coverage for IoTeX beyond what CoinGecko currently supports.
    * We've added Claimswap just in time for an upcoming hackathon with Klaytn blockchain. We've also improved the token price coverage.
 - Axie is now supported through the NFT market data endpoints, enabling users to query supported NFT data for the Ronin chain. 
-- The Harmony blockchain is now fully indexed! Users can query all on-chain data through our Class A endpoints. **Harmony Mainnet chainID: 1666600000. IoTeX Testnet chainID: 1666700000.**
+- The Harmony blockchain is now fully indexed! Users can query all on-chain data through our Class A endpoints. **Harmony Mainnet chainID: 1666600000. Harmony Testnet chainID: 1666700000.**
 
 
 ### UPDATED
