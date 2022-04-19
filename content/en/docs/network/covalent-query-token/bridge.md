@@ -1,5 +1,5 @@
 ---
-title: Bridge your CQT
+title: Bridge
 
 ---
 
@@ -11,7 +11,12 @@ There are two options available when bridging through the Nomad GUI; Nomad and C
 
 For more information on Nomad, please visit its [documentation](https://docs.nomad.xyz/).
 
+## Nomad CQT Domain
 
+One important note is that CQT contract address is different per network. As a result, you will have to import to your wallet the new CQT contract address that is respective to the network you are bridging to. It is recommended that you do this prior to bridging. The CQT contract addresses per chain are listed below:
+
+- CQT on Ethereum: **0xD417144312DbF50465b1C641d016962017Ef6240**
+- CQT on Moonbeam: **0x5130ca61bf02618548dfc3fdef50b50b36b11f2b**
 
 ## How to Bridge CQT using Nomad
 
