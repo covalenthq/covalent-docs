@@ -30,11 +30,11 @@ From here, you need to:
 
 At this point, the interface should be similar to the below image. The Gas Fee and time to complete the bridge request are shown. Finally, select how much CQT you wish to bridge and select ‘Next’.
 
-<img src="/static/images/network/bridge/bridge2.jpg"></img>
+<img class="w-1/2" src="/static/images/network/bridge/bridge2.jpg"></img>
 
 After selecting ‘Next’, you will be shown the below prompt. Make sure Nomad is selected and hit ‘Send’.
 
-<img src="/static/images/network/bridge/bridge3.jpg"></img>
+<img class="w-1/2" src="/static/images/network/bridge/bridge3.jpg"></img>
 
 ### Approve & Send Transaction
 
@@ -42,15 +42,15 @@ Before your CQT can be moved to moonbeam, you may need to approve the Nomad Cont
 
 Having done so, you will be asked to confirm the transaction.
 
-<img src="/static/images/network/bridge/bridge4.jpg"></img>
+<img class="w-1/2" src="/static/images/network/bridge/bridge4.jpg"></img>
 
 After approving the transaction, you will be taken to the transaction details page. Here, you will see the estimated time remaining for your transfer to complete. Please save your transaction hash for convenience. If you lose it, you can visit your wallet address on the block explorer of the origin network and find the transaction again.
 
-<img src="/static/images/network/bridge/bridge5.jpg"></img>
+<img class="w-1/2" src="/static/images/network/bridge/bridge5.jpg"></img>
 
 You can expand the time estimate tab to track your transaction status by clicking the down arrow in the blue box.
 
-<img src="/static/images/network/bridge/bridge6.jpg"></img>
+<img class="w-1/2" src="/static/images/network/bridge/bridge6.jpg"></img>
 
 (Optional) If you navigated away from the GUI at any point and want to find your transfer's progress page again, visit [https://app.nomad.xyz/tx](https://app.nomad.xyz/tx) and enter the origin network and your transfer's transaction hash.
 
