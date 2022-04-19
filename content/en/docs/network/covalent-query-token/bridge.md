@@ -10,7 +10,7 @@ Covalent has partnered with [Nomad](https://www.nomad.xyz/) to enable the secure
 There are two options available when bridging through the Nomad GUI; Nomad and Connext. While complementary to one another, CQT bridging is only available through Nomad at this time.
 
 For more information on Nomad, please visit its [documentation](https://docs.nomad.xyz/).
-**[Covalent Network Governance Forum](https://gov.covalenthq.com/)**
+
 
 
 ## How to Bridge CQT using Nomad
