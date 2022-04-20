@@ -29,6 +29,11 @@
       published: false
       subsection:
     -
+      title: Bridge
+      link: /docs/network/covalent-query-token/bridge
+      published: true
+      subsection:
+    -
       title: Network Governance
       link: /docs/network/covalent-query-token/governance
       published: true
