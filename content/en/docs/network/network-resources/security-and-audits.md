@@ -7,7 +7,7 @@ Covalent places significant emphasis on security. The Covalent Network has been 
 Below are the links to all audit reports for the Covalent Network and CQT.
 
 ## Staking Contract Audits
-### Audit Round 2
+### Round 2
 
 |Auditor|Date|Report|
 |---|---|---|
@@ -16,7 +16,7 @@ Below are the links to all audit reports for the Covalent Network and CQT.
 |FairyProof|29-03-2022|[Report](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/de70f645-cff3-4a19-8208-9a9c5cc54afb/Covalent-Audit-Report-032922.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220425T211807Z&X-Amz-Expires=86400&X-Amz-Signature=f0bb0aa84b9b6cb8ba67705ffedf7f27b1907589bc96f002c61920e02e98b0e0&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Covalent-Audit-Report-032922.pdf%22&x-id=GetObject)|
 
 
-### Audit Round 1
+### Round 1
 
 |Auditor|Date|Report|
 |---|---|---|

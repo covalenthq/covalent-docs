@@ -20,7 +20,7 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 ## Using your CQT
 
-- Staking (*coming soon*)
+- Staking
 
 - [Bridge](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/)
 

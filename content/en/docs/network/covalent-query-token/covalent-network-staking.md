@@ -6,6 +6,9 @@ title: Staking
 
 Staking on the Covalent Network provides the opportunity to power the querying and indexing protocol of Web 3.
 
+<a class="text-white tracking-wide text-lg font-light md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
+href="https://cqtscan.com/#/">Stake CQT</a>
+
 Staking is an essential feature of the Covalent Network. All Network Operators will have to meet the minimum staking requirement. This mechanism is in place to **promote and ensure correct behaviour in the Covalent Network**. If Network Operators are ever malicious or dishonest, a percentage of their staked amount will be slashed. Furthermore, Network Operators stand to earn more CQT by providing utility to the network.
 
 Beyond Network Operators, CQT holders who do not wish to run a node on the Covalent Network can delegate their tokens to Network Operators. They stand to earn yield for securing the querying and indexing protocol of Web 3.
@@ -18,8 +21,6 @@ There are some further points to note with regard to delegating:
 - **Delegating is entirely non-custodial** - CQT never actually leaves the wallet of the owner, they just symbolically become attached to the network operator.
 - Staked CQT is held in an escrow on the network. Consequently, staked assets are inaccessible to the token holder while they are being used to secure the network. In order to reverse this, the delegator must unstake the principle amount of CQT they staked.
 
-<a class="text-white tracking-wide text-lg font-light md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
-href="https://cqtscan.com/#/">Stake CQT</a>
 
 ## Guides and Resources
 
@@ -75,4 +76,4 @@ These epoch amounts are represented as `bsp_reward_per_epoch`. How much each ope
 
 **CQT Contract Address - Moonbeam**: 0x5130ca61bf02618548dfc3fdef50b50b36b11f2b
 
-**CQT Staking Contract Address**: 
+**CQT Staking Contract Address**:
