@@ -87,6 +87,7 @@ By default, the API returns 100 items in a single page. To get all the data, sim
 &nbsp;
 ### What do the following error messages mean in the context of the Covalent API?
 - **404: Page Unavailable** - The API server cannot find the requested API resource. Check your request endpoint.
+- **406: Address Will Predictably Timeout** - The API returns this error for addresses where requests will likely timeout due to, as an example, too many transactions associated with the address. 
 - **429: Too Many Requests** - The client has surpassed its rate limit. This may also be indicated by the server *503: Network Error*.
 - **500: Request Timeout** - This error response is given when the query will take longer than approximately 90 seconds.
 - **503: Network Error** - The API server cannot handle the request at the time, which might be due to a high number of concurrent requests or if a server is momentarily down. Retry your request in a couple minutes or reduce the number of concurrent requests.
