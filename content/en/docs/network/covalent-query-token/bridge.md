@@ -1,6 +1,5 @@
 ---
 title: Bridge
-
 ---
 
 # Bridge your CQT
