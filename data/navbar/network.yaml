@@ -38,16 +38,19 @@
       link: /docs/network/covalent-query-token/bridge
       published: true
       subsection:
-    -
-      title: Network Governance
-      link: /docs/network/covalent-query-token/governance
-      published: true
-      subsection:
+
     -
       title: Tokenomics
       link: /docs/network/covalent-query-token/tokenomics
       published: false
       subsection:
+
+-
+title: Network Governance
+link: /docs/network/governance
+published: true
+subsection:
+
 -
   title: Learn
   published: true
