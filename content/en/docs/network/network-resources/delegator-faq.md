@@ -14,19 +14,19 @@ Delegators can choose to delegate their tokens to any registered Covalent Networ
 
 ### Can I swap my staked CQT to a different Operator?
 
-Yes. You would first have to undelegate your stake however and wait until the cool-down period is over.
+Yes. You would first have to unstake your stake however and wait until the cool-down period is over.
 
 ### Why is Staking live on Moonbeam?
 
-For every piece of ‘work’ Network Operators perform such as producing a Block Specimen, a respective proof is published to the [ProofChain Contract](https://www.covalenthq.com/docs/network/network-resources/glossary/). Publishing proofs is a key mechanism in ensuring that the data Operators produce is honest and trustworthy. Publishing proofs on Ethereum Mainnet would have ridiculous costs. Hence, Moonbean was selected as the settlement layer of the Covalent Network.  
+For every piece of ‘work’ Network Operators perform such as producing a Block Specimen, a respective proof is published to the [ProofChain Contract](https://www.covalenthq.com/docs/network/network-resources/glossary/). Publishing proofs is a key mechanism in ensuring that the data Operators produce is honest and trustworthy. Publishing proofs on Ethereum Mainnet would have ridiculous costs. Hence, Moonbeam was selected as the settlement layer of the Covalent Network.  
 
 ### How often can rewards be claimed?
 
 Rewards can be claimed immediately.
 
-### Is there a minimum delegation amount?
+### Is there a minimum stake amount for delegators?
 
-There is no minimum delegation amount. There is, however, a maximum cap that Operators can accept in delegations. Hence, some may be unavailable for delegating.
+There is no minimum delegation amount. There is, however, a maximum cap that Operators can accept in delegations due to the Max Cap Multiplier staking parameter. Hence, some may be unavailable for delegating. This cap will be increasing with time however and as a result, more space will become available to stake with Network Operators.
 
 ### How can I bridge my CQT to Moonbeam?
 
@@ -46,12 +46,12 @@ There is a cool-down period of 28 days. This only applies to the amount delegate
 
 ### How do delegator rewards work?
 
-If a CQT token holder decides to delegate CQT tokens with an Operator, the delegator will receive a portion of the rewards that the respective Operator has earned proportionate to the total amount staked. The delegator also has to consider the commission fee set by the Operator.
+If a CQT token holder decides to stake CQT tokens with an Operator, the delegator will receive a portion of the rewards that the respective Operator has earned proportionate to the total amount staked. The delegator also has to consider the commission fee set by the Operator.
 
-### Why do Operators charge a commission fee on delegation rewards?
+### Why do Operators charge a commission fee on staking rewards?
 
 This fee is charged as Operators have to pay the expense of running the infrastructure necessary for operating on the Covalent Network.
 
-### Is Delegating CQT non-custodial?
+### Is staking CQT non-custodial?
 
 **Delegating is entirely non-custodial** - CQT never actually leaves the wallet of the owner, they just symbolically become attached to the Operator.

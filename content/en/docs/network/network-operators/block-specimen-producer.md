@@ -78,4 +78,4 @@ The process of evaluating a message, segmenting multiple messages into a single 
 
 [Github Repo](https://github.com/covalenthq/go-ethereum/)
 
-[Block Specimen Whitepaper](https://www.covalenthq.com/static/documents/Block%20Specimen%20Whitepaper%20V1.1.pdf)
+[Block Specimen Whitepaper](https://www.covalenthq.com/static/documents/Block%20Specimen%20Whitepaper%20V1.2.pdf)

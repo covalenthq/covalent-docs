@@ -40,3 +40,9 @@ The Block Specimen is a bulk export method that can be implemented on existing b
 ### Block Result
 
 A transformed Block Specimen that is organized in a schema the Covalent database expects.
+
+### ProofChain Contract
+
+The ProofChain contract is a smart contract that 1) records information that meet specific validation rules and 2) determines consensus on network rewards by comparing these inputs.
+
+With regard to the information recorded, these are proofs in the form of hashes. A proof is generated for every Block Specimen created by a Block Specimen Producer and submitted to the ProofChain contract, along with some other identifying information.
