@@ -2,9 +2,9 @@
 title: April 2022
 weight: -16
 hidden: false
-description: 'Fees paid' added to transaction endpoint, more dates added to XY=K 
+description: Fees paid added to transaction endpoint, more dates added to XY=K
 ---
-
+ 
 ## 2022-04-30
 
 ### ADDED
