@@ -2,7 +2,7 @@
 title: Staking
 ---
 
-## Covalent Network Staking
+# Covalent Network Staking
 
 Staking on the Covalent Network provides the opportunity to power the querying and indexing protocol of Web 3.
 
@@ -40,7 +40,7 @@ Some important parameters to understand in relation to the staking system in the
 - **Commission Fee**: The rate each network operator is charging for delegating with them.
 - **Epoch**: An epoch with regard to the Covalent Network is the period of time a Block Specimen session lasts. At the moment, an epoch lasts 24 hours. Epochs are considered in determining network reward.
 - **Emission rates**: The amount of CQT that is rewarded per epoch.
-- **MaxCap Multiplier**: Max cap is the ratio of network operator staked tokens to delegator staked tokens. So if you are a validator and you stake 1 CQT you are only eligible to stake 10 delegated CQT. If you stake 800K CQT then you are eligible to stake 8M delegated CQT.
+- **MaxCap Multiplier**: Max cap is the ratio of network operator staked tokens to delegator staked tokens. So if you are a Network Operator and you stake 1 CQT you are only eligible to stake 10 delegated CQT. If you stake 800K CQT then you are eligible to stake 8M delegated CQT.
 - **Operator Max Stake:** This is an upper bond set by the contract owner that limits how much an operator can stake. This is in place to prevent a minority of the operators making up a signification percentage of the staked amount.
 - **Deposit reward tokens**: Sourced from the ‘Staking’ allocation of CQTs total supply, these are deposited tokens that are stored in the staking contract and distributed as rewards.
 - **Remove reward tokens**: This involves the contract owner removing tokens that have been deposited for rewards. Note, only those that haven't been awarded can be removed.
