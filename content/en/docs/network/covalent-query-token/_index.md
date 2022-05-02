@@ -49,7 +49,7 @@ The reason for implementing a stablecoin mechanism is that:
 - Enterprise customers do not want to hold a token that is susceptible to volatility on their balance sheets.
 - It makes measuring the expense of using the Covalent API easier to budget for users.
 
-Nonetheless, demand for CQT is directly correlated with API Demand.
+The greater number of API queries, the greater the demand and buy pressure for CQT that exists on the Covalent Network.
 
 ## Audits
 
