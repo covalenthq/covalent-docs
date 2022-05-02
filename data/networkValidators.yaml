@@ -5,6 +5,9 @@
     Name: StakewithUs
     img: "//covalenthq.com/static/images/validators/StakewithUs.png"
   -
+    Name: AuditOne
+    img: "//covalenthq.com/static/images/validators/Audit-One.png"
+  -
     Name: Claystack
     img: "//covalenthq.com/static/images/validators/Claystack.png"
   -
@@ -23,9 +26,12 @@
     Name: Stakely
     img: "//covalenthq.com/static/images/validators/Stakely.io.png"
   -
+    Name: WolfEdge
+    img: "//covalenthq.com/static/images/validators/Woldedge-Capital.png"
+  -
+    Name: LFV
+    img: "//covalenthq.com/static/images/validators/LFV.png"
+  -
     Name: Bware Labs
     img: "//covalenthq.com/static/images/validators/BwareLabs.png"
-  -
-    Name: UofCalgary
-    img: "//covalenthq.com/static/images/validators/UofCalgary.png"
 

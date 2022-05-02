@@ -10,7 +10,7 @@ Below are the links to all audit reports for the Covalent Network and CQT.
 ### Round 2
 
 <div class="sm:px-6 grid grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-2 mt-8 pb-20 max-w-5xl">
-        <a href="/static/audits/quantstamp-cqt-audit-report.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
+        <a href="/static/audits/QuantStamp.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
         <svg class="mr-4 -ml-6 w-16" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.4345 20.6841V2.5L12.5454 20.6841H29.4345Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M29.4333 2.5L12.5 20.6841V70.631C12.5 73.1473 14.4011 75.1889 16.7444 75.1889H63.2557C65.5989 75.1889 67.5 73.1473 67.5 70.631V7.05788C67.5 4.54154 65.5989 2.5 63.2557 2.5H29.4333Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,7 +22,7 @@ Below are the links to all audit reports for the Covalent Network and CQT.
             View the Quantstamp Report
         </div>
         </a>
-        <a href="/static/audits/certik-cqt-audit-report.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
+        <a href="/static/audits/SafePress.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
         <svg class="mr-4 -ml-6 w-16" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.4345 20.6841V2.5L12.5454 20.6841H29.4345Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M29.4333 2.5L12.5 20.6841V70.631C12.5 73.1473 14.4011 75.1889 16.7444 75.1889H63.2557C65.5989 75.1889 67.5 73.1473 67.5 70.631V7.05788C67.5 4.54154 65.5989 2.5 63.2557 2.5H29.4333Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -34,7 +34,7 @@ Below are the links to all audit reports for the Covalent Network and CQT.
            View the SafePress Report
         </div>
         </a>
-        <a href="/static/audits/certik-cqt-audit-report.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
+        <a href="/static/audits/FairyProof.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
         <svg class="mr-4 -ml-6 w-16" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.4345 20.6841V2.5L12.5454 20.6841H29.4345Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M29.4333 2.5L12.5 20.6841V70.631C12.5 73.1473 14.4011 75.1889 16.7444 75.1889H63.2557C65.5989 75.1889 67.5 73.1473 67.5 70.631V7.05788C67.5 4.54154 65.5989 2.5 63.2557 2.5H29.4333Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,7 +51,7 @@ Below are the links to all audit reports for the Covalent Network and CQT.
 ## Round 1
 
 <div class="sm:px-6 grid grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-2 mt-8 pb-20 max-w-5xl">
-        <a href="/static/audits/quantstamp-cqt-audit-report.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
+        <a href="/static/audits/QuantStamp-1.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
         <svg class="mr-4 -ml-6 w-16" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.4345 20.6841V2.5L12.5454 20.6841H29.4345Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M29.4333 2.5L12.5 20.6841V70.631C12.5 73.1473 14.4011 75.1889 16.7444 75.1889H63.2557C65.5989 75.1889 67.5 73.1473 67.5 70.631V7.05788C67.5 4.54154 65.5989 2.5 63.2557 2.5H29.4333Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,7 +63,7 @@ Below are the links to all audit reports for the Covalent Network and CQT.
             View the Quantstamp Report
         </div>
         </a>
-        <a href="/static/audits/certik-cqt-audit-report.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
+        <a href="https://code4rena.com/reports/2021-10-covalent/" class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
         <svg class="mr-4 -ml-6 w-16" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.4345 20.6841V2.5L12.5454 20.6841H29.4345Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M29.4333 2.5L12.5 20.6841V70.631C12.5 73.1473 14.4011 75.1889 16.7444 75.1889H63.2557C65.5989 75.1889 67.5 73.1473 67.5 70.631V7.05788C67.5 4.54154 65.5989 2.5 63.2557 2.5H29.4333Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -75,7 +75,7 @@ Below are the links to all audit reports for the Covalent Network and CQT.
            View the Code4Arena Report
         </div>
         </a>
-        <a href="/static/audits/certik-cqt-audit-report.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
+        <a href="/static/audits/Hacken.pdf" download class="col-span-2 w-full bg-white px-12 mr-4 mb-4 py-4 no-flex md:py-2 hover:bg-covalent-gray-light border flex items-center font-normal text-sm cursor-pointer">
         <svg class="mr-4 -ml-6 w-16" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.4345 20.6841V2.5L12.5454 20.6841H29.4345Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M29.4333 2.5L12.5 20.6841V70.631C12.5 73.1473 14.4011 75.1889 16.7444 75.1889H63.2557C65.5989 75.1889 67.5 73.1473 67.5 70.631V7.05788C67.5 4.54154 65.5989 2.5 63.2557 2.5H29.4333Z" stroke="#FF4C8B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
