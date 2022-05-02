@@ -1,6 +1,6 @@
 ---
 title: Developer Tools
-weigth: 7
+weight: 7
 
 ---
 
@@ -8,5 +8,5 @@ weigth: 7
 These tools are complementary to the [Covalent API](https://www.covalenthq.com/docs/api/) and provide additional features and functionality to extract and analyze complex blockchain data.
 
 
-## [Code Templates](https://replit.com/teams/join/ebrcwtxpfocwsffqdtgxxtlrywyyjfux-Covalent)
-Join our team on [Replit.com](https://replit.com/team/Covalent) to access our suite of code templates for different use cases and get building rapidly!
+## [Web3 Code Templates](https://github.com/covalenthq/web3-templates)
+Check out our [Web3 starter templates](https://github.com/covalenthq/web3-templates) to help you build your multi-chain Web3 dapps for various use cases rapidly!
