@@ -1,6 +1,5 @@
 ---
 title: Community Tools
-weight: 1
 description: Tools build by the community to provide value to users of the Covalent API.
 ---
 

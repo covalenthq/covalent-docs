@@ -1,6 +1,5 @@
 ---
 title: WebSocket Connections
-weight: 2
 author: anadipandharkar
 description: Learn how to open a WebSocket connection to API endpoints.
 ---

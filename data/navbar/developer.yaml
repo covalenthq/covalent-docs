@@ -9,10 +9,18 @@
     published: true
     subsection:
       - 
+        title: WebSocket Connections
+        link: /docs/tools/websocket-get-log-events
+        published: true
+      - 
+        title: Chainlink Example
+        link: /docs/tools/chainlink-example
+        published: true
+      - 
         title: Community Tools
         link: /docs/tools/community
         published: true
-      - 
+      
         title: Get Log Data
         link: /docs/tools/get-log-data
         published: false
