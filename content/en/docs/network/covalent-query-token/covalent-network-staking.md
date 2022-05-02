@@ -19,7 +19,7 @@ There are some further points to note with regard to delegating:
 
 - Staking is live on Moonbeam with bridging facilitated by Nomad.
 - **Delegating is entirely non-custodial** - CQT never actually leaves the wallet of the owner, they just symbolically become attached to the network operator.
-- Staked CQT is held in an escrow on the network. Consequently, staked assets are inaccessible to the token holder while they are being used to secure the network. In order to reverse this, the delegator must unstake the principle amount of CQT they staked.
+- Staked CQT is held in escrow on the network.. Consequently, staked assets are inaccessible to the token holder while they are being used to secure the network. In order to reverse this, the delegator must unstake the principle amount of CQT they staked.
 
 
 ## Guides and Resources
@@ -32,17 +32,17 @@ There are some further points to note with regard to delegating:
 
 ## General Definitions
 
-Some important parameters to understand in relation to the staking system in the Covalent Network include:
+Some important parameters to understand with regards to Covalent Network staking:
 
-- **Network** **Operators**: A collection of network participants who perform various roles in the network in extracting, transforming, tracing, indexing, delegating, governing, providing queries all the while making proofs-of-work done for receiving per block-rewards on a public blockchain.
-- **Commission Fee**: The rate each network operator is charging for delegating with them.
+- **Network** **Operators**: A collection of network participants who perform various roles in the network including extracting, transforming, tracing, indexing, delegating, governing, and answering queries. Network Operators submit proofs-of-work done and receive per block-rewards on a public blockchain for honest work.
+- **Commission Fee**: The rate each network operator charges for delegating with them
 - **Epoch**: An epoch with regard to the Covalent Network is the period of time a Block Specimen session lasts. At the moment, an epoch lasts 24 hours. Epochs are considered in determining network reward.
 - **Emission rates**: The amount of CQT that is rewarded per epoch.
-- **MaxCap Multiplier**: Max cap is the ratio of network operator staked tokens to delegator staked tokens. For example, with a ratio of 1:10, if a Network Operator stakes 1 CQT, they are only eligible to accept 10 delegated CQT.
+- **MaxCap Multiplier**: MaxCap Multiplier is the ratio of network operator staked tokens to delegator staked tokens. For example, with a ratio of 1:10, if a Network Operator stakes 1 CQT, they are only eligible to accept 10 delegated CQT.
 - **Operator Max Stake:** This is an upper bound set by the contract owner that limits how much an operator can stake. This is in place to prevent a minority of the operators making up a signification percentage of the staked amount.
 - **Deposit reward tokens**: Sourced from the ‘Staking’ allocation of CQTs total supply, these are deposited tokens that are stored in the staking contract and distributed as rewards.
 - **Remove reward tokens**: This involves the contract owner removing tokens that have been deposited for rewards. Note, only those that haven't been awarded can be removed.
-- **Cooldown period**: The period between when a Delegator or Validators chooses to unstake  and when they can claim back their principle amount.
+- **Cooldown period**: The period between when a Delegator or Validators chooses to unstake  and when they can claim back their principal amount.
 - **Minimum stake required**: The minimum amount that needs to be staked in order to become a network operator. There is no minimum amount for a delegator.
 - **Slashing:** a mechanism to discourage operator misbehaviour, where typically the operator and their delegators get slashed by losing a percentage of their stake. Currently, there is no slashing on the Covalent Network. Until slashing is live, network operators who produce Block Specimens with invalid proofs won't receive rewards.
 
