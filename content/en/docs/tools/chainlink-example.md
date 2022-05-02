@@ -1,5 +1,6 @@
 ---
 title: Chainlink Example
+weight: 2
 description: Learn how to use the Covalent API with Chainlink 
 ---
 

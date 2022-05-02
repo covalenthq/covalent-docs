@@ -1,5 +1,6 @@
 ---
 title: WebSocket Connections
+weight: 1
 author: anadipandharkar
 description: Learn how to open a WebSocket connection to API endpoints.
 ---
@@ -91,5 +92,6 @@ function reconnect(socketUrl, successCallback) {
 
 }
 ```
+
 
 We would love to get your feedback and improve this feature based on your use case. Please contact one of our product experts **[here](anadi@covalenthq.com)** or use our [governance forum](https://gov.covalenthq.com/c/dev/api/14).
