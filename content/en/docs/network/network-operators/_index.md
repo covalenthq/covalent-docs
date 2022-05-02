@@ -27,7 +27,8 @@ Currently, whitelisted operators are only operating as Block-Specimen Producers.
 - The minimum staking amount for an operator is 175,000 CQT.
 - There is an unbonding period of 180 days for operators. During this period, rewards cease to be added to the principal amount staked.
 - The fees which delegates pay to operators can be changed by the owner and has a minimum of 2%. It can be different for each operator as they ultimately control the fee.
-- There is a maximum ratio of delegated CQT to operator-staked CQT. The ratio can be changed by the contract owner (Covalent) and will be set to 10:1 at launch.
+- There is a maximum ratio of delegated CQT to operator-staked CQT.
+- There is a max stake in place for operators to prevent a small number of Network Operators making up the majority staked.  
 
 ## Running as an Operator
 

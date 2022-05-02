@@ -30,8 +30,6 @@ There are some further points to note with regard to delegating:
 
 - [Bridging your CQT](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/)
 
-
-
 ## General Definitions
 
 Some important parameters to understand in relation to the staking system in the Covalent Network include:
@@ -40,13 +38,23 @@ Some important parameters to understand in relation to the staking system in the
 - **Commission Fee**: The rate each network operator is charging for delegating with them.
 - **Epoch**: An epoch with regard to the Covalent Network is the period of time a Block Specimen session lasts. At the moment, an epoch lasts 24 hours. Epochs are considered in determining network reward.
 - **Emission rates**: The amount of CQT that is rewarded per epoch.
-- **MaxCap Multiplier**: Max cap is the ratio of network operator staked tokens to delegator staked tokens. So if you are a Network Operator and you stake 1 CQT you are only eligible to stake 10 delegated CQT. If you stake 800K CQT then you are eligible to stake 8M delegated CQT.
-- **Operator Max Stake:** This is an upper bond set by the contract owner that limits how much an operator can stake. This is in place to prevent a minority of the operators making up a signification percentage of the staked amount.
+- **MaxCap Multiplier**: Max cap is the ratio of network operator staked tokens to delegator staked tokens. For example, with a ratio of 1:10, if a Network Operator stakes 1 CQT, they are only eligible to accept 10 delegated CQT.
+- **Operator Max Stake:** This is an upper bound set by the contract owner that limits how much an operator can stake. This is in place to prevent a minority of the operators making up a signification percentage of the staked amount.
 - **Deposit reward tokens**: Sourced from the ‘Staking’ allocation of CQTs total supply, these are deposited tokens that are stored in the staking contract and distributed as rewards.
 - **Remove reward tokens**: This involves the contract owner removing tokens that have been deposited for rewards. Note, only those that haven't been awarded can be removed.
 - **Cooldown period**: The period between when a Delegator or Validators chooses to unstake  and when they can claim back their principle amount.
 - **Minimum stake required**: The minimum amount that needs to be staked in order to become a network operator. There is no minimum amount for a delegator.
 - **Slashing:** a mechanism to discourage operator misbehaviour, where typically the operator and their delegators get slashed by losing a percentage of their stake. Currently, there is no slashing on the Covalent Network. Until slashing is live, network operators who produce Block Specimens with invalid proofs won't receive rewards.
+
+## Staking Parameters
+
+With Covalent Network Staking, there are a number of staking parameters in place that are dynamic in that they can be updated. These are in place to a) prevent a small number of Network Operators making up the majority staked and b) to manage the system as its scale increases. These parameters will be consistently examined and adjusted. The parameters are as follows:
+
+|Parameter|Rate|
+|---|---|
+|Operator Max Stake|175,000 CQT|
+|MaxCap Multiplier|3:1|
+|Minimum Stake Requirement|175,000 CQT|
 
 ## Reward Distribution
 
