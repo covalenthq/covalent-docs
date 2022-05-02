@@ -48,7 +48,7 @@ Some important parameters to understand in relation to the staking system in the
 
 ## Staking Parameters
 
-With Covalent Network Staking, there are a number of staking parameters in place that are dynamic in that they can be updated. These are in place to a) prevent a small number of Network Operators making up the majority staked and b) to manage the system as its scale increases. These parameters will be consistently examined and adjusted. The parameters are as follows:
+With Covalent Network Staking, there are a number of staking parameters in place that are dynamic in that they can be updated. These are in place to a) prevent a small number of Network Operators making up the majority staked and b) to manage the system as its scale increases. These parameters will be consistently examined and adjusted. The parameters at launch are as follows:
 
 |Parameter|Rate|
 |---|---|
@@ -70,7 +70,7 @@ As a reminder, the work being completed on the network is the production of Bloc
 
 To determine the price of a Block Specimen, the number of Block Specimen Produced, as well as the number of BSPs, is considered. Given that for every block mined on Ethereum Mainnet, a respective Block Specimen will be produced. This comes to roughly **5,600** block specimens being produced each day / per epoch.   
 
-Knowing this figure, along with the token`token_emission`, we can price the Block Specimen; `block_specimen_price`
+Knowing this figure, along with the `token_emission`, we can price the Block Specimen; `block_specimen_price`
 
 This amount will then be divided among network operators who have 1) produced a block specimen and 2) will be proportionate to how much they have staked on the Covalent Network. The total staked amount, which included delegates, is considered here.    
 
@@ -84,4 +84,4 @@ These epoch amounts are represented as `bsp_reward_per_epoch`. How much each ope
 
 **CQT Contract Address - Moonbeam**: 0x5130ca61bf02618548dfc3fdef50b50b36b11f2b
 
-**CQT Staking Contract Address**:
+**CQT Staking Contract Address - Moonbeam**:

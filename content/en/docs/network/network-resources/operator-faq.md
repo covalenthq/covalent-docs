@@ -12,7 +12,7 @@ Staking assets are used as collateral to register operators in the consensus pro
 
 ### What is the process to become an Operator in the Covalent Network?
 
-Please reach out to the core team in Covalent's community Discord for more information.
+Please fill out this [form](https://covalenthq.typeform.com/to/kzQnxBul). Also, you can reach out to the core team in Covalent's community Discord for more information.
 
 ### How are Covalent Network improvement proposals addressed?
 
