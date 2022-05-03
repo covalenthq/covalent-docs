@@ -10,8 +10,7 @@ The primary way to stake CQT is through the [Covalent Network Staking Dashboard]
 
 ## Getting Start with the Covalent Network Dashboard
 
-To get started with the dashboard, navigate to the [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/). You will be prompted to connect your wallet. If you have not already, you  
-will need to connect to the Moonbeam Network via your wallet. If you need assistance in doing so, visit the Moonbeam documentation on [connecting MetaMask to Moonbeam.](https://docs.moonbeam.network/builders/get-started/moonbeam/#connect-metamask)
+To get started with the dashboard, navigate to the [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/). You will be prompted to connect your wallet. If you have not already, you will need to connect to the Moonbeam Network via your wallet. If you need assistance in doing so, visit the Moonbeam documentation on [connecting MetaMask to Moonbeam.](https://docs.moonbeam.network/builders/get-started/moonbeam/#connect-metamask)
 
 On the staking dashboard, you will be able to delegate to network operators, modify existing stakes, and get an overall glimpse of your staking activity.
 
