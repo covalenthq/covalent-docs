@@ -16,7 +16,8 @@ Other interesting data feeds that can lead to interesting applications and use c
 - Externally Owned Accounts(EOA) balances & transactions
 - Multi-chain log events
 
-&nbsp;
+
+
 # Use the Covalent API with Chainlink
 This [Chainlink documentation](https://docs.chain.link/docs/make-a-http-get-request/) demonstrates how to make an HTTP GET request to an external API from a smart contract, using Chainlink's [Request & Receive Data](https://docs.chain.link/docs/advanced-tutorial/) cycle. Because there are existing oracle nodes on major public mainnets and testnets, which are configured to make HTTP GET requests and handle a JSON response object, no specific Covalent-Chainlink node or external adapter has been created. This might be something to evaluate in the future. 
 
@@ -47,16 +48,11 @@ To use the Covalent API, the process is as follows:
 7. Call your smart contract data fetch function, which in turn makes the call to the Covalent API for a custom data feed into the contract!
 
 
-&nbsp;
 # Code Examples
 These contracts are modified versions of examples found on [Chainlink's docs](https://docs.chain.link/docs/make-a-http-get-request/). 
 
-&nbsp;
 ## String Data Feed
-The following smart contract code example uses Chainlink to make a call to the following Covalent API endpoint to fetch the 7-day average floor price of the largest NFT collection on Ethereum Mainnet:
-```
-https://api.covalenthq.com/v1/1/nft_market/?quote-currency=USD&format=JSON&page-size=10&key=ckey_c219e0eef35648a89dffe25e770
-```
+The following smart contract code example uses Chainlink to make a call to the following Covalent API endpoint to fetch the 7-day average floor price of the largest NFT collection on Ethereum Mainnet: https://api.covalenthq.com/v1/1/nft_market/?quote-currency=USD&format=JSON&page-size=10&key=ckey_c219e0eef35648a89dffe25e770
 
 
 ```jsx
@@ -131,12 +127,9 @@ contract FetchStringFromCovalentAPI is ChainlinkClient {
 
 ```
 
-&nbsp;
+
 ## Integer Data Feed
-The following smart contract code example uses Chainlink to make a call to the following Covalent API endpoint to fetch the current price of ETH:
-```
-https://api.covalenthq.com/v1/pricing/tickers/?quote-currency=USD&format=JSON&tickers=ETH&page-size=10&key=ckey_c219e0eef35648a89dffe25e770
-```
+The following smart contract code example uses Chainlink to make a call to the following Covalent API endpoint to fetch the current price of ETH: https://api.covalenthq.com/v1/pricing/tickers/?quote-currency=USD&format=JSON&tickers=ETH&page-size=10&key=ckey_c219e0eef35648a89dffe25e770
 
 ```jsx
 // SPDX-License-Identifier: MIT
