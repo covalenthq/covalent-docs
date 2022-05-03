@@ -48,7 +48,7 @@ Some important parameters to understand with regards to Covalent Network staking
 
 ## Staking Parameters
 
-With Covalent Network Staking, there are a number of staking parameters in place that are dynamic in that they can be updated. These are in place to a) prevent a small number of Network Operators making up the majority staked and b) to manage the system as its scale increases. These parameters will be consistently examined and adjusted. The parameters at launch are as follows:
+With Covalent Network Staking, there are a number of staking parameters in place that are dynamic and can be updated. These are in place to a) prevent a small number of Network Operators making up the majority staked and b) to manage the system as its scale increases. These parameters will be periodically examined and adjusted. The parameters at launch are as follows:
 
 |Parameter|Rate|
 |---|---|
