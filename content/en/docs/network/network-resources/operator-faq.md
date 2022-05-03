@@ -38,29 +38,29 @@ Yes. As the Covalent Network is developed and more operators are live and functi
 
 The initial set of Network Operators of the Covalent Network is operating as Block Specimen Producers which involves running a full Ethereum mainnet archive node with a Covalent extract and normalize worker sitting on top.
 
-Running a block specimen producer node is very input/output (I/O) intensive.  Here, the requirements to run a BDP node matches that of running go-ethereum full node with some additional provisions.
+Running a block specimen producer node is very input/output (I/O) intensive.  Here, the requirements to run a BSP node matches that of running go-ethereum full node with some additional provisions.
 
 **Hardware Requirements**
 
 The recommended configurations will make sure the sync is not lag prone and the node is able to keep up with the Ethereum network.
 
-Minimum requirements
+Minimum Requirements:
 
 - CPU with 2+ cores
 - 4GB RAM
 - 320GB free storage space to sync the Mainnet
 - 8 MBit/sec download Internet service
 
-Recommended
+Recommended:
 
-- Fast CPU (eg:-Intel Core i7-4770) with 4+ cores
-- >= 32 GB+ RAM
+- Fast CPU with 4+ cores (e.g. Intel Core i7-4770)
+- 32 GB+ RAM
 - Fast SSD with >= 500GB storage space
 - 25+ MBit/sec download Internet service
 
-**Software Requirements**
+**Software Requirements:**
 
-Install the given versions of the following software
+Install the given versions of the following software:
 
 - 64-bit Linux, Mac OS
 - SSL certificates
@@ -73,7 +73,7 @@ Install the given versions of the following software
 
 ### What is the Max Cap Multiplier and why is it in effect?
 
-Max cap is the ratio of Operator-staked tokens to delegator-staked tokens. So if you are an Operator and you stake 1 CQT you are only eligible to stake 10 delegated CQT. Or if you stake 800K CQT then you are eligible to stake 8M delegated CQT.
+Max Cap  Multiplier is the ratio of Operator-staked tokens to delegator-staked tokens. For example, with a ratio of 1:10, if a Network Operator stakes 1 CQT, they are only eligible to accept 10 delegated CQT.
 
 This is a mechanism to prevent a centralized group of Operators where the majority of delegated CQT is staked with a select few.
 
