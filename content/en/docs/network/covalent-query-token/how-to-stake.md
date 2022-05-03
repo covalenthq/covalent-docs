@@ -15,9 +15,9 @@ will need to connect to the Moonbeam Network via your wallet. If you need assist
 
 On the staking dashboard, you will be able to delegate to network operators, modify existing stakes, and get an overall glimpse of your staking activity.
 
-### Delegate your CQT to a Network Operator
+### Stake your CQT to a Network Operator
 
-Upon connecting your wallet to the Covalent Network Staking dashboard, you, as a Delegator,  can delegate to a Network Operator by staking tokens and adding to the Operator's stake.
+Upon connecting your wallet to the Covalent Network Staking dashboard, you, as a Delegator, can delegate to a Network Operator by staking tokens and adding to the Operator's stake.
 
 You should see a number of Network Operators, all of which perform a specific, or range of roles. At this time, they are only operating as Block Specimen Producers.
 
