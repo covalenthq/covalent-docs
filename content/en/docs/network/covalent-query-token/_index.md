@@ -10,19 +10,18 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 **Governance:** Those who hold CQT and have a vested interest in the network will be able to vote using CQT for on-chain proposals put forward by the community.
 
-
-**CQT Contract Address - Ethereum**: 0xD417144312DbF50465b1C641d016962017Ef6240
-
-**CQT Contract Address - Moonbeam**: 0x5130ca61bf02618548dfc3fdef50b50b36b11f2b
-
 **[CQT Economics](https://www.covalenthq.com/token/)**
 
+|Contract|Network|Address|
+|---|---|---|
+|CQT Contract Address|Ethereum|0xD417144312DbF50465b1C641d016962017Ef6240|
+|CQT Contract Address|Moonbeam|0x5130ca61bf02618548dfc3fdef50b50b36b11f2b|
 
 
 
 ## Using your CQT
 
-- Staking
+- [Staking](https://www.covalenthq.com/dashboard/#/stake/single-sided/)
 
 - [Bridge](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/)
 

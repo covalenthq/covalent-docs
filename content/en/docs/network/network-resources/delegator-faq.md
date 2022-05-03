@@ -6,7 +6,7 @@ title: Delegator FAQ
 
 ### How can I stake my CQT?
 
-Staking your CQT can be completed via the Covalent Network Staking Dashboard. For a complete guide, please visit the guide 'How to stake CQT on the Covalent Network'.
+Staking your CQT can be completed via the [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/). For a complete guide, please visit the guide 'How to stake CQT on the Covalent Network'.
 
 ### Can delegators choose any Network Operator?
 
