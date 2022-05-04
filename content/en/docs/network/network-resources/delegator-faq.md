@@ -54,4 +54,4 @@ This fee is charged as Operators have to pay the expense of running the infrastr
 
 ### 12. Is staking CQT non-custodial?
 
-**Delegating is entirely non-custodial** - CQT never actually leaves the wallet of the owner, they just symbolically become attached to the Operator.
+While CQT is held in the staking contract, it is only the owner of the respective staked CQT that can interact with it. 

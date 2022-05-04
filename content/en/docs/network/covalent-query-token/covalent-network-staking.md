@@ -18,7 +18,7 @@ To manage staking-related actions, you can visit Covalent Network Staking here o
 There are some further points to note with regard to delegating:
 
 - Staking is live on Moonbeam with bridging facilitated by Nomad.
-- **Delegating is entirely non-custodial** - CQT never actually leaves the wallet of the owner, they just symbolically become attached to the network operator.
+- **Delegating is non-custodial** - While CQT is held in the staking contract, it is only the owner of the respective staked CQT that can interact with it. 
 - Staked CQT is held in escrow on the network.. Consequently, staked assets are inaccessible to the token holder while they are being used to secure the network. In order to reverse this, the delegator must unstake the principle amount of CQT they staked.
 
 
@@ -84,7 +84,7 @@ These epoch amounts are represented as `bsp_reward_per_epoch`. How much each ope
 
 |Contract|Network|Address|
 |---|---|---|
-|CQT Contract Address|Ethereum|0xD417144312DbF50465b1C641d016962017Ef6240|
-|CQT Contract Address|Moonbeam|0x5130ca61bf02618548dfc3fdef50b50b36b11f2b|
-|CQT Staking Contract Address|Moonbeam|0x8eBbA081291B908096D19f6614Df041C95fc4469|
-|ProofChain Contract|Moonbeam|0x4f2E285227D43D9eB52799D0A28299540452446E|
+|CQT Contract Address|Ethereum|[0xD417144312DbF50465b1C641d016962017Ef6240](https://etherscan.io/token/0xd417144312dbf50465b1c641d016962017ef6240)|
+|CQT Contract Address|Moonbeam|[0x5130ca61bf02618548dfc3fdef50b50b36b11f2b](https://moonscan.io/token/0x5130ca61bf02618548dfc3fdef50b50b36b11f2b)|
+|CQT Staking Contract Address|Moonbeam|[0x8eBbA081291B908096D19f6614Df041C95fc4469](https://moonscan.io/address/0x8eBbA081291B908096D19f6614Df041C95fc4469)|
+|ProofChain Contract|Moonbeam|[0x4f2E285227D43D9eB52799D0A28299540452446E](https://moonscan.io/address/0x4f2E285227D43D9eB52799D0A28299540452446E)|

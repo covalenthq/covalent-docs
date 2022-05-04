@@ -14,8 +14,8 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 |Contract|Network|Address|
 |---|---|---|
-|CQT Contract Address|Ethereum|0xD417144312DbF50465b1C641d016962017Ef6240|
-|CQT Contract Address|Moonbeam|0x5130ca61bf02618548dfc3fdef50b50b36b11f2b|
+|CQT Contract Address|Ethereum|[0xD417144312DbF50465b1C641d016962017Ef6240](https://etherscan.io/token/0xd417144312dbf50465b1c641d016962017ef6240)|
+|CQT Contract Address|Moonbeam|[0x5130ca61bf02618548dfc3fdef50b50b36b11f2b](https://moonscan.io/token/0x5130ca61bf02618548dfc3fdef50b50b36b11f2b)|
 
 
 
