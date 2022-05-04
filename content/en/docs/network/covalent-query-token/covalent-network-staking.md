@@ -18,7 +18,7 @@ To manage staking-related actions, you can visit Covalent Network Staking here o
 There are some further points to note with regard to delegating:
 
 - Staking is live on Moonbeam with bridging facilitated by Nomad.
-- **Delegating is non-custodial** - While CQT is held in the staking contract, it is only the owner of the respective staked CQT that can interact with it. 
+- **Delegating is non-custodial** - While CQT is held in the staking contract, it is only the owner of the respective staked CQT that can interact with it.
 - Staked CQT is held in escrow on the network.. Consequently, staked assets are inaccessible to the token holder while they are being used to secure the network. In order to reverse this, the delegator must unstake the principle amount of CQT they staked.
 
 
@@ -26,9 +26,9 @@ There are some further points to note with regard to delegating:
 
 - [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/)
 
-- How to Stake on the Covalent Network
+- [How to Stake on the Covalent Network](https://www.covalenthq.com/docs/network/covalent-query-token/how-to-stake/)
 
-- Delegator FAQ
+- [Delegator FAQ](https://www.covalenthq.com/docs/network/network-resources/delegator-faq)
 
 - [Bridging your CQT](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/)
 
