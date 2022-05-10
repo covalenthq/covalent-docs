@@ -10,6 +10,9 @@ hidden: false
 
 To get started, sign up for an [**API Key**](https://www.covalenthq.com/platform/?utm_source=evmos&utm_medium=partner-docs). 
 
+**The Evmos Network does not have any EVM transactions prior to the Block Height `58700` for Mainnet and `738550` for Testnet. Therefore when querying the Evmos chain via the Covalent API, the Evmos Mainnet responses are indexed from block height `58700` to the `latest` Block Height.
+The Evmos Testnet state response begins from Block Height `738550` to the `latest` Block Height.**
+
 |   *JSON support*    | *CSV support* |
 | :-----------: | :-----------: |
 | ![Developer Mode](https://www.covalenthq.com/static/images/partner-docs/developer_mode.png) | ![Analyst Mode](https://www.covalenthq.com/static/images/partner-docs/analyst_mode.png)|
