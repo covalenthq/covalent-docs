@@ -36,7 +36,7 @@ Aurora supports all tools available in the Ethereum ecosystem — MetaMask, Truf
 
 <Aside>
 
-All __Class A__ endpoints are supported for the HECO mainnet and the HECO testnet. You can query either network via the unified API by changing the `chainId`.
+All __Class A__ endpoints are supported for the Aurora mainnet. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 
