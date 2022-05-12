@@ -101,7 +101,7 @@ The Covalent API supports a broad range of Web3 data use cases including:
 | DEXs & Trading| Predictive Analytics| Governance | Pricing |
 
 
-Check out our collection of ready-to-ship [**Code Templates**](https://covalenthq.notion.site/dbf062042f4a463a950f0047b9df9ec1?v=2f7a0d7267034526a641ce7215dd7512/?utm_source=evmos&utm_medium=partner-docs) you can use immediately to build Web3 data-powered dApps.
+Check out our collection of ready-to-ship [**Code Templates**](https://github.com/covalenthq/web3-templates?utm_source=evmos&utm_medium=partner-docs) you can use immediately to build Web3 data-powered dApps.
 
 &nbsp;
 # Resources
