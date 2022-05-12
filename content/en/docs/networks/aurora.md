@@ -72,4 +72,6 @@ All __Class A__ endpoints are supported for the HECO mainnet and the HECO testne
 <a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent's API Reference</a>
 
 --- 
+# Appendix
 
+[Rainbow Bridge](https://rainbowbridge.app/transfer) between or send within Ethereum, NEAR and Aurora
