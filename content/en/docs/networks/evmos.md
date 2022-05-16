@@ -25,7 +25,7 @@ The Evmos Testnet state response begins from Block Height `738550` to the `lates
 |Property|Value|
 |---|---|
 |Evmos Testnet chainId|`9000`|
-|Cosmos Blockchain Explorer|explorer.evmos.org|
+|Evmos Blockchain Explorer|evm.evmos.org|
 |Block time|~7 seconds|
 
 </TableWrap>
