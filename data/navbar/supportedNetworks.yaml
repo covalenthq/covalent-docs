@@ -106,4 +106,10 @@
         icon: "//covalenthq.com/static/images/blockchains/svgs/harmony.svg"
         banner:
         published: true
+      - 
+        title: Aurora
+        link: /docs/networks/aurora/
+        icon: "//covalenthq.com/static/images/blockchains/svgs/aurora.svg"
+        banner:
+        published: true
                    
