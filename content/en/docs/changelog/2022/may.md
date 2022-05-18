@@ -2,7 +2,7 @@
 title: May 2022
 weight: -17
 hidden: false
-description: Fees paid added to transaction endpoint, more dates added to XY=K
+description: Evmos blockchain added
 ---
  
 ## 2022-05-30
