@@ -68,6 +68,10 @@
     published: true
     subsection:
       - 
+        title: May 2022
+        link: /docs/changelog/2022/may/
+        published: true
+      - 
         title: April 2022
         link: /docs/changelog/2022/april/
         published: true
