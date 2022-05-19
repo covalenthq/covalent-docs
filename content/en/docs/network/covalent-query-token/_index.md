@@ -6,21 +6,22 @@ title: Covalent Query Token
 
 A critical component of the Covalent Network is CQT. CQT is the native token of the network wherein all settlements are denominated in this currency. CQT's functions can be broadly broken down into the following:
 
-**Staking & Infrastructure**: Operators, who first have to meet the minimum staking requirement to become such, are compensated in CQT for honestly fulfilling their roles (or role), and performing work on the network like validating data requests, indexing blockchain data, and responding to queries. Furthermore, token holders who wish to contribute to securing the network but do not wish to run node infrastructure, can delegate to a validator and earn staking rewards in CQT.
+**Staking & Infrastructure**: Operators, who first have to meet the minimum staking requirement to become such, are compensated in CQT for honestly fulfilling their roles (or role), and performing work on the network like validating data requests, indexing blockchain data, and responding to queries. Furthermore, token holders who wish to contribute to securing the network but do not wish to run node infrastructure, can delegate to a Network Operator and earn staking rewards in CQT.
 
 **Governance:** Those who hold CQT and have a vested interest in the network will be able to vote using CQT for on-chain proposals put forward by the community.
 
-
-**[CQT Contract Address](https://etherscan.io/token/0xd417144312dbf50465b1c641d016962017ef6240):** 0xd417144312dbf50465b1c641d016962017ef6240
-
 **[CQT Economics](https://www.covalenthq.com/token/)**
 
+|Contract|Network|Address|
+|---|---|---|
+|CQT Contract Address|Ethereum|[0xD417144312DbF50465b1C641d016962017Ef6240](https://etherscan.io/token/0xd417144312dbf50465b1c641d016962017ef6240)|
+|CQT Contract Address|Moonbeam|[0x5130ca61bf02618548dfc3fdef50b50b36b11f2b](https://moonscan.io/token/0x5130ca61bf02618548dfc3fdef50b50b36b11f2b)|
 
 
 
 ## Using your CQT
 
-- Staking (*coming soon*)
+- [Staking](https://www.covalenthq.com/dashboard/#/stake/single-sided/)
 
 - [Bridge](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/)
 
@@ -47,7 +48,7 @@ The reason for implementing a stablecoin mechanism is that:
 - Enterprise customers do not want to hold a token that is susceptible to volatility on their balance sheets.
 - It makes measuring the expense of using the Covalent API easier to budget for users.
 
-Nonetheless, demand for CQT is directly correlated with API Demand.
+The greater number of API queries, the greater the demand and buy pressure for CQT that exists on the Covalent Network.
 
 ## Audits
 

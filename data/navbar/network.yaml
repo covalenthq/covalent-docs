@@ -25,17 +25,17 @@
   subsection:
     -
       title: Staking
-      link: /docs/network/covalent-query-token/staking-covalent-network
-      published: false
+      link: /docs/network/covalent-query-token/covalent-network-staking
+      published: true
       subsection:
+          -
+            title: How to Stake CQT
+            link: /docs/network/covalent-query-token/how-to-stake
+            published: true
+            subsection:
     -
       title: Bridge
       link: /docs/network/covalent-query-token/bridge
-      published: true
-      subsection:
-    -
-      title: Network Governance
-      link: /docs/network/covalent-query-token/governance
       published: true
       subsection:
     -
@@ -43,6 +43,11 @@
       link: /docs/network/covalent-query-token/tokenomics
       published: false
       subsection:
+-
+  title: Network Governance
+  link: /docs/network/governance
+  published: true
+  subsection:
 -
   title: Learn
   published: true
@@ -64,19 +69,19 @@
       published: false
       subsection:
     -
-      title: Source Code
-      link: /docs/network/network-resources/source-code
-      published: false
+      title: Security & Audits
+      link: /docs/network/network-resources/security-and-audits
+      published: true
       subsection:
     -
       title: Operator FAQ
       link: /docs/network/network-resources/operator-faq
-      published: false
+      published: true
       subsection:
     -
       title: Delegator FAQ
       link: /docs/network/network-resources/delegator-faq
-      published: false
+      published: true
       subsection:
     -
       title: Glossary

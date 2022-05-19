@@ -67,6 +67,7 @@ anchor = "smart"
 id = "UA-00000000-0"
 
 # Language configuration
+ignoreErrors = ["error-remote-getjson"]
 
 [languages]
 [languages.en]

@@ -1,6 +1,5 @@
 ---
 title: Bridge
-
 ---
 
 # Bridge your CQT
@@ -43,7 +42,7 @@ After selecting ‘Next’, you will be shown the below prompt. Make sure Nomad 
 
 ### Approve & Send Transaction
 
-Before your CQT can be moved to moonbeam, you may need to approve the Nomad Contract to interact with your CQT. This will incur a gas fee.
+Before your CQT can be moved to Moonbeam, if you have not done so before, you will have to approve the Nomad Contract to interact with your CQT. This will incur a gas fee.
 
 Having done so, you will be asked to confirm the transaction.
 

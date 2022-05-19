@@ -1,6 +1,6 @@
 ---
 title: Primer
-weigth: 7
+weight: 7
 order: 1
 ---
 

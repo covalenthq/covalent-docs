@@ -1,7 +1,7 @@
 -
   title: "Covalent Query Token Utility"
   description: ""
-  link: "//covalenthq.com/static/documents/CQT_Utility_v1.3.pdf"
+  link: "//covalenthq.com/static/documents/CQT_Utility_v1.4.pdf"
   image: "//covalenthq.com/static/images/resources/CQT_whitepaper.jpg"
   icon: "//covalenthq.com/static/images/icons/display-icons/PDF.svg"
   stream: "token"
@@ -12,7 +12,7 @@
   description: ""
   image: "//covalenthq.com/static/images/resources/Network Whitepaper 1.jpg"
   icon: "//covalenthq.com/static/images/icons/display-icons/PDF.svg"
-  link: "//covalenthq.com/static/documents/Covalent Whitepaper Apr 2021 v1 Branded.pdf"
+  link: "//covalenthq.com/static/documents/Covalent Whitepaper May 2022 v1.1 Branded.pdf"
   stream: "token"
   category: "whitepaper"
 
@@ -21,6 +21,6 @@
   description: ""
   image: "//covalenthq.com/static/images/resources/Network Whitepaper 2.jpg"
   icon: "//covalenthq.com/static/images/icons/display-icons/PDF.svg"
-  link: "//covalenthq.com/static/documents/Block Specimen Whitepaper V1.1.pdf"
+  link: "//covalenthq.com/static/documents/Block Specimen Whitepaper V1.2 .pdf"
   stream: "token"
   category: "whitepaper"

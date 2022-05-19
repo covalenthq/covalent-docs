@@ -45,8 +45,8 @@ Install the given versions of the following software
 
 - 64-bit Linux, Mac OS
 - SSL certificates
-- Git, Docker, Docker-compose
-- BSP v0.1 ships with geth Version: 1.10.9-unstable
+- Git
+- BSP v1.1.5 ships with geth Version: 1.10.17 stable
 - Go v1.16.4
 - Redis v7, Redis-cli 6.2.5
 - Listener TCP and UDP discovery port 30303
@@ -78,4 +78,4 @@ The process of evaluating a message, segmenting multiple messages into a single 
 
 [Github Repo](https://github.com/covalenthq/go-ethereum/)
 
-[Block Specimen Whitepaper](https://www.covalenthq.com/static/documents/Block%20Specimen%20Whitepaper%20V1.1.pdf)
+[Block Specimen Whitepaper](https://www.covalenthq.com/static/documents/Block%20Specimen%20Whitepaper%20V1.2.pdf)

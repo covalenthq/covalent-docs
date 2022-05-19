@@ -80,6 +80,8 @@ Here are some steps we recommend to optimize the client-side code:
 - Create a queue for your requests.
 - Have a thread that pops requests from the queue at a rate of no more than 5 per second and kicks them off asynchronously (e.g. in a new thread/fiber or in a worker pool).
 
+We are currently exploring tiered plans for our API with a higher service tier. If interested, please complete this [short typeform](https://covalenthq.typeform.com/api-survey) to be amongst the first we contact when any tiered service goes live. 
+
 &nbsp;
 ### Why do I only get back 100 items (or rows) of data?
 By default, the API returns 100 items in a single page. To get all the data, simply pass a large value for the `page-size` parameter in your request.

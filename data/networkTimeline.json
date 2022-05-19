@@ -1,8 +1,16 @@
 [
     {
+      "date": "May 2022",
+      "title": "Block Specimen Producers are Live alongside Covalent Network Staking",
+      "desc": "Covalent makes the world’s first proof-based data indexer live with the launch of staking on the Covalent decentralized network. Network staking via the Covalent Query Token (CQT) enables anybody from the community to contribute to governing and securing the decentralized protocol.",
+      "cta": "https://www.covalenthq.com/blog/cqt-staking-live/"
+    },
+    {
       "date": "Feb 2022",
       "title": "Open Sourcing the Block Specimen",
       "desc": "Covalent is excited to finally announce and open-source the Block Specimen, a novel invention that is pivotal to the decentralized Covalent Network. The anticipated Covalent Network roadmap is also live and can be viewed on the new Covalent Network homepage.",
       "cta": "https://www.covalenthq.com/blog/bsp-launch-announcement/"
     }
+
+
   ]
