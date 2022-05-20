@@ -25,7 +25,6 @@ The platform allows real-world applications of large scale to be produced right 
 |Property|Value|
 |---|---|
 |Klaytn Mainnet Cypress chainId|`8217`|
-|Klaytn Testnet Baobab chainId|`1001`|
 |Klaytn Blockchain Explorer|https://scope.klaytn.com/|
 |Block time|~1 second|
 
