@@ -14,7 +14,7 @@ favicon: Astar-mainnet-logo
 
 ## Introduction
 
-[Astar](https://portal.astar.network/) Network is the #1 TVL Smart Contract Hub for WASM + EVM on Polkadot. Since winning its Parachain auction in January 2022, Astar Network has become the top Parachain in the Polkadot ecosystem in Total Value Locked and most Ethereum assets transferred over. Astar Network is the leading smart contract hub that connects the Polkadot ecosystem to Ethereum, Cosmos, and all major layer 1 blockchains. 
+[Astar](https://portal.astar.network/) Network is the Smart Contract Hub for WASM + EVM on Polkadot. Since winning its Parachain auction in January 2022, Astar Network has become the top Parachain in the Polkadot ecosystem in Total Value Locked and most Ethereum assets transferred over. Astar Network is the leading smart contract hub that connects the Polkadot ecosystem to Ethereum, Cosmos, and all major layer 1 blockchains. 
 
 Astar Network supports dApps using multiple virtual machines — namely WASM and EVM — and offers the best technology solutions and financial incentives via its Build2Earn and Astar Incubation Program for Web3 developers to build on top of a secure, scalable, and interoperable blockchain.
 
@@ -27,7 +27,7 @@ Astar Network supports dApps using multiple virtual machines — namely WASM and
 |Astar Mainnet chainId|`592`|
 |Astar Testnet chainId|`81`|
 |Astar Blockchain Explorer|https://astar.subscan.io/|
-|Block time|~3 seconds|
+|Block time|~12 seconds|
 
 </TableWrap>
 
