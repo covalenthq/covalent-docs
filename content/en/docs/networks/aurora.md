@@ -25,7 +25,7 @@ Aurora supports all tools available in the Ethereum ecosystem — MetaMask, Truf
 |Property|Value|
 |---|---|
 |Aurora Mainnet chainId|`1313161554`|
-|Aurora Blockchain Explorer|`https://explorer.mainnet.aurora.dev`|
+|Aurora Blockchain Explorer|`https://aurorascan.dev`|
 |Block time|~3 seconds|
 |Data refresh latency | ~6 seconds|
 
