@@ -57,7 +57,11 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 
 ### Install
 
-#### BSP
+- Git is used as the source code version control manager across all our repositories.
+- Go is the programming language that is used to develop on go-ethereum and bsp patches, the agent given below is also entirely written in Go.
+- Redis is our in-memory database, cache and streaming service provider.
+- Direnv is used for secret management and control.
+
 
 **MacOS 12.x (M1/Intel)**
 
@@ -67,6 +71,7 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 
 
 **Debian/Ubuntu**
+Install Golang, Git, Redis and direnv
 
 ```json
 wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
@@ -80,7 +85,49 @@ echo 'export GOBIN=$GOPATH/bin' >> ~/.bashrc
 echo 'export PATH=$PATH:/usr/local/go/bin:$GOBIN' >> ~/.bashrc
 echo 'export GO111MODULE=on' >> ~/.bashrc
 source .bashrc
+
+apt install git redis-server
+
+apt install direnv
 ```
+
+**Fedora**
+
+```json
+  dnf install git golang redis
+
+  dnf install direnv
+```
+
+**RHEL/CentOS**
+
+```json
+  yum install git go-toolset redis
+
+  yum install direnv
+```
+
+**OpenSUSE/SLES**
+
+```json
+zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/openSUSE_Leap_15.3/devel:languages:go.repo
+zypper refresh
+zypper install git go redis
+
+zypper install direnv
+```
+
+**bash users - add the following line to your ~/.bashrc**
+`eval "$(direnv hook bash)"`
+
+**zsh users - add the following line to your ~/.zshrc**
+`eval "$(direnv hook zsh)"`
+
+After adding this line do not forget to source your bash / powershell config with the following, by running it in your terminal
+
+`source ~/.zshrc`
+`source ~/.bashrc
+
 
 
 ### Run BSP
