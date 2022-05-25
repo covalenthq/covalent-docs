@@ -338,3 +338,98 @@ export MB_PRIVATE_KEY=***
 export IPFS_SERVICE_TOKEN=***
 ```
 {{% code-blocks %}}
+
+Allow direnv to catch the exported constant and enable it with the direnv allow command: `direnv allow` .
+
+**NOTE:You should see something like this if the env variables have been correctly exported and ready to use. If you don’t see this prompt in the terminal please enable/install direnv using the previous installation instructions.**
+
+{{% code-blocks %}}
+```json
+direnv: loading ~/Documents/covalent/bsp-agent/.envrc
+direnv: export +MB_PRIVATE_KEY +MB_RPC_URL +IPFS_SERVICE_TOKEN
+```
+{{% code-blocks %}}
+
+Make sure that you replace $PROOF_CHAIN_CONTRACT_ADDR with the new copied “proof-chain” contract address in command below for the --proof-chain-address flag and create a bin directory at `~/bsp-agent` to store the block- specimens binay files with `mkdir -p bin/block-ethereum`.
+
+**Moonbeam Proof-Chain Address: 0x4f2E285227D43D9eB52799D0A28299540452446E**
+
+Copy-paste the commands below (with only the new proof chain address changed) and run the agent:
+
+{{% code-blocks %}}
+```json
+go run ./cmd/bspagent/*.go     
+--redis-url="redis://username:@localhost:6379/0?topic=replication#replicate"     
+--avro-codec-path="./codec/block-ethereum.avsc"     
+--binary-file-path="./bin/block-ethereum" --block-divisor=35       
+--proof-chain-address=0x4f2E285227D43D9eB52799D0A28299540452446E     
+--consumer-timeout=10000000       --log-folder ./logs/     
+--ipfs-service=web3.storage
+```
+{{% code-blocks %}}
+
+Each of the agent’s flags and their functions are described below (some may have been taken out for simplifying this workshop) -
+
+- --redis-url - this flag tells the agent where to find the bsp messages, at which stream topic key (replication) and what the consumer group is named with the field after # which in this case is replicate, additionally one can provide a password to the redis instance here but we recommend by adding the line below to the .envrc
+export REDIS_PWD=your-redis-pwd
+- --codec-path - tells the bsp agent the relative path to the AVRO .avsc files in the repo, since the agent ships with the corresponding avsc files this remains fixed for the time being
+- --binary-file-path - tells the bsp if local copies of the block-replica objects being created are to be stored in a given local directory. Please make sure the path (& directory) pre-exists before passing this flag.
+- --block-divisor - allows the operator to configure the number of block specimens being created, the block number divisible only by this number will be extracted, packed, encoded, uploaded and proofed.
+- --eth-client - specifies the ethereum client used to make transactions to on the CQT network, credentials to be able to write it should be provided in the .envrc file
+- --proof-chain-address - specifies the address of the proof-chain contract that has been deployed to the Moonbeam network.
+- --consumer-timeout - specifies when the agent stops accepting new msgs from the pending queue for encode, proof and upload.
+- --log-folder - specifies the location (folder) where the log files have to be placed. In case of error (like permission errors), the logs are not recorded in files.
+- --ipfs-service - specifies the IPFS node as service to be used for block specimen uploads, supported options are `pinata` and `web3.storage`. Must provide API token on .envrc (or .env) file.
+
+***NOTE: if the bsp-agent command above fails with a message about permission issues to access  ~/.ipfs/*, run sudo chmod -R 700 ~/.ipfs  and try again.***
+
+If all the cli-flags are administered correctly (either in the makefile or the go run command) you should be able to see something like this from logs.
+
+{{% code-blocks %}}
+```json
+time="2022-04-18T17:26:47Z" level=info msg="Initializing Consumer: fb78bb1c-1e14-4905-bb1f-0ea96de8d8b5 | Redis Stream: replication-1 | Consumer Group: replicate-1" function=main line=167
+time="2022-04-18T17:26:47Z" level=info msg="block-specimen not created for: 10430548, base block number divisor is :3" function=processStream line=332
+time="2022-04-18T17:26:47Z" level=info msg="stream ids acked and trimmed: [1648848491276-0], for stream key: replication-1, with current length: 11700" function=processStream line=339
+time="2022-04-18T17:26:47Z" level=info msg="block-specimen not created for: 10430549, base block number divisor is :3" function=processStream line=332
+time="2022-04-18T17:26:47Z" level=info msg="stream ids acked and trimmed: [1648848505274-0], for stream key: replication-1, with current length: 11699" function=processStream line=339
+
+---> Processing 4-10430550-replica <---
+time="2022-04-18T17:26:47Z" level=info msg="Submitting block-replica segment proof for: 4-10430550-replica" function=EncodeProveAndUploadReplicaSegment line=59
+time="2022-04-18T17:26:47Z" level=info msg="binary file should be available: ipfs://QmUQ4XYJv9syrokUfUbhvA4bV8ce7w1Q2dF6NoNDfSDqxc" function=EncodeProveAndUploadReplicaSegment line=80
+time="2022-04-18T17:27:04Z" level=info msg="Proof-chain tx hash: 0xcc8c487a5db0fec423de62f7ac4ca81c630544aa67c432131cabfa35d9703f37 for block-replica segment: 4-10430550-replica" function=EncodeProveAndUploadReplicaSegment line=86
+time="2022-04-18T17:27:04Z" level=info msg="File written successfully to: /scratch/node/block-ethereum/4-10430550-replica-0xcc8c487a5db0fec423de62f7ac4ca81c630544aa67c432131cabfa35d9703f37" function=writeToBinFile line=188
+time="2022-04-18T17:27:04Z" level=info msg="car file location: /tmp/28077399.car\n" function=generateCarFile line=133
+time="2022-04-18T17:27:08Z" level=info msg="File /tmp/28077399.car successfully uploaded to IPFS with pin: QmUQ4XYJv9syrokUfUbhvA4bV8ce7w1Q2dF6NoNDfSDqxc" function=HandleObjectUploadToIPFS line=102
+time="2022-04-18T17:27:08Z" level=info msg="stream ids acked and trimmed: [1648848521276-0], for stream key: replication-1, with current length: 11698" function=processStream line=323
+```
+{{% code-blocks %}}
+
+If you see the above log, you’re successfully running the entire block specimen producer workflow. The BSP-agent is reading messages from the redis streams topic, encoding, compressing, proving and uploading it to the gcp bucket in segments of multiple blocks at a time.
+
+If however, that doesn’t happen and the agent fails and isn’t able to complete the workflow, fear not! It will atomically fail and the messages will be persisted in the stream where they were being read from! So when you restart correctly the same messages will be reprocessed till full success.
+
+Please note any ERR / WARN / DEBUG messages that could be responsible for the failure. The messages should be clear enough to pinpoint the exact issue. Additionally, seek support in the Covalent Discord.
+
+Now finally to decode the binary AVRO encoded block-replica (specimens) from your local storage and pretty print its contents and get to the block data ready to index and trace.
+
+{{% code-blocks %}}
+```json
+cd bsp-agent/scripts
+```
+{{% code-blocks %}}
+
+
+{{% code-blocks %}}
+```json
+go run extractor.go \
+--binary-file-path="../bin/block-ethereum/" \
+--codec-path="../codec/block-ethereum.avsc" \
+--indent-json=0
+```
+{{% code-blocks %}}
+
+Each of the extractor’s flags and their functions are described below -
+
+- --codec-path - tells the extractor the relative path to the AVRO .avsc codec files in the repo, since the agent ships with the corresponding avsc files this remains fixed.
+- --binary-file-path - tells the extractor if copies of the block-replica objects already created are  found in a given local directory. Please make sure the path (& directory) pre-exists with files in them before passing this flag.
+- --indent-json - tells the extractor how to format the json output, use 1 or 2 for example besides 0.
