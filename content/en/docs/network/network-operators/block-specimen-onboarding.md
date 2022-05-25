@@ -62,9 +62,7 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 **MacOS 12.x (M1/Intel)**
 
 ```json
-{
-    "brew install git go redis"
-}
+  brew install git go redis
 ```
 
 **`brew install git go redis`**
