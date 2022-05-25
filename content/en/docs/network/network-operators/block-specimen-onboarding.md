@@ -108,7 +108,7 @@ apt install direnv
 ```
 
 **OpenSUSE/SLES**
-
+- 
 ```json
 zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/openSUSE_Leap_15.3/devel:languages:go.repo
 zypper refresh
@@ -126,10 +126,24 @@ zypper install direnv
 After adding this line do not forget to source your bash / powershell config with the following, by running it in your terminal
 
 `source ~/.zshrc`
-`source ~/.bashrc
-
-
+`source ~/.bashrc`
 
 ### Run BSP
+
+1. Clone the [covalenthq/bsp-geth](https://github.com/covalenthq/bsp-geth) repo and checkout the branch that contains the block specimen patch (checking out the repo may take some time)
+
+```json
+git clone https://github.com/covalenthq/bsp-geth.git
+
+cd bsp-geth
+
+git checkout main
+```
+
+2. Build geth (install go if you don’t have it) and other geth developer tools from the root repo with (if you need all the geth related development tools do a “make all”.
+
+```json
+make geth
+```
 
 ### Run Agent
