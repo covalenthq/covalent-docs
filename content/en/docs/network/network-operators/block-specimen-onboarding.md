@@ -65,15 +65,17 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 
 **MacOS 12.x (M1/Intel)**
 
+{{% code-blocks %}}
 ```json
   brew install git go redis
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 
 **Debian/Ubuntu**
 Install Golang, Git, Redis and direnv
 
+{{% code-blocks %}}
 ```json
 wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
 tar -xvf go1.18.linux-amd64.tar.gz
@@ -91,28 +93,31 @@ apt install git redis-server
 
 apt install direnv
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
+
+
 
 **Fedora**
 
+{{% code-blocks %}}
 ```json
   dnf install git golang redis
 
   dnf install direnv
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 **RHEL/CentOS**
-
+{{% code-blocks %}}
 ```json
   yum install git go-toolset redis
 
   yum install direnv
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 **OpenSUSE/SLES**
-
+{{% code-blocks %}}
 ```json
 zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/openSUSE_Leap_15.3/devel:languages:go.repo
 zypper refresh
@@ -120,7 +125,7 @@ zypper install git go redis
 
 zypper install direnv
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 **bash users - add the following line to your ~/.bashrc**:
 
@@ -140,6 +145,7 @@ After adding this line do not forget to source your bash / powershell config wit
 
 Clone the [covalenthq/bsp-geth](https://github.com/covalenthq/bsp-geth) repo and checkout the branch that contains the block specimen patch (checking out the repo may take some time).
 
+{{% code-blocks %}}
 ```json
 git clone https://github.com/covalenthq/bsp-geth.git
 
@@ -147,48 +153,52 @@ cd bsp-geth
 
 git checkout main
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 Build geth (install go if you don’t have it) and other geth developer tools from the root repo with (if you need all the geth related development tools do a “make all”.
 
+{{% code-blocks %}}
 ```json
 make geth
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 Start redis (our streaming service) with the following.
 
+{{% code-blocks %}}
 ```json
 brew services start redis
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 ***On Linux***
 
+{{% code-blocks %}}
 ```json
 systemctl start redis
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 Start redis-cli in a separate terminal so you can see the encoded bsps as they are fed into redis streams.
 
+{{% code-blocks %}}
 ```json
 redis-cli   
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 **We are now ready to start accepting stream message into redis locally.**
 
 Go back to  ~/bsp-geth and start geth with the given configuration, here we specify the replication targets (block specimen targets) with redis stream topic key “replication”, in full “syncmode”, exposing the http port for the geth apis are optional. Prior to executing, please replace $PATH_TO_GETH_MAINNET_CHAINDATA with the location of the mainnet snapshot that was downloaded earlier. Everything else remains the same as given below.
 
-{{/% code-blocks %}}
+{{% code-blocks %}}
 ```json
 ./build/bin/geth --mainnet --log.debug --syncmode snap --datadir
 $PATH_TO_GETH_MAINNET_CHAINDATA --replication.targets
 "redis://localhost:6379/?topic=replication" --replica.result
 --replica.specimen --log.folder "./logs/"   
 ```
-{{/% code-blocks %}}
+{{%/ code-blocks %}}
 
 Each of the bsp flags and their functions are described below -
 
