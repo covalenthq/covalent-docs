@@ -212,6 +212,43 @@ Each of the bsp flags and their functions are described below -
 - --replica.result - this flag lets the bsp know if all fields related to the block-result specification need to be exported (if only this flag is selected the exported object is a block-result)
 - --replica.specimen -  this flag lets the bsp know if all fields related to the block-specimen specification need to be exported (if only this flag is selected the exported object is a block-specimen)
 
-If your node
+If your node is syncing, connect to the node’s ipc instance to check how far the node is synced.
+
+{{% code-blocks %}}
+```json
+./build/bin/geth attach $PATH_TO_GETH_MAINNET_CHAINDATA/geth.ipc
+```
+{{%/ code-blocks %}}
+
+Once connected wait for the node to reach the highest known block to start creating live block specimens.
+
+{{% code-blocks %}}
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.10.17-stable-d1a92cb2/darwin-arm64/go1.17.2
+at block: 10487792 (Mon Apr 11 2022 14:01:59 GMT-0700 (PDT))
+ datadir: /Users/niallyorke/bsp/rinkeby-chain-data-snap
+ modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+To exit, press ctrl-d or type exit
+> eth.syncing
+{
+  currentBlock: 10487906,
+  healedBytecodeBytes: 0,
+  healedBytecodes: 0,
+  healedTrienodeBytes: 0,
+  healedTrienodes: 0,
+  healingBytecode: 0,
+  healingTrienodes: 0,
+  highestBlock: 10499433,
+  startingBlock: 10486736,
+  syncedAccountBytes: 0,
+  syncedAccounts: 0,
+  syncedBytecodeBytes: 0,
+  syncedBytecodes: 0,
+  syncedStorage: 0,
+  syncedStorageBytes: 0
+}
+{{%/ code-blocks %}}
 
 ### Run Agent
