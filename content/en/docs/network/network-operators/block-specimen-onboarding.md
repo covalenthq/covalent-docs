@@ -68,6 +68,7 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 ```json
   brew install git go redis
 ```
+{{/% code-blocks %}}
 
 
 **Debian/Ubuntu**
@@ -90,6 +91,7 @@ apt install git redis-server
 
 apt install direnv
 ```
+{{/% code-blocks %}}
 
 **Fedora**
 
@@ -98,6 +100,7 @@ apt install direnv
 
   dnf install direnv
 ```
+{{/% code-blocks %}}
 
 **RHEL/CentOS**
 
@@ -106,6 +109,7 @@ apt install direnv
 
   yum install direnv
 ```
+{{/% code-blocks %}}
 
 **OpenSUSE/SLES**
 
@@ -116,16 +120,17 @@ zypper install git go redis
 
 zypper install direnv
 ```
+{{/% code-blocks %}}
 
-**bash users - add the following line to your ~/.bashrc**
+**bash users - add the following line to your ~/.bashrc**:
 
 `eval "$(direnv hook bash)"`
 
-**zsh users - add the following line to your ~/.zshrc**
+**zsh users - add the following line to your ~/.zshrc**:
 
 `eval "$(direnv hook zsh)"`
 
-After adding this line do not forget to source your bash / powershell config with the following, by running it in your terminal
+After adding this line do not forget to source your bash / powershell config with the following, by running it in your terminal.
 
 `source ~/.zshrc`
 
@@ -133,7 +138,7 @@ After adding this line do not forget to source your bash / powershell config wit
 
 ### Run BSP
 
-Clone the [covalenthq/bsp-geth](https://github.com/covalenthq/bsp-geth) repo and checkout the branch that contains the block specimen patch (checking out the repo may take some time)
+Clone the [covalenthq/bsp-geth](https://github.com/covalenthq/bsp-geth) repo and checkout the branch that contains the block specimen patch (checking out the repo may take some time).
 
 ```json
 git clone https://github.com/covalenthq/bsp-geth.git
@@ -142,19 +147,60 @@ cd bsp-geth
 
 git checkout main
 ```
+{{/% code-blocks %}}
 
 Build geth (install go if you don’t have it) and other geth developer tools from the root repo with (if you need all the geth related development tools do a “make all”.
 
 ```json
 make geth
 ```
+{{/% code-blocks %}}
 
 Start redis (our streaming service) with the following.
 
 ```json
 brew services start redis
 ```
+{{/% code-blocks %}}
 
+***On Linux***
 
+```json
+systemctl start redis
+```
+{{/% code-blocks %}}
+
+Start redis-cli in a separate terminal so you can see the encoded bsps as they are fed into redis streams.
+
+```json
+redis-cli   
+```
+{{/% code-blocks %}}
+
+**We are now ready to start accepting stream message into redis locally.**
+
+Go back to  ~/bsp-geth and start geth with the given configuration, here we specify the replication targets (block specimen targets) with redis stream topic key “replication”, in full “syncmode”, exposing the http port for the geth apis are optional. Prior to executing, please replace $PATH_TO_GETH_MAINNET_CHAINDATA with the location of the mainnet snapshot that was downloaded earlier. Everything else remains the same as given below.
+
+```json
+./build/bin/geth --mainnet --log.debug --syncmode snap --datadir
+$PATH_TO_GETH_MAINNET_CHAINDATA --replication.targets
+"redis://localhost:6379/?topic=replication" --replica.result
+--replica.specimen --log.folder "./logs/"   
+```
+{{/% code-blocks %}}
+
+Each of the bsp flags and their functions are described below -
+
+- --mainnet - lets geth know which network to synchronize with, this can be --ropsten --goerli etc
+- --port 0 - will auto-assign a port for geth to talk to other nodes in the network, but this may not work if you are behind a firewall. It would be better to explicitly assign a port and to ensure that port is open to any firewalls.
+- --http - enables the json-rpc api over http
+- --log.debug - enables a detailed log of the processes geth deals with going back and forth between
+- --syncmode full - this flag is used to enable different syncing strategies for geth and a fully sync allows us to execute every block from block 0
+- --datadir - specifies a local datadir path for geth (note we use “bsp” as the directory name with the Ethereum directory), this way we don’t overwrite or touch other previously synced geth libraries across other chains
+- --replication.targets - this flag lets the bsp know where and how to send the bsp messages (this flag will not function without the usage of either one or both of the flags below, if both are selected a full block-replica is exported
+- --replica.result - this flag lets the bsp know if all fields related to the block-result specification need to be exported (if only this flag is selected the exported object is a block-result)
+- --replica.specimen -  this flag lets the bsp know if all fields related to the block-specimen specification need to be exported (if only this flag is selected the exported object is a block-specimen)
+
+If your node
 
 ### Run Agent
