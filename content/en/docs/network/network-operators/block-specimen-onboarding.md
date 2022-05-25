@@ -52,4 +52,15 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 
 **Congratulations, you have completed the first step in becoming a Covalent Network Operator. Now on to getting the Block Specimen Product & Agent up and running.  👩‍💻**
 
-## Build & Run the Block Specimen Producer & Agent
+## Build & Run the Block Specimen Producer (BSP) & Agent from Source
+
+### Install
+
+#### BSP
+
+**MacOS 12.x (M1/Intel)**
+**`brew install git go redis`**
+
+### Run BSP
+
+### Run Agent
