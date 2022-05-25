@@ -317,7 +317,7 @@ cd bsp-agent
 
 git checkout v1.1.5
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 
 Add an .envrc file to ~/bsp-agent and add the private key to your operator account address. (See below on how to do this for this workshop).
@@ -328,7 +328,7 @@ cd bsp-agent
 
 touch .envrc
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 Here we set up the required env vars for the bsp-agent. Other variables that are not secrets are passed as flags.Add the entire line below to the .envrc file with the replaced keys, rpc url and ipfs service token, save the file.
 
@@ -338,7 +338,7 @@ export MB_RPC_URL=***
 export MB_PRIVATE_KEY=***
 export IPFS_SERVICE_TOKEN=***
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 Allow direnv to catch the exported constant and enable it with the direnv allow command: `direnv allow` .
 
@@ -349,7 +349,7 @@ Allow direnv to catch the exported constant and enable it with the direnv allow 
 direnv: loading ~/Documents/covalent/bsp-agent/.envrc
 direnv: export +MB_PRIVATE_KEY +MB_RPC_URL +IPFS_SERVICE_TOKEN
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 Make sure that you replace $PROOF_CHAIN_CONTRACT_ADDR with the new copied “proof-chain” contract address in command below for the --proof-chain-address flag and create a bin directory at `~/bsp-agent` to store the block- specimens binay files with `mkdir -p bin/block-ethereum`.
 
@@ -367,7 +367,7 @@ go run ./cmd/bspagent/*.go
 --consumer-timeout=10000000       --log-folder ./logs/     
 --ipfs-service=web3.storage
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 Each of the agent’s flags and their functions are described below (some may have been taken out for simplifying this workshop) -
 
@@ -403,7 +403,7 @@ time="2022-04-18T17:27:04Z" level=info msg="car file location: /tmp/28077399.car
 time="2022-04-18T17:27:08Z" level=info msg="File /tmp/28077399.car successfully uploaded to IPFS with pin: QmUQ4XYJv9syrokUfUbhvA4bV8ce7w1Q2dF6NoNDfSDqxc" function=HandleObjectUploadToIPFS line=102
 time="2022-04-18T17:27:08Z" level=info msg="stream ids acked and trimmed: [1648848521276-0], for stream key: replication-1, with current length: 11698" function=processStream line=323
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 If you see the above log, you’re successfully running the entire block specimen producer workflow. The BSP-agent is reading messages from the redis streams topic, encoding, compressing, proving and uploading it to the gcp bucket in segments of multiple blocks at a time.
 
@@ -417,7 +417,7 @@ Now finally to decode the binary AVRO encoded block-replica (specimens) from you
 ```json
 cd bsp-agent/scripts
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 
 {{% code-blocks %}}
@@ -427,7 +427,7 @@ go run extractor.go \
 --codec-path="../codec/block-ethereum.avsc" \
 --indent-json=0
 ```
-{{% code-blocks %}}
+{{%/ code-blocks %}}
 
 Each of the extractor’s flags and their functions are described below -
 
