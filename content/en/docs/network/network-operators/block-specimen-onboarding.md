@@ -319,6 +319,7 @@ git checkout v1.1.5
 ```
 {{% code-blocks %}}
 
+
 Add an .envrc file to ~/bsp-agent and add the private key to your operator account address. (See below on how to do this for this workshop).
 
 {{% code-blocks %}}
