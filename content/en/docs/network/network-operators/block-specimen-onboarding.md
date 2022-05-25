@@ -1,6 +1,7 @@
 ---
 title: Get Started
 
+
 ---
 # Block Specimen Producer Onboarding
 
@@ -60,6 +61,21 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 
 **MacOS 12.x (M1/Intel)**
 **`brew install git go redis`**
+
+**Debian/Ubuntu**
+**`wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
+tar -xvf go1.18.linux-amd64.tar.gz
+sudo mv go /usr/local
+
+echo "" >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
+echo 'export GOBIN=$GOPATH/bin' >> ~/.bashrc
+echo 'export PATH=$PATH:/usr/local/go/bin:$GOBIN' >> ~/.bashrc
+echo 'export GO111MODULE=on' >> ~/.bashrc
+source .bashrc`**
+
+
 
 ### Run BSP
 
