@@ -118,14 +118,17 @@ zypper install direnv
 ```
 
 **bash users - add the following line to your ~/.bashrc**
+
 `eval "$(direnv hook bash)"`
 
 **zsh users - add the following line to your ~/.zshrc**
+
 `eval "$(direnv hook zsh)"`
 
 After adding this line do not forget to source your bash / powershell config with the following, by running it in your terminal
 
 `source ~/.zshrc`
+
 `source ~/.bashrc`
 
 ### Run BSP
@@ -145,5 +148,13 @@ Build geth (install go if you don’t have it) and other geth developer tools fr
 ```json
 make geth
 ```
+
+Start redis (our streaming service) with the following.
+
+```json
+brew services start redis
+```
+
+
 
 ### Run Agent
