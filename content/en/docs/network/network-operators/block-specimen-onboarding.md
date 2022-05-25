@@ -223,6 +223,7 @@ If your node is syncing, connect to the node’s ipc instance to check how far t
 Once connected wait for the node to reach the highest known block to start creating live block specimens.
 
 {{% code-blocks %}}
+```json
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.10.17-stable-d1a92cb2/darwin-arm64/go1.17.2
@@ -249,6 +250,7 @@ To exit, press ctrl-d or type exit
   syncedStorage: 0,
   syncedStorageBytes: 0
 }
+```
 {{%/ code-blocks %}}
 
 ### Run Agent
