@@ -55,7 +55,7 @@ With Covalent Network Staking, there are a number of staking parameters in place
 |Parameter|Rate|
 |---|---|
 |Operator Max Stake|175,000 CQT|
-|MaxCap Multiplier|3:1|
+|MaxCap Multiplier|6:1|
 |Minimum Stake Requirement|175,000 CQT|
 
 ## Reward Distribution
