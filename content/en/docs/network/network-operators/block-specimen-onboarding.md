@@ -60,9 +60,11 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 #### BSP
 
 **MacOS 12.x (M1/Intel)**
+
 **`brew install git go redis`**
 
 **Debian/Ubuntu**
+
 **`wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
 tar -xvf go1.18.linux-amd64.tar.gz
 sudo mv go /usr/local
