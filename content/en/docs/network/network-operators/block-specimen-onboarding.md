@@ -186,8 +186,9 @@ Go back to  ~/bsp-geth and start geth with the given configuration, here we spec
 $PATH_TO_GETH_MAINNET_CHAINDATA --replication.targets
 "redis://localhost:6379/?topic=replication" --replica.result
 --replica.specimen --log.folder "./logs/"   
-```
 {{/% code-blocks %}}
+
+```
 
 Each of the bsp flags and their functions are described below -
 
