@@ -1,5 +1,5 @@
 ---
-title: Block Specimen Producer Onboarding
+title: Get Started
 
 ---
 # Block Specimen Producer Onboarding
