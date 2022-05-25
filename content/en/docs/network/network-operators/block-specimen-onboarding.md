@@ -181,14 +181,14 @@ redis-cli
 
 Go back to  ~/bsp-geth and start geth with the given configuration, here we specify the replication targets (block specimen targets) with redis stream topic key “replication”, in full “syncmode”, exposing the http port for the geth apis are optional. Prior to executing, please replace $PATH_TO_GETH_MAINNET_CHAINDATA with the location of the mainnet snapshot that was downloaded earlier. Everything else remains the same as given below.
 
+{{/% code-blocks %}}
 ```json
 ./build/bin/geth --mainnet --log.debug --syncmode snap --datadir
 $PATH_TO_GETH_MAINNET_CHAINDATA --replication.targets
 "redis://localhost:6379/?topic=replication" --replica.result
 --replica.specimen --log.folder "./logs/"   
-{{/% code-blocks %}}
-
 ```
+{{/% code-blocks %}}
 
 Each of the bsp flags and their functions are described below -
 
