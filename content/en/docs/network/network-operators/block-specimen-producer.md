@@ -20,6 +20,8 @@ There are two further considerations regarding the Block Specimen.
 
 As a result, anyone can run full tracing on the block specimen and accurately recreate the blockchain without access to a blockchain client software.
 
+<a class="text-white tracking-wide text-lg font-light md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
+href="https://cqtscan.com/#/">Get Started as a Block Specimen Producer</a>
 
 ### Hardware Requirements
 
