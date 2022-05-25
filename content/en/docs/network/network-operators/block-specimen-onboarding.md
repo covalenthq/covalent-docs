@@ -253,4 +253,88 @@ To exit, press ctrl-d or type exit
 ```
 {{%/ code-blocks %}}
 
+Now wait till you see a log from the terminal here with something like this
+
+This can take a few days or a few hours depending on if the source chaindata is already available at the datadir location or live sync is being attempted from scratch for a new copy of blockchain data obtained from syncing with peers. In the case of the latter the strength of the network and other factors that affect the Ethereum network devp2p protocol performance can further cause delays.
+
+Once blockchain data state sync is complete and eth.syncing returns false, you can expect to see block-specimens in the redis stream. The following logs are captured from bsp-geth service as the node begins to export live Block Specimens.
+
+{{% code-blocks %}}
+```json
+INFO [04-11|16:35:48.554|core/chain_replication.go:317]             Replication progress                     sessID=1 queued=1 sent=10960 last=0xffc46213ccd3c55b75f73a0bc29c25780eb37f04c9f2b88179e9d0fb889a4151
+INFO [04-11|16:36:04.183|core/blockchain_insert.go:75]              Imported new chain segment               blocks=1       txs=63         mgas=13.147  elapsed=252.747ms    mgasps=52.015   number=10,486,732 hash=8b57c8..bd5c79 dirty=255.49MiB
+INFO [04-11|16:36:04.189|core/block_replica.go:41]                  Creating Block Specimen                  Exported block=10,486,732 hash=0x8b57c8606d74972c59c56f7fe672a30ed6546fc8169b6a2504abb633aebd5c79
+INFO [04-11|16:36:04.189|core/rawdb/chain_iterator.go:338]          Unindexed transactions                   blocks=1       txs=9          tail=8,136,733 elapsed="369.12µs"
+```
+{{%/ code-blocks %}}
+
+The last two lines above show that new block replicas containing the block specimens are being produced and streamed to the redis topic “replication”. After this you can check that redis is stacking up the bsp messages through the redis-cli with the command below (this should give you the number of messages from the stream).
+
+{{% code-blocks %}}
+```json
+$ redis-cli
+127.0.0.1:6379>  xlen replication
+11696
+```
+{{%/ code-blocks %}}
+
+If it doesn’t - the BSP - producer isn't producing messages! In this case please look at the logs above and see if you have any WARN / DEBUG logs that can be responsible for the inoperation. For quick development iteration and faster network sync - enable a new node key to quickly re-sync with the ethereum network for development and testing by going to the root of go-ethereum and running the bootnode helper.
+
+NOTE: To use the bootnode binary execute make all in place of make geth, this creates all the additional helper binaries that bsp-geth ships with.
+./build/bin/bootnode -genkey ~/.ethereum/bsp/geth/nodekey
+Further, also have bsp-agent running alongside consuming messages from redis (this will consume the messages and remove them from the stream key). You should see the occasional responses from bsp-agent service such as:
+
+{{% code-blocks %}}
+```json
+time="2022-04-18T17:26:47Z" level=info msg="Initializing Consumer: fb78bb1c-1e14-4905-bb1f-0ea96de8d8b5 | Redis Stream: replication-1 | Consumer Group: replicate-1" function=main line=167
+time="2022-04-18T17:26:47Z" level=info msg="block-specimen not created for: 10430548, base block number divisor is :3" function=processStream line=332
+time="2022-04-18T17:26:47Z" level=info msg="stream ids acked and trimmed: [1648848491276-0], for stream key: replication-1, with current length: 11700" function=processStream line=339
+time="2022-04-18T17:26:47Z" level=info msg="block-specimen not created for: 10430549, base block number divisor is :3" function=processStream line=332
+time="2022-04-18T17:26:47Z" level=info msg="stream ids acked and trimmed: [1648848505274-0], for stream key: replication-1, with current length: 11699" function=processStream line=339
+
+---> Processing 4-10430550-replica <---
+time="2022-04-18T17:26:47Z" level=info msg="Submitting block-replica segment proof for: 4-10430550-replica" function=EncodeProveAndUploadReplicaSegment line=59
+time="2022-04-18T17:26:47Z" level=info msg="binary file should be available: ipfs://QmUQ4XYJv9syrokUfUbhvA4bV8ce7w1Q2dF6NoNDfSDqxc" function=EncodeProveAndUploadReplicaSegment line=80
+time="2022-04-18T17:27:04Z" level=info msg="Proof-chain tx hash: 0xcc8c487a5db0fec423de62f7ac4ca81c630544aa67c432131cabfa35d9703f37 for block-replica segment: 4-10430550-replica" function=EncodeProveAndUploadReplicaSegment line=86
+time="2022-04-18T17:27:04Z" level=info msg="File written successfully to: /scratch/node/block-ethereum/4-10430550-replica-0xcc8c487a5db0fec423de62f7ac4ca81c630544aa67c432131cabfa35d9703f37" function=writeToBinFile line=188
+time="2022-04-18T17:27:04Z" level=info msg="car file location: /tmp/28077399.car\n" function=generateCarFile line=133
+time="2022-04-18T17:27:08Z" level=info msg="File /tmp/28077399.car successfully uploaded to IPFS with pin: QmUQ4XYJv9syrokUfUbhvA4bV8ce7w1Q2dF6NoNDfSDqxc" function=HandleObjectUploadToIPFS line=102
+time="2022-04-18T17:27:08Z" level=info msg="stream ids acked and trimmed: [1648848521276-0], for stream key: replication-1, with current length: 11698" function=processStream line=323
+```
+{{%/ code-blocks %}}
+
+**If you see all of the above you're successfully running the full BSP pipeline.**
+
 ### Run Agent
+
+Next we’re going to install the agent that can transform the specimens to AVRO encoded blocks, prove that their data contains what is encoded and upload them to an object store. Clone the [covalenthq.com/bsp-agent](https://github.com/covalenthq/bsp-agent) repo in a separate terminal.
+
+{{% code-blocks %}}
+```json
+git clone https://github.com/covalenthq/bsp-agent.git
+
+cd bsp-agent
+
+git checkout v1.1.5
+```
+{{% code-blocks %}}
+
+Add an .envrc file to ~/bsp-agent and add the private key to your operator account address. (See below on how to do this for this workshop).
+
+{{% code-blocks %}}
+```json
+cd bsp-agent
+
+touch .envrc
+```
+{{% code-blocks %}}
+
+Here we set up the required env vars for the bsp-agent. Other variables that are not secrets are passed as flags.Add the entire line below to the .envrc file with the replaced keys, rpc url and ipfs service token, save the file.
+
+{{% code-blocks %}}
+```json
+export MB_RPC_URL=***
+export MB_PRIVATE_KEY=***
+export IPFS_SERVICE_TOKEN=***
+```
+{{% code-blocks %}}
