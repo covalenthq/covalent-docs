@@ -68,9 +68,7 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 **Debian/Ubuntu**
 ```json
 wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
-
 tar -xvf go1.18.linux-amd64.tar.gz
-
 sudo mv go /usr/local
 
 echo "" >> ~/.bashrc
