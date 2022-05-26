@@ -160,7 +160,7 @@ git checkout main
 ```
 {{%/ code-blocks %}}
 
-Build geth (install go if you don’t have it) and other geth developer tools from the root repo with (if you need all the geth related development tools do a “make all”.
+Build Geth (install go if you don’t have it) and other Geth developer tools from the root repo with (if you need all the Geth related development tools do a “make all”.
 
 {{% code-blocks %}}
 ```json
