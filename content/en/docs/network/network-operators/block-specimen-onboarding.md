@@ -5,21 +5,21 @@ title: Onboarding
 ---
 # Block Specimen Producer Onboarding
 
-Before reading any further, please note that only those who have been approved and whitelisted can be fully onboarded as a Covalent Network Operators. If you're interested in becoming a Covalent Network Operator, please fill [this](https://covalenthq.typeform.com/to/kzQnxBul) form.
+Before reading any further, please note that only those who have been approved and whitelisted can be fully onboarded as Covalent Network Operators. If you're interested in becoming a Covalent Network Operator, please fill [this](https://covalenthq.typeform.com/to/kzQnxBul) form.
 
 ## Prerequisites
 
 ### Infra
 
 - Access to an RPC Moonbeam endpoint either locally or via a service provider.
-- Generate and document an API token for your storage instance. Supported options include pinata and web3.storage. The latter is recommended given that it offers up to 1TB in free storage.
+- Generate and document an API token for your storage instance. Supported options include pinata and [web3.storage](https://web3.storage/). The latter is recommended given that it offers up to 1TB in free storage.
 - [bsp-geth](https://github.com/covalenthq/bsp-geth) cloned, running and synced.
 
 ### General
 
 - Provide Covalent with two public addresses:
   1. **Staking Address**: This is the address of the wallet holding your CQT on Moonbeam to meet the minimum staking requirement.
-  2. **Operator Address**: This is a public address tied to the private-public key pair an operator will use to sign proof transactions to the proof-chain contract. It is required by the bsp-agent. It is not tied to any network. It can be generated using the **BIP-44** mnemonic multi-account deterministic algorithm. It can be generated using [https://iancoleman.io/bip39/](https://iancoleman.io/bip39/).
+  2. **Operator Address**: This is a public address tied to the private-public key pair an Operator will use to sign proof transactions to the proof-chain contract. It is required by the bsp-agent. It is not tied to any network. It can be generated using the **BIP-44** mnemonic multi-account deterministic algorithm and using [https://iancoleman.io/bip39/](https://iancoleman.io/bip39/).
 
 - Provide your desired commission rate.
 - 175,000 CQT on Moonbeam. If you have not bridged your CQT to Moonbeam, here is a guide on [how](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/).
@@ -47,11 +47,13 @@ On the left tab, you should see an icon labelled Operator Dashboard.
 
 Here, you should see that you are ‘Sufficiently Staked ✓’ and have a ‘Validator Status’ of ‘Disabled’.
 
+<img src="/static/images/network/operator-dashboard.png"></img>
+
 Simply hit the ‘Operator Status’ toggle. You will be prompted by MetaMask to confirm the call.
 
 Once confirmed, your ‘Operator Status’ should display as ‘On’.
 
-**Congratulations, you have completed the first step in becoming a Covalent Network Operator. Now on to getting the Block Specimen Product & Agent up and running.  👩‍💻**
+**Congratulations, you have completed the first step in becoming a Covalent Network Operator. Now on to getting the Block Specimen Producer & Agent up and running.  👩‍💻**
 
 ## Build & Run the Block Specimen Producer (BSP) & Agent from Source
 
@@ -73,7 +75,6 @@ Once confirmed, your ‘Operator Status’ should display as ‘On’.
 
 
 **Debian/Ubuntu**
-Install Golang, Git, Redis and direnv
 
 {{% code-blocks %}}
 ```json
@@ -129,11 +130,15 @@ zypper install direnv
 
 **bash users - add the following line to your ~/.bashrc**:
 
-`eval "$(direnv hook bash)"`
+```json
+eval "$(direnv hook bash)"
+```
 
 **zsh users - add the following line to your ~/.zshrc**:
 
-`eval "$(direnv hook zsh)"`
+```json
+eval "$(direnv hook zsh)"
+```
 
 After adding this line do not forget to source your bash / powershell config with the following, by running it in your terminal.
 
@@ -171,7 +176,7 @@ brew services start redis
 ```
 {{%/ code-blocks %}}
 
-***On Linux***
+***If you're on Linux:***
 
 {{% code-blocks %}}
 ```json
@@ -179,7 +184,7 @@ systemctl start redis
 ```
 {{%/ code-blocks %}}
 
-Start redis-cli in a separate terminal so you can see the encoded bsps as they are fed into redis streams.
+Start redis-cli in a separate terminal so you can see the encoded block specimens as they are fed into redis streams.
 
 {{% code-blocks %}}
 ```json
@@ -189,7 +194,7 @@ redis-cli
 
 **We are now ready to start accepting stream message into redis locally.**
 
-Go back to  ~/bsp-geth and start geth with the given configuration, here we specify the replication targets (block specimen targets) with redis stream topic key “replication”, in full “syncmode”, exposing the http port for the geth apis are optional. Prior to executing, please replace $PATH_TO_GETH_MAINNET_CHAINDATA with the location of the mainnet snapshot that was downloaded earlier. Everything else remains the same as given below.
+Go back to  ~/bsp-geth and start Geth with the given configuration, here we specify the replication targets (block specimen targets) with redis stream topic key “replication”, in full “syncmode”, exposing the http port for the Geth apis are optional. Prior to executing, please replace $PATH_TO_GETH_MAINNET_CHAINDATA with the location of the mainnet snapshot that was downloaded earlier. Everything else remains the same as given below.
 
 {{% code-blocks %}}
 ```json
@@ -200,17 +205,17 @@ $PATH_TO_GETH_MAINNET_CHAINDATA --replication.targets
 ```
 {{%/ code-blocks %}}
 
-Each of the bsp flags and their functions are described below -
+Each of the bsp flags and their functions are described below:
 
-- --mainnet - lets geth know which network to synchronize with, this can be --ropsten --goerli etc
-- --port 0 - will auto-assign a port for geth to talk to other nodes in the network, but this may not work if you are behind a firewall. It would be better to explicitly assign a port and to ensure that port is open to any firewalls.
-- --http - enables the json-rpc api over http
-- --log.debug - enables a detailed log of the processes geth deals with going back and forth between
-- --syncmode full - this flag is used to enable different syncing strategies for geth and a fully sync allows us to execute every block from block 0
-- --datadir - specifies a local datadir path for geth (note we use “bsp” as the directory name with the Ethereum directory), this way we don’t overwrite or touch other previously synced geth libraries across other chains
-- --replication.targets - this flag lets the bsp know where and how to send the bsp messages (this flag will not function without the usage of either one or both of the flags below, if both are selected a full block-replica is exported
-- --replica.result - this flag lets the bsp know if all fields related to the block-result specification need to be exported (if only this flag is selected the exported object is a block-result)
-- --replica.specimen -  this flag lets the bsp know if all fields related to the block-specimen specification need to be exported (if only this flag is selected the exported object is a block-specimen)
+- `--mainnet` - lets geth know which network to synchronize with, this can be --ropsten --goerli etc
+- `--port` 0 - will auto-assign a port for geth to talk to other nodes in the network, but this may not work if you are behind a firewall. It would be better to explicitly assign a port and to ensure that port is open to any firewalls.
+- `--http` - enables the json-rpc api over http
+- `--log.debug` - enables a detailed log of the processes geth deals with going back and forth between
+- `--syncmode full` - this flag is used to enable different syncing strategies for geth and a fully sync allows us to execute every block from block 0
+- `--datadir` - specifies a local datadir path for geth (note we use “bsp” as the directory name with the Ethereum directory), this way we don’t overwrite or touch other previously synced geth libraries across other chains
+- `--replication.targets` - this flag lets the bsp know where and how to send the bsp messages (this flag will not function without the usage of either one or both of the flags below, if both are selected a full block-replica is exported
+- `--replica.result` - this flag lets the bsp know if all fields related to the block-result specification need to be exported (if only this flag is selected the exported object is a block-result)
+- `--replica.specimen` -  this flag lets the bsp know if all fields related to the block-specimen specification need to be exported (if only this flag is selected the exported object is a block-specimen)
 
 If your node is syncing, connect to the node’s ipc instance to check how far the node is synced.
 
@@ -253,7 +258,7 @@ To exit, press ctrl-d or type exit
 ```
 {{%/ code-blocks %}}
 
-Now wait till you see a log from the terminal here with something like this
+Now wait until you see a log from the terminal here with something like this
 
 This can take a few days or a few hours depending on if the source chaindata is already available at the datadir location or live sync is being attempted from scratch for a new copy of blockchain data obtained from syncing with peers. In the case of the latter the strength of the network and other factors that affect the Ethereum network devp2p protocol performance can further cause delays.
 
@@ -278,11 +283,11 @@ $ redis-cli
 ```
 {{%/ code-blocks %}}
 
-If it doesn’t - the BSP - producer isn't producing messages! In this case please look at the logs above and see if you have any WARN / DEBUG logs that can be responsible for the inoperation. For quick development iteration and faster network sync - enable a new node key to quickly re-sync with the ethereum network for development and testing by going to the root of go-ethereum and running the bootnode helper.
+If it doesn’t, the Block Specimen Producer isn't producing messages! In this case please look at the logs above and see if you have any WARN / DEBUG logs that can be responsible for the inoperation. For quick development iteration and faster network sync - enable a new node key to quickly re-sync with the ethereum network for development and testing by going to the root of go-ethereum and running the bootnode helper.
 
-NOTE: To use the bootnode binary execute make all in place of make geth, this creates all the additional helper binaries that bsp-geth ships with.
-./build/bin/bootnode -genkey ~/.ethereum/bsp/geth/nodekey
-Further, also have bsp-agent running alongside consuming messages from redis (this will consume the messages and remove them from the stream key). You should see the occasional responses from bsp-agent service such as:
+NOTE: To use the bootnode binary execute make all in place of make geth, this creates all the additional helper binaries that bsp-geth ships with
+`./build/bin/bootnode -genkey ~/.ethereum/bsp/geth/nodekey`.
+Furthermore, you can also have bsp-agent running alongside consuming messages from redis (this will consume the messages and remove them from the stream key). You should see the occasional responses from bsp-agent service such as:
 
 {{% code-blocks %}}
 ```json
@@ -320,7 +325,7 @@ git checkout v1.1.5
 {{%/ code-blocks %}}
 
 
-Add an .envrc file to ~/bsp-agent and add the private key to your operator account address. (See below on how to do this for this workshop).
+Add an .envrc file to `~/bsp-agent` and add the private key to your operator account address.
 
 {{% code-blocks %}}
 ```json
@@ -330,7 +335,7 @@ touch .envrc
 ```
 {{%/ code-blocks %}}
 
-Here we set up the required env vars for the bsp-agent. Other variables that are not secrets are passed as flags.Add the entire line below to the .envrc file with the replaced keys, rpc url and ipfs service token, save the file.
+Here we set up the required env vars for the bsp-agent. Other variables that are not secrets are passed as flags. Add the entire line below to the .envrc file with the replaced keys, rpc url and ipfs service token, save the file.
 
 {{% code-blocks %}}
 ```json
@@ -351,7 +356,7 @@ direnv: export +MB_PRIVATE_KEY +MB_RPC_URL +IPFS_SERVICE_TOKEN
 ```
 {{%/ code-blocks %}}
 
-Make sure that you replace $PROOF_CHAIN_CONTRACT_ADDR with the new copied “proof-chain” contract address in command below for the --proof-chain-address flag and create a bin directory at `~/bsp-agent` to store the block- specimens binay files with `mkdir -p bin/block-ethereum`.
+Make sure that you replace $PROOF_CHAIN_CONTRACT_ADDR with the new copied “proof-chain” contract address in the command below for the `--proof-chain-address` flag and create a bin directory at `~/bsp-agent` to store the block- specimens binary files with `mkdir -p bin/block-ethereum`.
 
 **Moonbeam Proof-Chain Address: 0x4f2E285227D43D9eB52799D0A28299540452446E**
 
@@ -369,20 +374,20 @@ go run ./cmd/bspagent/*.go
 ```
 {{%/ code-blocks %}}
 
-Each of the agent’s flags and their functions are described below (some may have been taken out for simplifying this workshop) -
+Each of the agent’s flags and their functions are described below:
 
-- --redis-url - this flag tells the agent where to find the bsp messages, at which stream topic key (replication) and what the consumer group is named with the field after # which in this case is replicate, additionally one can provide a password to the redis instance here but we recommend by adding the line below to the .envrc
+- `--redis-url` - this flag tells the agent where to find the bsp messages, at which stream topic key (replication) and what the consumer group is named with the field after # which in this case is replicate, additionally one can provide a password to the redis instance here but we recommend by adding the line below to the .envrc
 export REDIS_PWD=your-redis-pwd
-- --codec-path - tells the bsp agent the relative path to the AVRO .avsc files in the repo, since the agent ships with the corresponding avsc files this remains fixed for the time being
-- --binary-file-path - tells the bsp if local copies of the block-replica objects being created are to be stored in a given local directory. Please make sure the path (& directory) pre-exists before passing this flag.
-- --block-divisor - allows the operator to configure the number of block specimens being created, the block number divisible only by this number will be extracted, packed, encoded, uploaded and proofed.
-- --eth-client - specifies the ethereum client used to make transactions to on the CQT network, credentials to be able to write it should be provided in the .envrc file
-- --proof-chain-address - specifies the address of the proof-chain contract that has been deployed to the Moonbeam network.
-- --consumer-timeout - specifies when the agent stops accepting new msgs from the pending queue for encode, proof and upload.
-- --log-folder - specifies the location (folder) where the log files have to be placed. In case of error (like permission errors), the logs are not recorded in files.
-- --ipfs-service - specifies the IPFS node as service to be used for block specimen uploads, supported options are `pinata` and `web3.storage`. Must provide API token on .envrc (or .env) file.
+- `--codec-path` - tells the bsp agent the relative path to the AVRO .avsc files in the repo, since the agent ships with the corresponding avsc files this remains fixed for the time being
+- `--binary-file-path` - tells the bsp if local copies of the block-replica objects being created are to be stored in a given local directory. Please make sure the path (& directory) pre-exists before passing this flag.
+- `--block-divisor` - allows the operator to configure the number of block specimens being created, the block number divisible only by this number will be extracted, packed, encoded, uploaded and proofed.
+- `--eth-client` - specifies the ethereum client used to make transactions to on the CQT network, credentials to be able to write it should be provided in the .envrc file
+- `--proof-chain-address` - specifies the address of the proof-chain contract that has been deployed to the Moonbeam network.
+- `--consumer-timeout` - specifies when the agent stops accepting new msgs from the pending queue for encode, proof and upload.
+- `--log-folder` - specifies the location (folder) where the log files have to be placed. In case of error (like permission errors), the logs are not recorded in files.
+- `--ipfs-service` - specifies the IPFS node as service to be used for block specimen uploads, supported options are pinata and web3.storage. Must provide API token on .envrc (or .env) file.
 
-***NOTE: if the bsp-agent command above fails with a message about permission issues to access  ~/.ipfs/*, run sudo chmod -R 700 ~/.ipfs  and try again.***
+**NOTE: if the bsp-agent command above fails with a message about permission issues to access  ~/.ipfs/*, run sudo chmod -R 700 ~/.ipfs  and try again.**
 
 If all the cli-flags are administered correctly (either in the makefile or the go run command) you should be able to see something like this from logs.
 
@@ -405,7 +410,7 @@ time="2022-04-18T17:27:08Z" level=info msg="stream ids acked and trimmed: [16488
 ```
 {{%/ code-blocks %}}
 
-If you see the above log, you’re successfully running the entire block specimen producer workflow. The BSP-agent is reading messages from the redis streams topic, encoding, compressing, proving and uploading it to the gcp bucket in segments of multiple blocks at a time.
+If you see the above log, you’re successfully running the entire block specimen producer workflow. The bsp-agent is reading messages from the redis streams topic, encoding, compressing, proving and uploading it to the storage bucket in segments of multiple blocks at a time.
 
 If however, that doesn’t happen and the agent fails and isn’t able to complete the workflow, fear not! It will atomically fail and the messages will be persisted in the stream where they were being read from! So when you restart correctly the same messages will be reprocessed till full success.
 
@@ -431,6 +436,6 @@ go run extractor.go \
 
 Each of the extractor’s flags and their functions are described below -
 
-- --codec-path - tells the extractor the relative path to the AVRO .avsc codec files in the repo, since the agent ships with the corresponding avsc files this remains fixed.
-- --binary-file-path - tells the extractor if copies of the block-replica objects already created are  found in a given local directory. Please make sure the path (& directory) pre-exists with files in them before passing this flag.
-- --indent-json - tells the extractor how to format the json output, use 1 or 2 for example besides 0.
+- `--codec-path` - tells the extractor the relative path to the AVRO .avsc codec files in the repo, since the agent ships with the corresponding avsc files this remains fixed.
+- `--binary-file-path` - tells the extractor if copies of the block-replica objects already created are  found in a given local directory. Please make sure the path (& directory) pre-exists with files in them before passing this flag.
+- `--indent-json` - tells the extractor how to format the json output, use 1 or 2 for example besides 0.
