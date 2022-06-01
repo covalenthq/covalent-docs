@@ -125,8 +125,8 @@ Check out our collection of ready-to-ship [**Code Templates**](https://github.co
 &nbsp;
 # Resources
 Here are some additional resources to help you get started with the Covalent API:
-- [Blockchain Network Details](../networks/_index.md)
+- [Blockchain Network Details](../networks)
 - [Covalent API Reference](https://covalenthq.com/docs/api/?utm_source=covalent&utm_medium=docs)
-- [Project Showcase](../project-showcase/_index.md)
-- [API FAQs](./faq.md)
+- [Project Showcase](../project-showcase)
+- [API FAQs](./faq)
 - [Discord Support](https://www.covalenthq.com/discord/?utm_source=covalent&utm_medium=docs)
