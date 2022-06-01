@@ -19,7 +19,7 @@ weight: 0
      Built for builders
     </div>
     <div class="font-light text-xl text-covalent-black pt-1 max-w-screen-md">
-Over 1000 projects building with Covalent.
+Over 1000 projects building with Covalent including:
     </div>
     {{< partners >}}
     <div class="font-light font-sans text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
@@ -37,9 +37,9 @@ Over 1000 projects building with Covalent.
     Developers love Covalent for the following reasons:
     </p>
     <ul class="list-disc max-w-3xl">
-    <li class="text-xl "><strong>Automatically indexed:</strong> All code on the underlying blockchain is automatically indexed for you, the developer. Covalent makes an exact replica of every single contract, every wallet and every single transaction to the Covalent database. The Covalent database hosts billions of rows of data and terabytes of data.</li>
-    <li class="text-xl "><strong>No-code:</strong> Covalent offers a "no-code" solution and all customizations can be done without writing a single line of code by the developer. No need to invest expensive engineering time in building indexing code that you'd rather invest in building your application.</li>
-    <li class="text-xl "><strong>Multiple blockchains, multiple usecases:</strong> The same unified API works across 30+ blockchains and dozens of use cases like crypto-wallets, NFT galleries, investor dashboard tools, DAO tooling - the possibilities are endless.</li>
+    <li class="text-xl "><strong>Automatically indexed:</strong> All code on the underlying blockchain is automatically indexed for you, the developer. Covalent runs full archive nodes and makes an exact replica of every single contract, every wallet and every single transaction in the Covalent database. The Covalent database hosts billions of rows of data and terabytes of data.</li>
+    <li class="text-xl "><strong>No-code:</strong> Covalent offers a "no-code" solution and all customizations can be done without writing a single line of code by the developer. There is no need to invest expensive engineering time in building indexing code that you'd rather invest in building your application.</li>
+    <li class="text-xl "><strong>Multiple blockchains, multiple use cases:</strong> The same unified API works across 30+ blockchains and dozens of use cases like crypto-wallets, NFT galleries, investor dashboard tools, DAO tooling - the possibilities are endless.</li>
     </ul>
     <!-- <p>FIXME: Enter social icons for help here discord, yt, twitter</p> -->
     <hr />
