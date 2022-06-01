@@ -14,7 +14,7 @@ description: Annotation to NFT market endpoints.
   - [Get historical data for NFT collection](https://www.covalenthq.com/docs/api/#/0/Get%20historical%20data%20for%20NFT%20collection/USD/1) 
 
 
-![image](../images/supported_networks.png)
+![image](../../images/supported_networks.png)
 
 ### UPDATED
 
