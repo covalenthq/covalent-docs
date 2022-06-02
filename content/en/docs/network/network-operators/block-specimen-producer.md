@@ -20,6 +20,8 @@ There are two further considerations regarding the Block Specimen.
 
 As a result, anyone can run full tracing on the block specimen and accurately recreate the blockchain without access to a blockchain client software.
 
+<a class="text-white tracking-wide text-lg font-light md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
+href="https://cqtscan.com/#/">Get Started as a Block Specimen Producer</a>
 
 ### Hardware Requirements
 
@@ -52,7 +54,7 @@ Install the given versions of the following software
 - Listener TCP and UDP discovery port 30303
 - ICMP IPv4 should not be closed by an external firewall
 
-# Architecture Overview
+## Architecture Overview
 
 A lot happens from the client node to the block-specimen production-proof transaction being uploaded to the Covalent virtual chain. Let's break down each step, assuming that the validator is using go-ethereum as the underlying EVM-based blockchain node that houses the BSP modifications.
 

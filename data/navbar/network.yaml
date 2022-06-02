@@ -13,6 +13,11 @@
       link: /docs/network/network-operators/block-specimen-producer
       published: true
       subsection:
+        -
+          title: Onboarding
+          link: /docs/network/network-operators/block-specimen-onboarding
+          published: true
+          subsection:
     -
       title: Network Rewards
       link: /docs/network/network-operators/network-rewards
