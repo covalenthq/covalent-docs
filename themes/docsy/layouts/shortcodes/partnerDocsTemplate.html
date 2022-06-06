@@ -1,0 +1,192 @@
+<h1>Introduction</h1>
+
+<p><a href='https://www.covalenthq.com/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Covalent</a> provides a unified API to bring full transparency and visibility to assets across all blockchain networks including {{ .Get "blockchain" }}.</p>
+<p>To get started, sign up for an <a href='https://www.covalenthq.com/platform/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'><strong>API Key</strong></a>. </p>
+
+<table>
+    <thead>
+    <tr>
+    <th style="text-align:center"><em>Developer Mode (JSON)</em></th>
+    <th style="text-align:center"><em>Analyst Mode (CSV)</em></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/developer_mode.png" alt="Developer Mode"></td>
+    <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/analyst_mode.png" alt="Analyst Mode"></td>
+    </tr>
+    </tbody>
+</table>
+
+<p>The Covalent API is RESTful and offers the following out-of-the-box for <em>{{ .Get "blockchain" | humanize }}</em>:</p>
+
+<table>
+    <thead>
+        <tr>
+            <th><strong>Covalent API</strong></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Response formats</strong></td>
+            <td>JSON and CSV</td>
+        </tr>
+        <tr>
+            <td><strong>Real time response</strong></td>
+            <td>2 blocks</td>
+        </tr>
+        <tr>
+            <td><strong>Batch response</strong></td>
+            <td>30 minutes</td>
+        </tr>
+        <tr>
+            <td><strong>Request volume limit</strong></td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td><strong>Request rate limit</strong></td>
+            <td>5 requests per second</td>
+        </tr>
+        <tr>
+            <td><strong>Base URL</strong></td>
+            <td><a href="https://api.covalenthq.com/v1/">https://api.covalenthq.com/v1/</a></td>
+        </tr>
+        <tr>
+            <td><strong>Networks & <code>chain_id</code></strong></td>
+            <td>Mainnet - <code>{{ .Get "mainnet" }}</code> <br> Testnet - <code>{{ .Get "testnet" }}</code></td>
+        </tr>
+        <tr>
+            <td><strong>Supported Endpoints</strong></td>
+            <td><strong>Class A</strong> 
+                <br>- <a href='https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Balances</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Transactions</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20ERC20%20token%20transfers%20for%20address/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Transfers</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20token%20holders%20as%20of%20any%20block%20height/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Token Holders</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20contract%20address/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Log Events (Contract Address)</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20topic%20hash(es)/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Log Events (Topic Hash)</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Try the supported endpoints directly in your browser from our <a href='https://covalenthq.com/docs/api/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>API Reference</a> or use the following code examples. <strong>The JSON response format is the same for all endpoints:</strong></p>
+
+<div class="highlight">
+<pre><code>❴
+    "data": ..., 
+    "error": false,
+    "error_message": null,
+    "error_code": null
+❵</code></pre>
+</div>
+
+<h3>Curl</h3>
+
+<div class="highlight">
+<pre><code> 
+<span>curl -X GET "https://api.covalenthq.com/v1/{{ .Get "apiReferenceChain" }}/address/0xFEC4f9D5B322Aa834056E85946A32c35A3f5aDD8/balances_v2/?key={YOUR API KEY}" -H "Accept: application/json"</span>
+</code></pre>
+</div>
+
+<h3>JavaScript</h3>
+
+<div class="highlight">
+<pre><code>const APIKEY = 'YOUR API KEY';
+const baseURL = 'https://api.covalenthq.com/v1'
+const blockchainId = {{ .Get "apiReferenceChain" }}
+const demoAddress = '0xFEC4f9D5B322Aa834056E85946A32c35A3f5aDD8'
+
+async function getWalletBalance(chainId, address) {
+    const url = new URL(`${baseURL}/${chainId}/address/${address}/balances_v2/?key=${APIKEY}`);
+    const response = await fetch(url);
+    const result = await response.json();
+    const data = result.data;
+    console.log(data)
+    return data;
+}
+
+// Example address request
+getWalletBalance(blockchainId, demoAddress);</code></pre>
+</div>
+
+<h3>Python</h3>
+
+<div class="highlight">
+<pre><code>import requests
+API_KEY = 'YOUR API KEY'
+base_url = 'https://api.covalenthq.com/v1'
+blockchain_id = {{ .Get "apiReferenceChain" }}
+demo_address = '0xFEC4f9D5B322Aa834056E85946A32c35A3f5aDD8'
+
+def get_wallet_balance(chain_id, address):
+    endpoint = f'/{chain_id}/address/{address}/balances_v2/?key={API_KEY}'
+    url = base_url + endpoint
+    result = requests.get(url).json()
+    data = result["data"]
+    print(data)
+    return(data)
+
+
+# Example address request
+get_wallet_balance(blockchain_id, demo_address)
+</code></pre>
+</div>
+
+&nbsp;
+<h1>Use Cases</h1>
+<p>The Covalent API supports a broad range of Web3 data use cases including:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/gaming.png" alt="Gaming"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/defi.png" alt="DeFi"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/kyc.png" alt="KYC"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/nft_icon.png" alt="NFT"></td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Gaming</td>
+            <td style="text-align:center">DeFi Taxes</td>
+            <td style="text-align:center">KYC</td>
+            <td style="text-align:center">NFTs</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/wallets.png" alt="Wallets"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/dashboards.png" alt="Dashboards"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/forensics.png" alt="On-Chain Forensics"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/dao.png" alt="DAO"></td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Wallets</td>
+            <td style="text-align:center">Dashboards</td>
+            <td style="text-align:center">On-Chain Forensics</td>
+            <td style="text-align:center">DAO Data</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/trading.png" alt="Trading"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/predictions.png" alt="Predictions"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/governance.png" alt="Governance"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/pricing.png" alt="Pricing"></td>
+        </tr>
+        <tr>
+            <td style="text-align:center">DEXs &amp; Trading</td>
+            <td style="text-align:center">Predictive Analytics</td>
+            <td style="text-align:center">Governance</td>
+            <td style="text-align:center">Pricing</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Check out our collection of ready-to-ship <a href='https://github.com/covalenthq/web3-resources?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs' target="_blank"><strong>Code Templates</strong></a> that you can use to build your Web3 data-powered dApps.</p>
+
+&nbsp;
+<h1>Resources</h1>
+<p>Here are some additional resources to help you get started with the Covalent API:</p>
+<ul>
+    <li><a href='https://www.covalenthq.com/docs/networks/{{ .Get "blockchain" }}/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>{{ .Get "blockchain" | humanize }} Network Details</a></li>
+    <li><a href='https://www.covalenthq.com/docs/project-showcase/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Project Showcase</a></li>
+    <li><a href='https://covalenthq.com/docs/api/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Covalent API Reference</a></li>
+    <li><a href='https://www.covalenthq.com/docs/developer/faq/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>API FAQs</a></li>
+    <li><a href='https://www.covalenthq.com/discord/?utm_source={{ .Get "blockchain" }}&utm_medium=partner-docs'>Discord Support</a></li>
+</ul>
