@@ -161,15 +161,19 @@
         subsection:
 
   -
-    title: Project Showcase
+    title: Projects
     link: /docs/project-showcase/
     published: true
     subsection:
       - 
-        title: Dex
+        title: DEX
         link: /docs/project-showcase/dex/
         published: true
         subsection:
+          -
+            title: SpiritSwap
+            link: /docs/project-showcase/dex/spiritswap/
+            published: true
           -
             title: AppDEX
             link: /docs/project-showcase/dex/appdex/
