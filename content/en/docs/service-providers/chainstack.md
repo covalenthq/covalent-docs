@@ -16,7 +16,7 @@ Created by developers for developers, Chainstack allows you to easily create, ma
 
 ### [Ethereum](https://chainstack.com/build-better-with-ethereum/)
 - Mainnet — public Ethereum mainnet.
-- Ropsten testnet — a proof-of-work public Ethereum testnet.
+- Ropsten testnet — a proof-of-stake public Ethereum testnet.
 - Rinkeby testnet — a proof-of-authority public Ethereum testnet.
 
 ### [Polygon/Matic](https://chainstack.com/build-better-with-polygon/)
