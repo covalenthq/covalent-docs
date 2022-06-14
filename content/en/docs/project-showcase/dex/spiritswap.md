@@ -16,7 +16,7 @@ SpiritSwap is a decentralized exchange (DEX) on the Fantom Opera Chain. SpiritSw
 
 &nbsp;
 # Analytics powered by Covalent
-SpiritSwap's analytics page is powered by the `XY=K` suite of Covalent API endpoints.
+Parts of SpiritSwap's analytics page are powered by the `XY=K` suite of Covalent API endpoints.
 
 The Covalent API is RESTful and offers the following out-of-the-box for *SpiritSwap*:
 
@@ -31,7 +31,7 @@ The Covalent API is RESTful and offers the following out-of-the-box for *SpiritS
 
 
 ## Details
-Here is a breakdown of the the specific endpoints used to build the SpiritSwap analytics page:
+Here is a breakdown of the the specific API endpoints that are used, or can be used, to build the SpiritSwap analytics page:
 
 ![SpiritSwap analytics](/static/images/project-showcase/spiritswap/spiritswap-analytics.png)
 

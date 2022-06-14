@@ -9,7 +9,7 @@ description: DEX based on Uniswap's XY=K automated market maker on the Fantom ch
 
 # Covalent
 
-[Covalent](https://www.covalenthq.com/?utm_source=spiritswap&utm_medium=partner-docs) provides a unified API to bring full transparency and visibility to assets across all blockchains. The Covalent API is used to power the [SpiritSwap analytics dashboard](https://info.spiritswap.finance/). 
+[Covalent](https://www.covalenthq.com/?utm_source=spiritswap&utm_medium=partner-docs) provides a unified API to bring full transparency and visibility to assets across all blockchains. The Covalent API is used to power parts of the [SpiritSwap analytics dashboard](https://info.spiritswap.finance/). 
 
 To get started, sign up for a [**Covalent API Key**](https://www.covalenthq.com/platform/?utm_source=cronos&utm_medium=partner-docs). 
 
@@ -33,7 +33,7 @@ Try the supported endpoints directly in your browser from the [Covalent API Refe
 
 
 ## Details
-Here is a breakdown of the the specific endpoints used to build the SpiritSwap analytics page:
+Here is a breakdown of the the specific API endpoints that are used, or can be used, to build the SpiritSwap analytics page:
 
 ![SpiritSwap analytics](/static/images/project-showcase/spiritswap/spiritswap-analytics.png)
 
