@@ -7,7 +7,7 @@ title: Staking
 Staking on the Covalent Network provides the opportunity to power the querying and indexing protocol of Web 3.
 
 <a class="text-white tracking-wide text-lg font-light md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
-href="https://www.covalenthq.com/dashboard/#/stake/single-sided/">Stake CQT</a>
+href="https://www.covalenthq.com/staking/#/">Stake CQT</a>
 
 Staking is an essential feature of the Covalent Network. All Network Operators will have to meet the minimum staking requirement. This mechanism is in place to **promote and ensure correct behaviour in the Covalent Network**. If Network Operators are ever malicious or dishonest, a percentage of their staked amount will be slashed. Furthermore, Network Operators stand to earn more CQT by providing utility to the network.
 
@@ -24,7 +24,7 @@ There are some further points to note with regard to delegating:
 
 ## Guides and Resources
 
-- [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/)
+- [Covalent Network Staking Dashboard](https://www.covalenthq.com/staking/#/)
 
 - [How to Stake on the Covalent Network](https://www.covalenthq.com/docs/network/covalent-query-token/how-to-stake/)
 
