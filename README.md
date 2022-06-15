@@ -19,15 +19,15 @@ Covalent uses a static site generator `hugo` for generating the website.
    npm install 
    ```
 
-4. Run the `hugo` server which should render the contents from `public/`. 
+4. Run the `hugo` server:
    ```
-   hugo server --contentDir ./public
+   hugo server
    ``` 
 
 
 ## How it works
 
-The content is generated as static HTML pages in `public/` and then rendered. 
+The markdown files in `content/` are generated as static HTML pages and rendered by hugo. By default, the docs will be run at `localhost:1313/docs`. 
 
 ### Creating Content
 
@@ -55,6 +55,6 @@ Some helpful things to know about creating content pages:
 
 
 ## Preview your branch
-
 Everytime you commit to a branch, we deploy a fully built website for preview. Check the comments on your pull request for the live URL.
+
 

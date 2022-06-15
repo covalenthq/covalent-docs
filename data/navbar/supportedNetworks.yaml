@@ -95,9 +95,15 @@
         banner:
         published: true
       - 
+        title: Astar
+        link: /docs/networks/astar/
+        icon: "//covalenthq.com/static/images/blockchains/svgs/astar-main.svg"
+        banner:
+        published: true
+      - 
         title: Shiden
         link: /docs/networks/shiden/
-        icon: "//covalenthq.com/static/images/blockchains/svgs/astar.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/shiden.svg"
         banner:
         published: true
       - 
