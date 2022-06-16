@@ -175,6 +175,10 @@
             link: /docs/project-showcase/dex/spiritswap/
             published: true
           -
+            title: StellaSwap
+            link: /docs/project-showcase/dex/stellaswap/
+            published: true
+          -
             title: AppDEX
             link: /docs/project-showcase/dex/appdex/
             published: true
