@@ -2,7 +2,7 @@
 
 <h1>{{ .Get "dex" }}</h1>
 
-<p><a href='{{ .Get "website" }}'>{{ .Get "dex" }}</a> is a decentralized exchange (DEX) on the {{ .Get "apiReferenceChainName" }} Network. {{ .Get "dex" }}'s design is based on the Uniswap constant-product automated market maker (AMM). In an AMM, liquidity providers simply deposit a pair of tokens and an algorithm automatically makes markets for the token pair. Traders can easily swap between tokens in the AMM and get guaranteed rates for the swaps. Each swap on {{ .Get "dex" }} incurs a fee, which gets distributed to liquidity providers as their payment for work.</p>
+<p><a href='{{ .Get "website" }}' target="_blank">{{ .Get "dex" }}</a> is a decentralized exchange (DEX) on the {{ .Get "apiReferenceChainName" }} Network. {{ .Get "dex" }}'s design is based on the Uniswap constant-product automated market maker (AMM). In an AMM, liquidity providers simply deposit a pair of tokens and an algorithm automatically makes markets for the token pair. Traders can easily swap between tokens in the AMM and get guaranteed rates for the swaps. Each swap on {{ .Get "dex" }} incurs a fee, which gets distributed to liquidity providers as their payment for work.</p>
 
 <img src='/static/images/project-showcase/{{ .Get "dex" | lower }}/{{ .Get "dex" | lower }}-app.png' alt="DEX app screenshot">
 <br>
@@ -51,7 +51,7 @@
 <p>Try the key endpoints directly in your browser from the <a href='https://www.covalenthq.com/docs/api/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs#/0/0/USD/{{ .Get "apiReferenceChain" }}' target="_blank">API Reference</a>.
 
 <h2>Build Analytics Dashboards</h2>
-<p>Here is a breakdown of the the specific API endpoints that are used, or can be used, to build the {{ .Get "dex" }} analytics dashboard:</p>
+<p>Here is a breakdown of the the specific API endpoints that can be used to build the {{ .Get "dex" }} analytics dashboard:</p>
 
 <img src='/static/images/project-showcase/{{ .Get "dex" | lower }}/{{ .Get "dex" | lower }}-analytics.png' alt="Analytics screenshot">
 
@@ -92,5 +92,5 @@
 <a href='https://github.com/covalenthq/dex-dashboard-template?utm_source={{ .Get "dex" | lower  }}&utm_medium=partner-docs' target="_blank"><img src='/static/images/project-showcase/{{ .Get "dex" | lower }}/dex-dashboard-{{ .Get "dex" | lower }}.png' alt="Dex dashboard screenshot"></a>
 <p>Template repo:<a href='https://github.com/covalenthq/dex-dashboard-template?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">https://github.com/covalenthq/dex-dashboard-template</a></p>
 
-<p>This code template is a showcase of the <code> XY=K</code> suite of Covalent API endpoints powering DEX dashboards such as {{ .Get "dex" }}. The code is open source and forkable for anyone to customize it.</p>
+<p>This code template is a showcase of the <code> XY=K</code> suite of Covalent API endpoints capable of powering DEX dashboards. The code is open source and forkable for anyone to customize it.</p>
 
