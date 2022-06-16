@@ -4,7 +4,7 @@ LinkTitle: SpiritSwap
 weight: 1
 hidden: true
 featuredImage: /static/images/project-showcase/spiritswap-banner.png
-description: DEX based on Uniswap's XY=K automated market maker on the Fantom chain.
+description: DEX based on Uniswap's XY=K automated market maker on the Fantom network.
 ---
 
 {{< onDexPartnerDocsTemplate dex="SpiritSwap" apiReferenceChainName="Fantom" apiReferenceChain="250" website="https://info.spiritswap.finance/" >}}

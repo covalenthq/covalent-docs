@@ -4,15 +4,15 @@ LinkTitle: SpiritSwap
 weight: 1
 hidden: false
 featuredImage: /static/images/project-showcase/spiritswap-banner.png
-description: DEX based on Uniswap's XY=K automated market maker on the Fantom chain.
+description: DEX based on Uniswap's XY=K automated market maker on the Fantom network.
 ---
 
 {{< dexPartnerDocsTemplate dex="SpiritSwap" apiReferenceChainName="Fantom" apiReferenceChain="250" website="https://info.spiritswap.finance/" >}}
 
 ## Resources
 Here are some additional resources to help you get started with SpiritSwap and the Covalent API:
-- [SpiritSwap App](https://docs.spiritswap.finance?utm_source=covalent&utm_medium=partner-docs)
-- [SpiritSwap Docs](https://app.spiritswap.finance?utm_source=covalent&utm_medium=partner-docs)
+- [SpiritSwap App](https://app.spiritswap.finance?utm_source=covalent&utm_medium=partner-docs)
+- [SpiritSwap Docs](https://docs.spiritswap.finance?utm_source=covalent&utm_medium=partner-docs)
 - [SpiritSwap Discord](https://discord.com/invite/uYNsSCKcfT?utm_source=covalent&utm_medium=partner-docs)
 - [Covalent API Reference](https://covalenthq.com/docs/api/?utm_source=spiritswap&utm_medium=partner-docs)
 - [Covalent API FAQs](https://www.covalenthq.com/docs/developer/faq/?utm_source=spiritswap&utm_medium=partner-docs)
