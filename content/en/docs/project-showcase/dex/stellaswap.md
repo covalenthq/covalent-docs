@@ -7,7 +7,7 @@ featuredImage: /static/images/project-showcase/stellaswap-banner.png
 description: DEX based on Uniswap's XY=K automated market maker on the Moonbeam network.
 ---
 
-{{< dexPartnerDocsTemplate dex="StellaSwap" apiReferenceChainName="Moonbeam Mainnet" apiReferenceChain="1284" website="https://stellaswap.com/" >}}
+{{< dexPartnerDocsTemplate dex="StellaSwap" apiReferenceChainName="Moonbeam Mainnet" apiReferenceChain="1284" website="https://analytics.stellaswap.com/" >}}
 
 ## Resources
 Here are some additional resources to help you get started with StellaSwap and the Covalent API:
