@@ -118,4 +118,10 @@
         icon: "//covalenthq.com/static/images/blockchains/svgs/aurora.svg"
         banner:
         published: true
+      - 
+        title: Cronos
+        link: /docs/networks/cronos/
+        icon: "//covalenthq.com/static/images/blockchains/svgs/cronos.svg"
+        banner:
+        published: true
                    

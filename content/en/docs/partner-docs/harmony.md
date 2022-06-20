@@ -2,6 +2,7 @@
 title: Harmony Docs
 LinkTitle: harmony-docs
 hidden: false
+livePage: https://docs.harmony.one/home/developers/tools/covalent
 ---
 
 {{< partnerDocsTemplate blockchain="harmony" mainnet="1666600000" testnet="1666700000" apiReferenceChain="1666600000" >}}

@@ -1,5 +1,5 @@
 ---
-title: IoTeX Mainnet & Testnet
+title: IoTeX indexing & querying data API
 LinkTitle: IoTeX
 weight: 14
 hidden: false
