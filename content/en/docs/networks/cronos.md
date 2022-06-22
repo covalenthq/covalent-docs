@@ -17,11 +17,12 @@ favicon: cronos-mainnet-logo
 [Cronos](https://cronos.org/?utm_source=covalent&utm_medium=network-docs) is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. An open-source and permission-less Layer 1 chain which runs in parallel to the Crypto.org Chain, Cronos aims to massively scale the DeFi, GameFi, and overall Web3 user community by providing builders with the ability to instantly port apps and crypto assets from other chains while benefiting from low transaction fees, high throughput, and fast finality. 
 
 Key reasons to use Cronos include:
-- EVM Compatible - Built on Ethermint, which supports rapid porting of apps & smart contracts from Ethereum and other EVM-compatible chains
-- Scalable- Cronos can process more transactions per minute than Ethereum, making it faster, cheaper, and greener to execute smart contracts
-- Interoperable - The Inter Blockchain Communications (IBC) protocol enables interoperability and bridging to the Crypto.org Chain, and other IBC-enabled chains, such as Cosmos Hub
-- Proof of Authority (POA)- A more streamlined and scalable consensus mechanism consensus protocol while still maintaining security with a range of validators that many different parties run
-- Open Source - Open for the community to review and provide suggestions to strengthen Cronos
+- **EVM Compatibility:** Cronos is built on Ethermint, which supports rapid porting of apps and smart contracts from Ethereum and other EVM-compatible chains.
+- **Scalability:** Cronos aims to deliver faster, cheaper, and greener transactions and smart contract execution than proof of work chains.
+- **Interoperability:** The Inter Blockchain Communications (IBC) protocol enables interoperability and bridging to other IBC-enabled chains, such as Cosmos Hub, Osmosis, etc.
+- **Proof of Authority (POA):** Utilising POA as a more streamlined and scalable consensus mechanism while still maintaining security through a range of experienced and carefully-vetted validators.
+- **Open Source:** High involvement of the community is welcomed to proactively review and provide suggestions to strengthen Cronos.
+
 
 ### Quick facts
 
@@ -30,8 +31,8 @@ Key reasons to use Cronos include:
 |Property|Value|
 |---|---|
 |Cronos Mainnet|`25`|
-|Cronos Blockchain Explorer|https://cronos.org/explorer/|
-|Block time|~8 seconds|
+|Cronos Blockchain Explorer|https://cronoscan.com/|
+|Block time|~6 seconds|
 
 </TableWrap>
 
@@ -72,7 +73,7 @@ All __Class A__ endpoints are supported for the Cronos Mainnet. You can query th
 </div>
 
 
-<a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent's API Reference</a>
+<a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/#/0/0/USD/25?utm_source=cronos&utm_medium=network-docs">Go to Covalent's API Reference</a>
 
 ---
 
