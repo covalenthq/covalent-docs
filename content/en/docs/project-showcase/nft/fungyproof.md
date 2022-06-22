@@ -1,6 +1,6 @@
 ---
 title: FungyProof
-order: 9
+weight: -1
 hidden: false
 featuredImage: /static/images/project-showcase/banners/fungyproof.png
 author: anadi2311

@@ -1,6 +1,6 @@
 ---
 title: TXN Wallet
-order: 5
+weight: 3
 hidden: false
 featuredImage: /static/images/project-showcase/banners/txnwallet.png
 author: anadi2311

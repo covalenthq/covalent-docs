@@ -1,23 +1,15 @@
 ---
-title: MultiChain-Analysis
+title: Multi-chain Analysis
 order: 1
 hidden: false
 hideChildren: false
 ---
 
-# Multi-Chain Analytics
+# Multi-chain Analysis
 
-## [EthHole](/docs/project-showcase/multichain-analysis/ethhole/)
-[![EthHole](/static/images/project-showcase/banners/eth-hole.png)](/docs/project-showcase/multichain-analysis/ethhole/)
-
-## [Dokodemodoa](/docs/project-showcase/multichain-analysis/dokodemodoa/)
-[![Dokodemodoa](/static/images/project-showcase/banners/Dokodemodoa.png)](/docs/project-showcase/multichain-analysis/dokodemodoa/)
-
-## [GoSwapp](/docs/project-showcase/multichain-analysis/goswapp/)
-[![GoSwapp](/static/images/project-showcase/banners/go-swapp.png)](/docs/project-showcase/multichain-analysis/goswapp/)
-
-## [SpiritSwap Overview](/docs/project-showcase/multichain-analysis/spiritswap-overview/)
-[![SpiritSwap Overview](/static/images/project-showcase/banners/spiritswap-overview.png)](/docs/project-showcase/multichain-analysis/spiritswap-overview/)
-
-## [TXN Wallet](/docs/project-showcase/multichain-analysis/txnwallet/)
-[![TXN Wallet](/static/images/project-showcase/banners/txnwallet.png)](/docs/project-showcase/multichain-analysis/txnwallet/)
+| Hackathon Projects | |
+| :-----------: | :-----------: |
+| [![EthHole](/static/images/project-showcase/banners/eth-hole.png)](/docs/project-showcase/multichain-analysis/ethhole/)| [![Dokodemodoa](/static/images/project-showcase/banners/Dokodemodoa.png)](/docs/project-showcase/multichain-analysis/dokodemodoa/)|
+|[EthHole](/docs/project-showcase/multichain-analysis/ethhole/) |[Dokodemodoa](/docs/project-showcase/multichain-analysis/dokodemodoa/)|
+|[![Poolz](/static/images/project-showcase/banners/poolz.png)](/docs/project-showcase/multichain-analysis/poolz/)| |
+|[Poolz Finance](/docs/project-showcase/multichain-analysis/poolz/) | |

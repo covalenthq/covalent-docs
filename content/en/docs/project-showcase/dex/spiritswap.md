@@ -1,9 +1,9 @@
 ---
 title: SpiritSwap DEX
 LinkTitle: SpiritSwap
-weight: 1
 hidden: false
-featuredImage: /static/images/project-showcase/spiritswap-banner.png
+weight: 1
+featuredImage: /static/images/project-showcase/spiritswap/spiritswap-banner.png
 description: DEX based on Uniswap's XY=K automated market maker on the Fantom network.
 ---
 

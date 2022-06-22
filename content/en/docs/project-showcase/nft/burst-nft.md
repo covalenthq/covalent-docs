@@ -1,6 +1,6 @@
 ---
 title: Burst NFT
-order: 5
+weight: 1
 hidden: false
 author: anadi2311
 updated: 2021-05-30

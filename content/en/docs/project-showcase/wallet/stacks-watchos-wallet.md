@@ -1,7 +1,7 @@
 ---
 title: Stack WatchOS Wallet
-order: 6
 hidden: false
+weight: 6
 author: emmaodia
 updated: 2021-05-30
 featuredImage: /static/images/project-showcase/banners/stacks.png

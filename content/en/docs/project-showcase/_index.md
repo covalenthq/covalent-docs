@@ -1,19 +1,33 @@
 ---
 title: Project Showcase
-weight: 8
 hideChildren: false
 ---
 
 # Project Showcase
 Our API powers thousands of applications and we are pleased to showcase many of them!
 
-The projects are divided into the following high-level categories:
+The projects are divided into the following use cases:
 
-- [DEXs](/docs/project-showcase/dex/)
+|Covalent API Use Cases | | |
+| :-----------: | :-----------: | :-----------: |
+|[![Wallets](https://www.covalenthq.com/static/images/partner-docs/wallets.png)](/docs/project-showcase/wallet/) | [![NFT](https://www.covalenthq.com/static/images/partner-docs/nft_icon.png)](/docs/project-showcase/nft/) | [![DEXs](https://www.covalenthq.com/static/images/partner-docs/trading.png)](/docs/project-showcase/dex/) |
+| [Wallets](/docs/project-showcase/wallet/)|[NFTs](/docs/project-showcase/nft/)|[DEXs](/docs/project-showcase/dex/)|
+| [![Multi-chain Analysis](https://www.covalenthq.com/static/images/partner-docs/forensics.png)](/docs/project-showcase/multichain-analysis/)| [![Tools](https://www.covalenthq.com/static/images/partner-docs/pricing.png)](/project-showcase/tools/) |
+| [Multi-chain Analysis](/docs/project-showcase/multichain-analysis/)| [Tools](/project-showcase/tools/) | |
+
+
+
+
+
+
+
+
+
+<!-- - [DEXs](/docs/project-showcase/dex/)
 - [Governance](/docs/project-showcase/governance/)
 - [MultiChain Analysis](/docs/project-showcase/multichain-analysis/)
 - [Wallets](/docs/project-showcase/wallet/)
 - [NFT](/docs/project-showcase/nft/)
-- [Tools](/project-showcase/tools/) 
+- [Tools](/project-showcase/tools/)  -->
 
-Check them out and support their social channels and groups!
+Check them out and support their social channels!

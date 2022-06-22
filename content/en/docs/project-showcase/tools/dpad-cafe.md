@@ -14,11 +14,11 @@ description: A protocol for Profit-Sharing Economy as a Service - allowing any D
 
 ### Website
 
-https://partners.d-pad.cafe
+https://skillwallet.id/
 
 <Aside>
 
-"We built a function for a re-usable Chainlink External Adapter for an iterative Covalent job that tracks interactions to a specific protocol's contract."
+"We built a function for a reusable Chainlink External Adapter for an iterative Covalent job that tracks interactions to a specific protocol's contract."
 
 </Aside>
 

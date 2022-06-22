@@ -1,6 +1,6 @@
 ---
 title: Poolz Finance
-order: 7
+weight: 3
 hidden: false
 featuredImage: ../images/poolz.png
 updated: 2021-11-01
@@ -9,15 +9,14 @@ tags:
   - DeFi
 ---
 
-![Poolz Banner](../images/poolz.png)
+![Poolz Banner](/static/images/project-showcase/banners/poolz.png)
 
 &nbsp;
 # Poolz Finance
 
 ### Website
-https://poolz.finance/leaderboard
+https://poolz.finance
 
-&nbsp;
 Poolz is a decentralized cross-chain IDO platform, built on top of the Web 3.0 Network.
 
 &nbsp;
