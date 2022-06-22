@@ -15,19 +15,4 @@ The projects are divided into the following use cases:
 | [![Multi-chain Analysis](https://www.covalenthq.com/static/images/partner-docs/forensics.png)](/docs/project-showcase/multichain-analysis/)| [![Tools](https://www.covalenthq.com/static/images/partner-docs/pricing.png)](/project-showcase/tools/) |
 | [Multi-chain Analysis](/docs/project-showcase/multichain-analysis/)| [Tools](/project-showcase/tools/) | |
 
-
-
-
-
-
-
-
-
-<!-- - [DEXs](/docs/project-showcase/dex/)
-- [Governance](/docs/project-showcase/governance/)
-- [MultiChain Analysis](/docs/project-showcase/multichain-analysis/)
-- [Wallets](/docs/project-showcase/wallet/)
-- [NFT](/docs/project-showcase/nft/)
-- [Tools](/project-showcase/tools/)  -->
-
 Check them out and support their social channels!
