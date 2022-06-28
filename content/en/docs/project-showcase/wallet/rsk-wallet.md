@@ -1,7 +1,7 @@
 ---
 title: Sovryn - RSK Multi-Wallet
-order: 7
 hidden: false
+weight: 4
 featuredImage: /static/images/project-showcase/banners/rsk-wallet.png
 description: This project is an RSK-based web wallet with login system. Registered users will be able to see their tokens balance & token transfers, NFTs and others data. 
 ---

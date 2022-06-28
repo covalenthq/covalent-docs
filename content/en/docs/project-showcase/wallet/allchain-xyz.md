@@ -1,7 +1,7 @@
 ---
-title: All chain
-order: 1
+title: Allchains
 hidden: false
+weight: 1
 featuredImage: /static/images/project-showcase/allchain-xyz.png
 description: Check data wallet all chains - real time
 ---
@@ -10,11 +10,11 @@ description: Check data wallet all chains - real time
 
 &nbsp;
 
-# All chain
+# Allchains
 
 ### Website
 
-https://allchain.xyz/
+https://allchains.xyz/
 
 <Aside>
 

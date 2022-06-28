@@ -1,8 +1,8 @@
 ---
 title: Governance
-order: 1
-hidden: false
-hideChildren: false
+weight: 4
+hidden: true
+hideChildren: true
 ---
 
 # Governance

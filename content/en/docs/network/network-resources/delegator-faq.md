@@ -6,7 +6,7 @@ title: Delegator FAQ
 
 ### 1. How can I stake my CQT?
 
-Staking your CQT can be completed via the [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/). For a complete guide, please visit the guide 'How to stake CQT on the Covalent Network'.
+Staking your CQT can be completed via the [Covalent Network Staking Dashboard](https://www.covalenthq.com/staking/#/). For a complete guide, please visit the guide 'How to stake CQT on the Covalent Network'.
 
 ### 2. Can delegators choose any Network Operator?
 
@@ -38,7 +38,7 @@ Given that slashing is not live on the Covalent Network yet, there is no risk of
 
 The primary risk is that the staking contract is compromised. However, to mitigate this risk, the contract has undergone multiple audits. These can be found here:
 
-- [Security & Audits]()
+- [Security & Audits](https://www.covalenthq.com/docs/network/network-resources/security-and-audits/)
 
 ### 9. Is there a cool-down period?
 
@@ -54,4 +54,4 @@ This fee is charged as Operators have to pay the expense of running the infrastr
 
 ### 12. Is staking CQT non-custodial?
 
-While CQT is held in the staking contract, it is only the owner of the respective staked CQT that can interact with it. 
+While CQT is held in the staking contract, it is only the owner of the respective staked CQT that can interact with it.

@@ -1,0 +1,115 @@
+<h1>Covalent</h1>
+
+<p><a href='https://www.covalenthq.com/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">Covalent</a> provides a unified API to bring full transparency and visibility to assets across all blockchains. The Covalent API can be used to build the <a href='{{ .Get "website"}}' target="_blank">{{ .Get "dex" }} analytics dashboard.</a></p>
+<p>To get started, sign up for a <a href='https://www.covalenthq.com/platform/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank"><strong>Covalent API Key</strong></a>. </p>
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center"><em>Developer Mode (JSON)</em></th>
+            <th style="text-align:center"><em>Analyst Mode (CSV)</em></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/developer_mode.png" alt="Developer Mode"></td>
+            <td style="text-align:center"><img src="https://www.covalenthq.com/static/images/partner-docs/analyst_mode.png" alt="Analyst Mode"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>The Covalent API is RESTful and offers the following out-of-the-box for <em>{{ .Get "dex" }}</em>:</p>
+
+<table>
+    <thead>
+        <tr>
+            <th><strong>Covalent API</strong></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Response formats</strong></td>
+            <td>JSON and CSV</td>
+        </tr>
+        <tr>
+            <td><strong>Real time response</strong></td>
+            <td>2 blocks</td>
+        </tr>
+        <tr>
+            <td><strong>Batch response</strong></td>
+            <td>30 minutes</td>
+        </tr>
+        <tr>
+            <td><strong>Base URL</strong></td>
+            <td><a href="https://api.covalenthq.com/v1">https://api.covalenthq.com/v1</a></td>
+        </tr>
+        <tr>
+            <td><strong>Networks & <code>chain_id</code></strong></td>
+            <td>{{ .Get "apiReferenceChainName" }} - <code>{{ .Get "apiReferenceChain" }}</code></td>
+        </tr>
+        <tr>
+            <td><strong>Key Endpoints</strong></td>
+            <td>
+                <br>- <a href='https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20pools/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">Get {{ .Get "dex"}} pools</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20network%20exchange%20tokens/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">Get {{ .Get "dex" }} network exchange tokens</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20transactions%20for%20exchange/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">Get {{ .Get "dex" }} transactions for exchange</a> 
+                <br> - <a href='https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20ecosystem%20chart%20data/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">Get {{ .Get "dex" }} ecosystem chart data</a> 
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Try the key endpoints directly in your browser from the <a href='https://www.covalenthq.com/docs/api/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs#/0/0/USD/{{ .Get "apiReferenceChain" }}' target="_blank">API Reference</a>.
+
+<h2>Build Analytics Dashboards</h2>
+<p>Here is a breakdown of the the specific API endpoints that can be used to build the {{ .Get "dex" }} analytics dashboard:</p>
+
+<img src='/static/images/project-showcase/{{ .Get "dex" | lower }}/{{ .Get "dex" | lower }}-analytics.png' alt="Analytics screenshot">
+
+<table>
+    <thead>
+        <tr>
+            <th>Marker</th>
+            <th>Endpoint</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href='https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank"><code>/{{ .Get "apiReferenceChain" }}/address/:address/transactions_v2</code></a></td>
+            <td>Timeseries TVL based on decoded <code>Deposit</code> and <code>Withdraw</code> events</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href='https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20pools%20by%20addressUSD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank"><code>/{{ .Get "apiReferenceChain" }}/xy=k/{{ .Get "dex" | lower }}/pools/address/:address</code></a></td>
+            <td>24h volume as a timeseries chart</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href='https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20network%20exchange%20tokens/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank"><code>/{{ .Get "apiReferenceChain" }}/xy=k/{{ .Get "dex" | lower }}/tokens</code></a></td>
+            <td>Top 50 tokens by price, volume, liquidity</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href='https://www.covalenthq.com/docs/api/#/0/Get%20XY=K%20pools/USD/{{ .Get "apiReferenceChain" }}/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank"><code>/{{ .Get "apiReferenceChain" }}/xy=k/{{ .Get "dex" | lower }}/pools</code></a></td>
+            <td>Top 50 pools by price, volume, liquidity</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>Code Template</h2>
+<a href='https://github.com/covalenthq/dex-dashboard-template?utm_source={{ .Get "dex" | lower  }}&utm_medium=partner-docs' target="_blank"><img src='/static/images/project-showcase/{{ .Get "dex" | lower }}/dex-dashboard-{{ .Get "dex" | lower }}.png' alt="Dex dashboard screenshot"></a>
+<p>Template repo: <a href='https://github.com/covalenthq/dex-dashboard-template?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">https://github.com/covalenthq/dex-dashboard-template</a></p>
+
+<p>This code template is a showcase of the <code> XY=K</code> suite of Covalent API endpoints capable of powering DEX dashboards. The code is open source and forkable for anyone to customize it.</p>
+
+<h2>Resources</h2>
+<p>Here are some additional resources to help you get started with the Covalent API:</p>
+<ul>
+    <li><a href='https://www.covalenthq.com/docs/api/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs#/0/0/USD/{{ .Get "apiReferenceChain" }}' target="_blank">Covalent API Reference</a></li>
+    <li><a href='https://www.covalenthq.com/docs/developer/faq/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">Covalent API FAQs</a></li>
+    <li><a href='https://www.covalenthq.com/discord/?utm_source={{ .Get "dex" | lower }}&utm_medium=partner-docs' target="_blank">Covalent Discord Support</a></li>
+</ul>

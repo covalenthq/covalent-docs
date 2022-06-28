@@ -1,6 +1,6 @@
 ---
 title: EthHole.Link
-order: 1
+weight: 2
 hidden: false
 featuredImage: /static/images/project-showcase/banners/eth-hole.png
 description: A dApp to monitor the token flow from ethereum to layer2 and it’s sidechains.

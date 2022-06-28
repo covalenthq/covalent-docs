@@ -161,42 +161,71 @@
         subsection:
 
   -
-    title: Project Showcase
+    title: Projects
     link: /docs/project-showcase/
     published: true
     subsection:
       - 
-        title: Dex
+        title: Wallets
+        link: /docs/project-showcase/wallet/
+        published: true
+        subsection:
+          -
+            title: Allchains
+            link: /docs/project-showcase/wallet/allchain-xyz/
+            published: true
+          -
+            title: Bokfolio
+            link: /docs/project-showcase/wallet/bokfolio/
+            published: true
+          -
+            title: TXN Wallet
+            link: /docs/project-showcase/wallet/txnwallet/
+            published: true
+          -
+            title: Sovryn - RSK Multi-Wallet
+            link: /docs/project-showcase/wallet/rsk-wallet/
+            published: true
+          -
+            title: Stack WatchOS Wallet
+            link: /docs/project-showcase/wallet/stacks-watchos-wallet/
+            published: true
+      - 
+        title: DEXs
         link: /docs/project-showcase/dex/
         published: true
         subsection:
           -
-            title: AppDEX
-            link: /docs/project-showcase/dex/appdex/
+            title: SpiritSwap
+            link: /docs/project-showcase/dex/spiritswap/
             published: true
           -
-            title: Crystal ETH
-            link: /docs/project-showcase/dex/crystaleth/
-            published: true
+            title: StellaSwap
+            link: /docs/project-showcase/dex/stellaswap/
+            published: false
           -
             title: Li.Finance
             link: /docs/project-showcase/dex/li-finance/
             published: true
           -
-            title: Stake All Finance
+            title: Stakeall Finance
             link: /docs/project-showcase/dex/stakeall-finance/
+            published: true
+          -
+            title: AppDEX
+            link: /docs/project-showcase/dex/appdex/
             published: true
       - 
         title: Governance
         link: /docs/project-showcase/governance/
-        published: true
+        published: false
         subsection:
           -
             title: Aave Governance
             link: /docs/project-showcase/governance/aave-governance/
-            published: true
+            published: false
       - 
-        title: MultiChain-Analysis
+        title: Multi-chain Analysis
         link: /docs/project-showcase/multichain-analysis/
         published: true
         subsection:
@@ -209,22 +238,18 @@
             link: /docs/project-showcase/multichain-analysis/ethhole/
             published: true
           -
-            title: GoSwapp
-            link: /docs/project-showcase/multichain-analysis/goswapp/
-            published: true
-          -
-            title: SpiritSwap Overview
-            link: /docs/project-showcase/multichain-analysis/spiritswap-overview/
-            published: true
-          -
-            title: TXN Wallet
-            link: /docs/project-showcase/multichain-analysis/txnwallet/
+            title: Poolz Finance
+            link: /docs/project-showcase/multichain-analysis/poolz/
             published: true
       - 
-        title: NFT
+        title: NFTs
         link: /docs/project-showcase/nft/
         published: true
         subsection:
+          -
+            title: FungyProof
+            link: /docs/project-showcase/tools/fungyproof/
+            published: true
           -
             title: Burst NFT
             link: /docs/project-showcase/nft/burst-nft/
@@ -249,10 +274,6 @@
             title: Nifty NFTs
             link: /docs/project-showcase/nft/nifty-nfts/
             published: true
-          -
-            title: PixelProperty
-            link: /docs/project-showcase/nft/pixel-property/
-            published: true
       - 
         title: Tools
         link: /docs/project-showcase/tools/
@@ -271,71 +292,10 @@
             link: /docs/project-showcase/tools/dpad-cafe/
             published: true
           -
-            title: Easy Web3
-            link: /docs/project-showcase/tools/easyweb3/
-            published: true
-          -
             title: FTM Scan
             link: /docs/project-showcase/tools/ftm-scan/
             published: true
           -
-            title: FungyProof
-            link: /docs/project-showcase/tools/fungyproof/
-            published: true
-          -
-            title: Sovryn Dashboard
-            link: /docs/project-showcase/tools/sovryn-dashboard/
-            published: true
-          -
-            title: Spirit View
-            link: /docs/project-showcase/tools/spirit-view/
-            published: true
-          -
-            title: SpiritSwap Analytics
-            link: /docs/project-showcase/tools/spiritswap-analytics/
-            published: true
-          -
             title: Yung Fantom
             link: /docs/project-showcase/tools/yung-fantom/
-            published: true
-      - 
-        title: Wallet
-        link: /docs/project-showcase/wallet/
-        published: true
-        subsection:
-          -
-            title: All chain
-            link: /docs/project-showcase/wallet/allchain-xyz/
-            published: true
-          -
-            title: Avalanche Wallet Checker
-            link: /docs/project-showcase/wallet/omw-awc/
-            published: true
-          -
-            title: Bokfolio
-            link: /docs/project-showcase/wallet/bokfolio/
-            published: true
-          -
-            title: Dash Monke
-            link: /docs/project-showcase/wallet/dash-monke/
-            published: true
-          -
-            title: NES Wallet
-            link: /docs/project-showcase/wallet/nes-wallet/
-            published: false
-          -
-            title: Sovryn - RSK Multi-Wallet
-            link: /docs/project-showcase/wallet/rsk-wallet/
-            published: true
-          -
-            title: SOVY Wallet
-            link: /docs/project-showcase/wallet/sovy-wallet/
-            published: true
-          -
-            title: Spectre
-            link: /docs/project-showcase/wallet/spectre/
-            published: true
-          -
-            title: Stack WatchOS Wallet
-            link: /docs/project-showcase/wallet/stacks-watchos-wallet/
             published: true

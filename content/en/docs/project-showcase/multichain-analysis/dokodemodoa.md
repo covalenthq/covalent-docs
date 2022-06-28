@@ -1,6 +1,6 @@
 ---
 title: Dokodemodoa
-order: 4
+weight: 1
 hidden: false
 featuredImage: /static/images/project-showcase/banners/Dokodemodoa.png
 description: All-in-one blockchain explorer. 

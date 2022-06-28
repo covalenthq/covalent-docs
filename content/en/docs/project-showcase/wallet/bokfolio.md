@@ -1,7 +1,7 @@
 ---
 title: Bokfolio
-order: 9
 hidden: false
+weight: 2
 featuredImage: /static/images/project-showcase/banners/BokFolio.png
 description: Simple and efficient way to keep track of wallets on the Binance Smart Chain in fiat currency.
 ---

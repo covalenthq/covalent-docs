@@ -1,7 +1,7 @@
 ---
 title: Li.Finance
-order: 3
 hidden: false
+weight: 2
 featuredImage: /static/images/project-showcase/li-finance.png
 description: Li.Finance allows cross-chain any-to-any swaps by aggregating cross-chain liquidity protocols, DEXes and lending protocols.
 ---
