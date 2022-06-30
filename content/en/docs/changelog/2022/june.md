@@ -16,7 +16,5 @@ description: Astar indexed! Uniswap bug fixes.
 - In addition, we have hidden our outdated pricing endpoints `Get historical prices by ticker symbol`, `Get spot prices`, and `Get price volatility`. 
 
 ### BUG FIXES
-- We fixed the following bugs regarding Uniswap data.
-    - Filtered out pools where a tokens contract decimal is 0 which was inflating liquidity quotes.
-    - Filtered out pools with obscenely high liquidity quotes from low liquidity pools.
+- Regarding Uniswap, we filtered out pools where a token's contract decimal was 0 which was inflating liquidity pool quotes. This eliminated obscene quotes from low liquidity pools. 
 
