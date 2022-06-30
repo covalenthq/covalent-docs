@@ -77,9 +77,9 @@
         banner:
         published: true
       - 
-        title: Polyjuice
-        link: /docs/networks/polyjuice/
-        icon: "//covalenthq.com/static/images/blockchains/svgs/nervos.svg"
+        title: Godwoken
+        link: /docs/networks/godwoken/
+        icon: "//covalenthq.com/static/images/blockchains/svgs/godwoken.svg"
         banner:
         published: true
       - 
