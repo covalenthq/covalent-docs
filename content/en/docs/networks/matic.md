@@ -34,7 +34,7 @@ The [Polygon / Matic Network](https://matic.network/) brings massive scale to Et
 
 
 ### Quickstart overview video
-<YouTube id="qhibXxKANWE"/>
+{{< youtube qhibXxKANWE >}}
 
 
 ## Supported endpoints

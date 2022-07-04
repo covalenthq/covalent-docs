@@ -1,12 +1,12 @@
 ---
 title: Chainlink Example
 weight: 2
-description: Learn how to use the Covalent API with Chainlink 
+description: Learn how to use the Covalent Unified API with Chainlink 
 ---
 
 
 # Introduction
-[Chainlink](https://chain.link/) is a decentralized oracle network that connects smart contracts with off-chain data and services. With Chainlink, smart contracts, which are typically isolated blocks of code, can access any external data using external APIs *including* the Covalent API!
+[Chainlink](https://chain.link/) is a decentralized oracle network that connects smart contracts with off-chain data and services. With Chainlink, smart contracts, which are typically isolated blocks of code, can access any external data using external APIs *including* the Covalent Unified API!
 
 Recently, we have seen developers explore using various and interesting on-chain data feeds, via the Covalent API, into smart contracts. For example, [this project](https://showcase.ethglobal.com/roadtoweb3/risk) uses an NFT collection floor price data feed to create a betting game.
 

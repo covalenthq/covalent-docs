@@ -17,6 +17,10 @@
         link: /docs/tools/chainlink-example
         published: true
       - 
+        title: Moralis Plugin
+        link: /docs/tools/moralis
+        published: true
+      - 
         title: Community Tools
         link: /docs/tools/community
         published: true
