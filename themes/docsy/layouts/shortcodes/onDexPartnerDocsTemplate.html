@@ -46,7 +46,15 @@
         </tr>
         <tr>
             <td><strong>Networks & <code>chain_id</code></strong></td>
-            <td>{{ .Get "apiReferenceChainName" }} - <code>{{ .Get "apiReferenceChain" }}</code></td>
+            <td>
+                {{ $array := split (.Get "chains") "," }}
+                {{ range $array }}
+                    {{ $item := split . " "}}
+                    {{ $name := index $item 0 }}
+                    {{ $id := index $item 1 }}
+                    {{ $name }} - <code>{{ $id }}</code><br>
+                {{ end }}
+            </td>
         </tr>
         <tr>
             <td><strong>Key Endpoints</strong></td>

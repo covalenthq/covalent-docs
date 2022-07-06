@@ -200,9 +200,21 @@
             link: /docs/project-showcase/dex/spiritswap/
             published: true
           -
+            title: SpookySwap
+            link: /docs/project-showcase/dex/spookyswap/
+            published: true
+          -
             title: StellaSwap
             link: /docs/project-showcase/dex/stellaswap/
-            published: false
+            published: true
+          -
+            title: QuickSwap
+            link: /docs/project-showcase/dex/quickswap/
+            published: true
+          -
+            title: SushiSwap
+            link: /docs/project-showcase/dex/sushiswap/
+            published: true
           -
             title: Li.Finance
             link: /docs/project-showcase/dex/li-finance/

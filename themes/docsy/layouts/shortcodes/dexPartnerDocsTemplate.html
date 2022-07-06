@@ -2,7 +2,7 @@
 
 <h1>{{ .Get "dex" }}</h1>
 
-<p><a href='{{ .Get "website" }}' target="_blank">{{ .Get "dex" }}</a> is a decentralized exchange (DEX) on the {{ .Get "apiReferenceChainName" }} Network. {{ .Get "dex" }}'s design is based on the Uniswap constant-product automated market maker (AMM). In an AMM, liquidity providers simply deposit a pair of tokens and an algorithm automatically makes markets for the token pair. Traders can easily swap between tokens in the AMM and get guaranteed rates for the swaps. Each swap on {{ .Get "dex" }} incurs a fee, which gets distributed to liquidity providers as their payment for work.</p>
+<p><a href='{{ .Get "website" }}' target="_blank">{{ .Get "dex" }}</a> is a decentralized exchange (DEX) on {{ .Get "apiReferenceChainName" }}. {{ .Get "dex" }}'s design is based on the Uniswap constant-product automated market maker (AMM). In an AMM, liquidity providers simply deposit a pair of tokens and an algorithm automatically makes markets for the token pair. Traders can easily swap between tokens in the AMM and get guaranteed rates for the swaps. Each swap on {{ .Get "dex" }} incurs a fee, which gets distributed to liquidity providers as their payment for work.</p>
 
 <img src='/static/images/project-showcase/{{ .Get "dex" | lower }}/{{ .Get "dex" | lower }}-app.png' alt="DEX app screenshot">
 <br>
@@ -34,7 +34,15 @@
         </tr>
         <tr>
             <td><strong>Networks & <code>chain_id</code></strong></td>
-            <td>{{ .Get "apiReferenceChainName" }} - <code>{{ .Get "apiReferenceChain" }}</code></td>
+            <td>
+                {{ $array := split (.Get "chains") "," }}
+                {{ range $array }}
+                    {{ $item := split . " "}}
+                    {{ $name := index $item 0 }}
+                    {{ $id := index $item 1 }}
+                    {{ $name }} - <code>{{ $id }}</code><br>
+                {{ end }}
+            </td>
         </tr>
         <tr>
             <td><strong>Key Endpoints</strong></td>
