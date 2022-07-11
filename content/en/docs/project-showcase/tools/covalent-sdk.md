@@ -26,7 +26,7 @@ A fully tested SDK for the Covalent API with Typescript support. It supports all
 
 &nbsp;
 ### Event
-The project was built at [#Gitcoin's GR14](https://gitcoin.co/hackathon/gr14/)
+The project was built at [#Gitcoin's GR14](https://gitcoin.co/hackathon/gr14/).
 
 &nbsp;
 ### Developers
