@@ -3,7 +3,7 @@ title: Covalent SDK
 weight: 2
 hidden: false
 featuredImage: /static/images/project-showcase/banners/covalent-sdk.png
-description: A fully tested SDK for the Covalent API with Typescript support. It supports all endpoints to easily fetch data from Covalent.
+description: A fully tested Node SDK for the Covalent API with Typescript support. It supports all endpoints to easily fetch data from Covalent.
 ---
 
 ![Covalent SDK Banner](/static/images/project-showcase/banners/covalent-sdk.png)
