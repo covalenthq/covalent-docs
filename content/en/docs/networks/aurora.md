@@ -1,5 +1,5 @@
 ---
-title: Aurora Network
+title: Aurora indexing & querying data API
 LinkTitle: Aurora
 weight: 16
 hidden: false

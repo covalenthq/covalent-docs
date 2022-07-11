@@ -1,7 +1,7 @@
 ---
-title: Astar Network
+title: Astar indexing & querying data API
 LinkTitle: Astar
-weight: 19
+weight: 20
 hidden: false
 featuredImage: /static/images/networks/banners/Astar.png
 description: Astar is a decentralized and cost efficient public chain that Ethereum developers can easily get started with and smart contracts are seamlessly compatible.

@@ -1,5 +1,5 @@
 ---
-title: Ronin Network
+title: Ronin indexing & querying data API
 LinkTitle: Ronin
 weight: 14
 hidden: false

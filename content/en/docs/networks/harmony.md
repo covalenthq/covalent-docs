@@ -1,6 +1,7 @@
 ---
-title: Harmony
-order: 19
+title: Harmony indexing & querying data API
+LinkTitle: Harmony
+weight: 19
 hidden: false
 featuredImage: /static/images/networks/banners/Harmony.png
 description: Harmony is the next generation sharding-based blockchain that is fully scalable, provably secure, and energy efficient.

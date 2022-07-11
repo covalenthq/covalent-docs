@@ -1,5 +1,5 @@
 ---
-title: Polygon/Matic indexing & querying data API
+title: Polygon indexing & querying data API
 LinkTitle: Polygon
 weight: 2
 hidden: false
@@ -8,13 +8,13 @@ description: Working together to bring massive scale to Ethereum
 favicon: polygon-matic-logo
 ---
 
-![Matic network banner](/static/images/networks/banners/Polygon.png)
+![Polygon network banner](/static/images/networks/banners/Polygon.png)
 
-# Polygon / Matic Network
+# Polygon Network
 
 ## Introduction
 
-The [Polygon / Matic Network](https://matic.network/) brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains that provides a solution for faster and extremely low-cost transactions with finality on the main chain. The Matic system ensures liveliness using PoS checkpoints which are pushed to the Ethereum mainchain. This enables a single Matic sidechain to theoretically achieve `2^16` transactions per block, and possibly millions of transactions on multiple chains in the future.
+The [Polygon Network](https://matic.network/) brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains that provides a solution for faster and extremely low-cost transactions with finality on the main chain. The Polygon network ensures liveliness using PoS checkpoints which are pushed to the Ethereum mainchain. This enables a single Polygon sidechain to theoretically achieve `2^16` transactions per block, and possibly millions of transactions on multiple chains in the future.
 
 
 
@@ -24,9 +24,9 @@ The [Polygon / Matic Network](https://matic.network/) brings massive scale to Et
 
 |Property|Value|
 |---|---|
-|Matic Mainnet chainId|`137`|
-|Matic Mumbai Testnet chainId|`80001`|
-|Matic Blockchain Explorer|https://explorer-mainnet.maticvigil.com/|
+|Polygon Mainnet chainId|`137`|
+|Polygon Mumbai Testnet chainId|`80001`|
+|Polygon Blockchain Explorer|https://polygonscan.com/|
 |Block time|~3 seconds|
 |Data refresh latency|~6 seconds or 2 Blocks|
 </TableWrap>

@@ -1,5 +1,5 @@
 ---
-title: Polyjuice L2 Network
+title: Polyjuice L2 indexing & querying data API
 LinkTitle: Polyjuice
 weight: 13
 hidden: false

@@ -1,5 +1,5 @@
 ---
-title: Heco Network
+title: Heco indexing & querying data API
 LinkTitle: Heco
 weight: 12
 hidden: false

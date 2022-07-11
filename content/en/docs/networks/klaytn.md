@@ -1,5 +1,5 @@
 ---
-title: Klaytn Network
+title: Klaytn indexing & querying data API
 LinkTitle: Klaytn
 weight: 11
 hidden: false
