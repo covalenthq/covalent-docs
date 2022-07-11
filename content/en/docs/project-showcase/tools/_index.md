@@ -14,6 +14,5 @@ hideChildren: false
 |[Yung Fantom](/docs/project-showcase/tools/yung-fantom/) |[d-pad Cafe](/docs/project-showcase/tools/dpad-cafe/) |
 |[![FTM Scan](/static/images/project-showcase/banners/ftm-scan.png)](/docs/project-showcase/tools/ftm-scan/) | [![Coin Defit](/static/images/project-showcase/banners/coin-defit.png)](/docs/project-showcase/tools/coindefit/)|
 |[FTM Scan](/docs/project-showcase/tools/ftm-scan/)|[Coin Defit](/docs/project-showcase/tools/coindefit/) |
-|[![Crypto Trust](/static/images/project-showcase/banners/Crypto-Trust.png)](/docs/project-showcase/tools/crypto-trust/)| |
-|[Crypto Trust](/docs/project-showcase/tools/crypto-trust/)| |
-
+|[![Crypto Trust](/static/images/project-showcase/banners/Crypto-Trust.png)](/docs/project-showcase/tools/crypto-trust/)|[![Covalent Node SDK](/static/images/project-showcase/banners/covalent-sdk.png)](/docs/project-showcase/tools/covalent-sdk/) |
+|[Crypto Trust](/docs/project-showcase/tools/crypto-trust/)|[Covalent Node SDK](/docs/project-showcase/tools/covalent-sdk/) |
