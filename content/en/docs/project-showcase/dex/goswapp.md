@@ -1,7 +1,6 @@
 ---
 title: GoSwapp
-order: 2
-hidden: false
+weight: 9
 featuredImage: /static/images/project-showcase/banners/go-swapp.png
 author: anadi2311
 updated: 2021-05-30

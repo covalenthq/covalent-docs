@@ -224,31 +224,6 @@
             link: /docs/project-showcase/dex/sushiswap/
             published: true
           -
-            title: TXN Wallet
-            link: /docs/project-showcase/wallet/txnwallet/
-            published: true
-          -
-            title: Sovryn - RSK Multi-Wallet
-            link: /docs/project-showcase/wallet/rsk-wallet/
-            published: true
-          -
-            title: Stack WatchOS Wallet
-            link: /docs/project-showcase/wallet/stacks-watchos-wallet/
-            published: true
-      - 
-        title: DEXs
-        link: /docs/project-showcase/dex/
-        published: true
-        subsection:
-          -
-            title: SpiritSwap
-            link: /docs/project-showcase/dex/spiritswap/
-            published: true
-          -
-            title: StellaSwap
-            link: /docs/project-showcase/dex/stellaswap/
-            published: false
-          -
             title: Li.Finance
             link: /docs/project-showcase/dex/li-finance/
             published: true
@@ -259,6 +234,10 @@
           -
             title: AppDEX
             link: /docs/project-showcase/dex/appdex/
+            published: true
+          -
+            title: GoSwapp
+            link: /docs/project-showcase/dex/goswapp/
             published: true
       - 
         title: Governance

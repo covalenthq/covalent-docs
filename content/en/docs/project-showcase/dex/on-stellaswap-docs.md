@@ -1,6 +1,8 @@
 ---
 title: StellaSwap DEX
 LinkTitle: StellaSwap
+_build:
+  list: false
 description: DEX based on Uniswap's XY=K automated market maker on the Moonbeam network.
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: SpookySwap DEX
 LinkTitle: SpookySwap
+_build:
+  list: false
 description: DEX based on Uniswap's XY=K automated market maker on the Fantom network.
 ---
 

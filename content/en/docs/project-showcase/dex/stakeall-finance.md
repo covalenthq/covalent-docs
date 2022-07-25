@@ -1,7 +1,6 @@
 ---
 title: Stakeall Finance
-hidden: false
-weight: 3
+weight: 7
 featuredImage: /static/images/project-showcase/stakeall-finance.png
 description: DeFi Platform for staking in various POS protocols.  
 ---

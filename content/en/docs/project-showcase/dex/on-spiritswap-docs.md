@@ -1,10 +1,14 @@
 ---
 title: SpiritSwap DEX
 LinkTitle: SpiritSwap
+_build:
+  list: false
+featuredImage: /static/images/project-showcase/spiritswap-banner.png
 description: DEX based on Uniswap's XY=K automated market maker on the Fantom network.
+livePage: https://docs.spiritswap.finance/spirit-swap/howto/pull-spiritswap-data-feeds-using-covalent-api
 ---
 
-{{< onDexPartnerDocsTemplate dex="SpiritSwap" chains="Fantom 250" apiReferenceChain="250" website="https://info.spiritswap.finance/" >}}
+{{< onDexPartnerDocsTemplate dex="SpiritSwap" apiReferenceChainName="Fantom" apiReferenceChain="250" website="https://info.spiritswap.finance/" >}}
 
 <!-- # Covalent
 

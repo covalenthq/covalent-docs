@@ -1,6 +1,8 @@
 ---
 title: QuickSwap DEX
 LinkTitle: QuickSwap
+_build:
+  list: false
 description: DEX based on Uniswap's XY=K automated market maker on the Polygon network.
 ---
 

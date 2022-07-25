@@ -1,6 +1,8 @@
 ---
 title: SushiSwap DEX
 LinkTitle: SushiSwap
+_build:
+  list: false
 description: DEX based on the XY=K automated market maker on multiple networks.
 ---
 
