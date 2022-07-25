@@ -2,6 +2,7 @@
 title: Evmos Docs
 LinkTitle: evmos-docs
 hidden: false
+livePage: https://github.com/evmos/awesome#infrastructure
 ---
 
 {{< partnerDocsTemplate blockchain="evmos" mainnet="9001" testnet="9000" apiReferenceChain="9001" >}}

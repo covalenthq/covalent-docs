@@ -17,6 +17,10 @@
         link: /docs/tools/chainlink-example
         published: true
       - 
+        title: Moralis Plugin
+        link: /docs/tools/moralis
+        published: true
+      - 
         title: Community Tools
         link: /docs/tools/community
         published: true
@@ -67,6 +71,10 @@
     link: /docs/changelog/
     published: true
     subsection:
+      - 
+        title: June 2022
+        link: /docs/changelog/2022/june/
+        published: true
       - 
         title: May 2022
         link: /docs/changelog/2022/may/
@@ -215,6 +223,31 @@
             title: SushiSwap
             link: /docs/project-showcase/dex/sushiswap/
             published: true
+          -
+            title: TXN Wallet
+            link: /docs/project-showcase/wallet/txnwallet/
+            published: true
+          -
+            title: Sovryn - RSK Multi-Wallet
+            link: /docs/project-showcase/wallet/rsk-wallet/
+            published: true
+          -
+            title: Stack WatchOS Wallet
+            link: /docs/project-showcase/wallet/stacks-watchos-wallet/
+            published: true
+      - 
+        title: DEXs
+        link: /docs/project-showcase/dex/
+        published: true
+        subsection:
+          -
+            title: SpiritSwap
+            link: /docs/project-showcase/dex/spiritswap/
+            published: true
+          -
+            title: StellaSwap
+            link: /docs/project-showcase/dex/stellaswap/
+            published: false
           -
             title: Li.Finance
             link: /docs/project-showcase/dex/li-finance/

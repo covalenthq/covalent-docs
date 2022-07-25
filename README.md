@@ -55,6 +55,6 @@ Some helpful things to know about creating content pages:
 
 
 ## Preview your branch
-
 Everytime you commit to a branch, we deploy a fully built website for preview. Check the comments on your pull request for the live URL.
+
 

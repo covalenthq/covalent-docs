@@ -21,7 +21,7 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 ## Using your CQT
 
-- [Staking](https://www.covalenthq.com/dashboard/#/stake/single-sided/)
+- [Staking](https://www.covalenthq.com/staking/#/)
 
 - [Bridge](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/)
 

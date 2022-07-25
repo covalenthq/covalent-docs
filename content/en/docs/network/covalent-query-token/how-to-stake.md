@@ -4,25 +4,24 @@ title: How to Stake CQT
 
 # How to Stake CQT on the Covalent Network
 
-The primary way to stake CQT is through the [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/). Here, you can stake your CQT to a number of Covalent Network Operators. As a reward for doing so, you stand to earn CQT proportionate to how much you have staked.
+The primary way to stake CQT is through the [Covalent Network Staking Dashboard](https://www.covalenthq.com/staking/#/). Here, you can stake your CQT to a number of Covalent Network Operators. As a reward for doing so, you stand to earn CQT proportionate to how much you have staked.
 
 **Note**: Staking is **live on Moonbeam**. Therefore, to participate in staking on the Covalent Network, you have to bridge your CQT to Moonbeam from the respective network you have CQT on. For more information on how to transfer your CQT to Moonbeam, visit the Bridging guide [here](https://www.covalenthq.com/docs/network/covalent-query-token/bridge/).
 
 ## Getting Start with the Covalent Network Dashboard
 
-To get started with the dashboard, navigate to the [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/). You will be prompted to connect your wallet. If you have not already, you will need to connect to the Moonbeam Network via your wallet. If you need assistance in doing so, visit the Moonbeam documentation on [connecting MetaMask to Moonbeam.](https://docs.moonbeam.network/builders/get-started/moonbeam/#connect-metamask)
+To get started with the dashboard, navigate to the [Covalent Network Staking Dashboard](https://www.covalenthq.com/staking/#/). You will be prompted to connect your wallet. If you have not already, you will need to connect to the Moonbeam Network via your wallet. If you need assistance in doing so, visit the Moonbeam documentation on [connecting MetaMask to Moonbeam.](https://docs.moonbeam.network/builders/get-started/moonbeam/#connect-metamask)
 
 On the staking dashboard, you will be able to delegate to network operators, modify existing stakes, and get an overall glimpse of your staking activity.
 
 ### Stake your CQT to a Network Operator
 
-Upon connecting your wallet to the [Covalent Network Staking Dashboard](https://www.covalenthq.com/dashboard/#/stake/single-sided/), you, as a Delegator, can delegate to a Network Operator by staking tokens and adding to the Operator's stake.
+Upon connecting your wallet to the [Covalent Network Staking Dashboard](https://www.covalenthq.com/staking/#/), you, as a Delegator, can delegate to a Network Operator by staking tokens and adding to the Operator's stake.
 
 You should see a number of Network Operators, all of which perform a specific, or range of roles. At this time, they are only operating as Block Specimen Producers.
 
 On the dashboard, you can view the name, operator's staked amount, commission rate, APY, amount of CQT delegated to this operator, and the amount available to delegate.
 
-<IMAGE>
 
 #### Selecting a Network Operator
 

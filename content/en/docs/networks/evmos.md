@@ -1,6 +1,7 @@
 ---
-title: Evmos
-order: 18
+title: Evmos indexing & querying data API
+LinkTitle: Evmos
+weight: 18
 hidden: false
 featuredImage: /static/images/networks/banners/Evmos.png
 description: Evmos is an application-agnostic Cosmos chain that will be interoperable with the Ethereum mainnet.

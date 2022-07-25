@@ -1,6 +1,6 @@
 ---
-title: Shiden
-order: 15
+title: Shiden indexing & querying data API
+weight: 15
 hidden: false
 featuredImage: /static/images/networks/banners/Shiden.png
 description: Support for the Shiden Network on Kusama parachain
