@@ -773,7 +773,7 @@
   "resolved" "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz"
   "version" "2.3.0"
 
-"postcss-cli@^9.0.1":
+"postcss-cli@^9.1.0":
   "integrity" "sha512-zvDN2ADbWfza42sAnj+O2uUWyL0eRL1V+6giM2vi4SqTR3gTYy8XzcpfwccayF2szcUif0HMmXiEaDv9iEhcpw=="
   "resolved" "https://registry.npmjs.org/postcss-cli/-/postcss-cli-9.1.0.tgz"
   "version" "9.1.0"
